@@ -27,9 +27,9 @@ profile_picture:
 
 <p>
 📫 You can reach me at nicklausjkim@gmail.com. Also, go and check out some of my other homes on the web:<br/><br/>
-  [Github](http://www.github.com/nicklauskim)<br/>
-  [LinkedIn](http://www.linkedin.com/nicklauskim)<br/>
-  [Kaggle](http://www.kaggle.com/nicklauskim)
+  <a href = "http://www.github.com/nicklauskim">GitHub</a><br/>
+  <a href = "http://www.linkedin.com/nicklauskim">LinkedIn</a><br/>
+  <a href = "http://www.kaggle.com/nicklauskim">Kaggle</a>
 </p>
 
 <p>
