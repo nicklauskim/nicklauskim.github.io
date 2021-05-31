@@ -32,6 +32,8 @@ profile_picture:
   <a href = "http://www.kaggle.com/nicklauskim">Kaggle</a>
 </p>
 
+<br/>
+
 <p>
-  You can find the source code and the instructions on <a href="https://github.com/eliottvincent/bay">GitHub</a>.
+  You can also find the source code and the instructions for this web page template <a href="https://github.com/eliottvincent/bay">here</a>.
 </p>
