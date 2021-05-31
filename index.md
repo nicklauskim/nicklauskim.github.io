@@ -6,7 +6,7 @@ profile_picture:
 ---
 
 <p>
-👋 Hi, I’m @nicklauskim!
+👋 Hello, I am Nicklaus Kim.
 </p>
 
 <p>
