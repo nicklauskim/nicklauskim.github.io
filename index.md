@@ -14,11 +14,11 @@ profile_picture:
 </p>
 
 <p>
-👀 I’m interested in applications of mathematics and statistics to the world of tech and big data, particularly machine learning and its booming subfields such as computer vision and natural language processing. As a big math nerd who is always looking to improve my programming abilities, studying the various methods of data science and their implementations in code has proven to be the ideal intellectual playground.
+🌱 I am starting a Master in Statistics (M.S.) program at UCLA in Fall 2021. I previously earned a B.S. in Applied Mathematics, also at UCLA.
 </p>
 
 <p>
-🌱 I am starting a Master in Statistics (M.S.) program at UCLA in Fall 2021. I previously earned a B.S. in Applied Mathematics, also at UCLA.
+👀 I’m interested in applications of mathematics and statistics to the world of tech and big data, particularly machine learning and its booming subfields such as computer vision and natural language processing. As a big math nerd who is always looking to improve my programming abilities, studying the various methods of data science and their implementations in code has proven to be the ideal intellectual playground.
 </p>
 
 <p>
