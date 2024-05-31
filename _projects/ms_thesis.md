@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Master's Thesis Research
+title: Master\'s Thesis Research
 date: 2023-06-20
 description: An Overview Presentation
 redirect: /assets/pdf/Research_Presentation.pdf
