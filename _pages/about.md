@@ -45,7 +45,6 @@ Please feel free to check out the Projects tab above for some examples of my wor
 <p>
 You can contact me at nicklausjkim@gmail.com. Also, go and check out some of my other homes on the web:<br/><br/>
   <a href = "https://www.github.com/nicklauskim">GitHub</a><br/>
-  <a href = "https://www.linkedin.com/in/nicklauskim">LinkedIn</a><br/>
   <a href = "https://www.kaggle.com/nicklauskim">Kaggle</a>
 </p>
 -->
