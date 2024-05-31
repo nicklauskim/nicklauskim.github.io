@@ -22,8 +22,6 @@ While I have a separate "Projects" page here to display my more involved *statis
 
 I look to put up a good variety of posts in the future (hopefully on a consistent basis). That means posts varying in content — for example, falling into one of the categories mentioned above — as well as a mix up more involved, in-depth posts as well as "microblogging" posts where I simply want to get some of my quick thoughts out there.
 
-<!---Lastly, you can also find my blog posts on my Medium page <a href="https://medium.com/@nickjkim">here</a>. I hope you'll check it out!--->
-
 So with that, I look forward to providing much more content in the future, thanks for visiting my site, and I hope you stick around to hear more from me very shortly!
 
 
