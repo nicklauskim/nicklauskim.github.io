@@ -38,14 +38,14 @@ Most recently, I performed research on topics in generative AI at the Trustworth
 </p>
 
 <p>
-Please feel free to check out the Projects tab above for some examples of my work from grad school and beyond. Also check out my <a href = "http://www.github.com/nicklauskim">GitHub</a><br/> for a more comprehensive view of the stats and data science-related things I've worked on!
+Please feel free to check out the Projects tab above for some examples of my work from grad school and beyond. Also check out my <a href = "https://www.github.com/nicklauskim">GitHub</a><br/> for a more comprehensive view of the stats and data science-related things I've worked on!
 
 
 <!--
 <p>
 You can contact me at nicklausjkim@gmail.com. Also, go and check out some of my other homes on the web:<br/><br/>
-  <a href = "http://www.github.com/nicklauskim">GitHub</a><br/>
-  <a href = "http://www.linkedin.com/in/nicklauskim">LinkedIn</a><br/>
-  <a href = "http://www.kaggle.com/nicklauskim">Kaggle</a>
+  <a href = "https://www.github.com/nicklauskim">GitHub</a><br/>
+  <a href = "https://www.linkedin.com/in/nicklauskim">LinkedIn</a><br/>
+  <a href = "https://www.kaggle.com/nicklauskim">Kaggle</a>
 </p>
 -->
