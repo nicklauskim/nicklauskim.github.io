@@ -5,8 +5,8 @@ nav: true
 nav_order: 6
 dropdown: true
 children: 
-    - title: news
-      permalink: /news/
+    - title: teaching
+      permalink: /teaching/
     - title: divider
     - title: publications
       permalink: /publications/
