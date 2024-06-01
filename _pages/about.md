@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+<!--subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.-->
 
 profile:
   align: right
@@ -12,7 +12,7 @@ profile:
     <p>Los Angeles, CA 90024</p>
 
 news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
@@ -38,13 +38,6 @@ Most recently, I performed research on topics in generative AI at the Trustworth
 </p>
 
 <p>
-Please feel free to check out the Projects tab above for some examples of my work from grad school and beyond. Also check out my <a href = "https://www.github.com/nicklauskim">GitHub</a><br/> for a more comprehensive view of the stats and data science-related things I've worked on!
+Please feel free to check out the Projects tab above for some examples of my work from grad school and beyond. Also check out my <a href = "https://www.github.com/nicklauskim">GitHub</a> and other links below for a more comprehensive view of the stats and data science-related things I've worked on!
 
 
-<!--
-<p>
-You can contact me at nicklausjkim@gmail.com. Also, go and check out some of my other homes on the web:<br/><br/>
-  <a href = "https://www.github.com/nicklauskim">GitHub</a><br/>
-  <a href = "https://www.kaggle.com/nicklauskim">Kaggle</a>
-</p>
--->

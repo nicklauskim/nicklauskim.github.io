@@ -1,12 +1,12 @@
 ---
 layout: post
-title: NBA Statistics Dashboard
-date: 2024-03-04
-description: Shooting Maps and Other Analytics-Based Visualizations
+title: Basketball Statistics Dashboard
+date: 2024-05-04
+description: Detailed Visualizations and Advanced Analytics
 <!---redirect: /assets/pdf/Research Presentation.pdf--->
 img: assets/img/ball-hoop.jpg
 importance: 1
-category: work
+category: fun
 ---
 
-This project is a Streamlit web app that is currently still in progress and I will post updates as I get closer to deployment.
+This project is a web app built in Dash that is currently still in progress and awaiting deployment.
