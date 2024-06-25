@@ -1,4 +1,4 @@
-# My website
+# My professional website, displaying my projects and other work in statistics and data science.
 
 Hello, I'm Nick and welcome to my website!
 

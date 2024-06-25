@@ -30,14 +30,14 @@ Hello, I'm Nick and welcome to my website!
 </p>
 
 <p>
-I recently graduated from UCLA with a Master of Science (M.S.) in Statistics and am currently looking for full-time data scientist roles where I can apply statistical concepts I’ve learned and computational tools I’ve practiced towards extracting meaningful insights from complex data. I also previously earned a B.S. in Applied Mathematics at UCLA.
+I recently graduated from UCLA with my M.S. in Statistics and am currently looking for full-time data scientist roles where I can apply statistical concepts I’ve learned and computational tools I’ve practiced (Python, R, SQL, among others!) towards extracting meaningful insights and knowledge from complex data. I also previously earned a B.S. in Applied Mathematics at UCLA.
 </p>
 
 <p>
-Most recently, I performed research on topics in generative AI at the Trustworthy AI Lab at UCLA. My research emphasized the methodology and application of **synthetic data** to improve modern statistical/ML models, particularly in terms of robustness, fairness, and differential privacy. Specifically, I investigated the paradigm of privacy auditing -- investigating the true privacy offered by different data synthesis methods, specifically under the risk of membership inference attacks and other attacks on generative models, in an adversarial framework. <!--While much of my focus was on the evaluation of such synthetic data methods, I am also interested in generative modeling methodology as a whole (reinforcement learning, large language models, etc.).-->
+Most recently, I performed research on topics in generative AI at the Trustworthy AI Lab at UCLA. My research emphasized the methodology and application of **synthetic data** to improve modern statistical/ML models, particularly in terms of robustness, fairness, and differential privacy. Specifically, I investigated the paradigm of privacy auditing -- investigating the true privacy offered by different synthetic data generation methods, specifically under the risk of adversarial attacks on generative models.
 </p>
 
 <p>
 Please feel free to check out the Projects tab above for some examples of my work from grad school and beyond. Also check out my <a href = "https://www.github.com/nicklauskim">GitHub</a> and other links below for a more comprehensive view of the stats and data science-related things I've worked on!
-
+</p>
 
