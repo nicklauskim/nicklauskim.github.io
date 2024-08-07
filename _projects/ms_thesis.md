@@ -6,5 +6,5 @@ description: Privacy Auditing of Synthetic Data Generation Models, An Overview P
 redirect: /assets/pdf/Research_Presentation.pdf
 img: assets/img/random_data.jpg
 importance: 1
-category: work
+category: featured
 ---
