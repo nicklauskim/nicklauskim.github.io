@@ -4,7 +4,7 @@ title: Dimension Reduction Techniques in NLP
 description: Binary Text Classification Using Regularized Logistic Regression
 img: assets/img/bookstack.jpg
 importance: 2
-category: work
+category: data science
 ---
 
 
