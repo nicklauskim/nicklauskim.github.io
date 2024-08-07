@@ -4,7 +4,7 @@ title: Statistical Learning Methods for Text Classification
 description: A Comparison of Algorithms and a Brief Look at the Zero-Frequency Problem in NLP
 img: assets/img/pages.jpg
 importance: 2
-category: work
+category: data science
 ---
 
 
