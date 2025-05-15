@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+%\usepackage{newtxtext,newtxmath} % Times-like font
+\usepackage{mathpazo} % Palatino font
+%\usepackage{libertinus} % Libertinus font
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17} % or 1.18, etc.
+\usepackage{pgf-pie} % pie charts
+\usepgfplotslibrary{statistics}
+\usepackage{enumitem}
+\usepackage{tcolorbox}
+\tcbuselibrary{breakable}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{properties}{Properties}[section]
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+
+\newenvironment{flushlefttab}{
+  \begin{flushleft}
+  \begin{tabular}{@{} l p{0.75\textwidth} @{}}}
+  {\end{tabular}
+  \end{flushleft}}
+
+
+
+\setlength{\parindent}{0pt}
+
+

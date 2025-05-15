@@ -1,0 +1,9 @@
+---
+title: "Post With Code"
+author: "Nick Kim"
+date: "2025-05-09"
+categories: [news, code, analysis]
+image: "image.jpg"
+---
+
+This is a post with executable code.

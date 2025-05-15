@@ -1,0 +1,13 @@
+---
+title: "About"
+---
+
+Hello, I’m Nick and welcome to my website!
+
+I recently graduated from UCLA with my M.S. in Statistics and am currently looking for full-time statistician/data scientist/data analyst roles where I can apply the statistical concepts and computational tools in my skillset (Python, R, and SQL, among others!) towards extracting meaningful insights and knowledge from complex data. I also previously earned a B.S. in Applied Mathematics at UCLA.
+
+Previously, I have conducted research on topics in generative AI at the Trustworthy AI Lab at UCLA. My research emphasized the methodology and application of synthetic data to improve modern statistical/ML modeling pipelines, particularly in terms of robustness and differential privacy. Specifically, I investigated the paradigm of privacy auditing – investigating the true privacy offered by different synthetic data generation methods when put under the risk of adversarial attacks.
+
+I am also passionate about teaching math and stats. I currently work as a private tutor for a variety of subjects, mainly AP Statistics. In the past I have also served as a teaching assistant for introductory statistics at UCLA and as a tutor and reader for a wide range of stats courses.
+
+

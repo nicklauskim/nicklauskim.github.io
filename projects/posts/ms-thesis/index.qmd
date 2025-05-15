@@ -1,0 +1,16 @@
+---
+title: Privacy Auditing of Synthetic Data Generation Models Using Adversarial Attacks
+description: "Thesis Research for Master of Science in Statistics"
+date: 2025-05-10
+categories: [machine learning, generative modeling, synthetic data, privacy]
+image: "random_data.jpg"
+---
+
+Overview presentation of my research:
+
+<iframe src="../../../assets/files/Research Presentation.pdf" width="100%" height="600px">
+  This browser does not support PDFs. Please download the PDF to view it: 
+  <a href="../../../assets/files/Research Presentation.pdf">Download PDF</a>.
+</iframe>
+
+Also, you can view my thesis here: [📄 Privacy Auditing of Tabular Synthetic Data Generators Using Membership Inference Attacks](../../../assets/files/MS Thesis.pdf)

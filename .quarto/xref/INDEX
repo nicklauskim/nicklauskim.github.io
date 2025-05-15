@@ -1,0 +1,100 @@
+{
+  "index.qmd": {
+    "index.html": "97ed2c3b"
+  },
+  "about.qmd": {
+    "about.html": "3514bcfc"
+  },
+  "projects.qmd": {
+    "projects.html": "37846930"
+  },
+  "blog/posts/post-with-code/index.qmd": {
+    "index.html": "42d7fba7"
+  },
+  "blog/posts/welcome/index.qmd": {
+    "index.html": "9ad0d5b4"
+  },
+  "blog/index.qmd": {
+    "index.html": "55832dec"
+  },
+  "blog/about.qmd": {
+    "about.html": "52f1b42b"
+  },
+  "blog/posts/new-post/index.qmd": {
+    "index.html": "f41aecba"
+  },
+  "notes.qmd": {
+    "notes.html": "0671354b"
+  },
+  "projects/experimental-design-hyperparameter-tuning.qmd": {
+    "experimental-design-hyperparameter-tuning.html": "69c53246"
+  },
+  "projects/index.qmd": {
+    "index.html": "78d4c80f"
+  },
+  "projects/supervised-text-classification.qmd": {
+    "supervised-text-classification.html": "b23615c7"
+  },
+  "projects/ms-thesis.qmd": {
+    "ms-thesis.html": "6fd76e74"
+  },
+  "projects/nlp-dimensionality-reduction.qmd": {
+    "nlp-dimensionality-reduction.html": "0dfda275"
+  },
+  "blog/posts/sample-post-with-code/index.qmd": {
+    "index.html": "25103509"
+  },
+  "blog/posts/electoral-college-changes/index.qmd": {
+    "index.html": "2adc52fc"
+  },
+  "notes/index.qmd": {
+    "index.html": "57667bf9"
+  },
+  "notes/ap-stats.qmd": {
+    "ap-stats.html": "d0e0e42e"
+  },
+  "notes/ap-stats/sections/chapter-1.qmd": {
+    "chapter-1.html": "792e567d",
+    "chapter-1.tex": "38b06b6f"
+  },
+  "notes/ap-stats/index.qmd": {
+    "index.html": "fb96660f"
+  },
+  "projects/posts/experimental-design-hyperparameter-tuning/index.qmd": {
+    "index.html": "5aac86c0"
+  },
+  "projects/posts/ms-thesis/index.qmd": {
+    "index.html": "bc8b3211"
+  },
+  "projects/posts/supervised-text-classification/index.qmd": {
+    "index.html": "0cdd827d"
+  },
+  "projects/posts/nlp-dimensionality reduction/index.qmd": {
+    "index.html": "0cce7349"
+  },
+  "notes/statistical-inference/index.qmd": {
+    "index.html": "c454acfe"
+  },
+  "blog/posts/blog-post/index.qmd": {
+    "index.html": "770fb047"
+  },
+  "notes/statistical-inference/sections/chapter1/chapter1.qmd": {
+    "chapter1.html": "bd4073d7",
+    "chapter1.tex": "df485022"
+  },
+  "notes/ap-stats/sections/chapter1/chapter-1.qmd": {
+    "chapter-1.html": "13aac578",
+    "chapter-1.tex": "88eef14b"
+  },
+  "notes/statistical-inference/sections/chapter2/chapter2.qmd": {
+    "chapter2.html": "4cc63cef"
+  },
+  "notes/ap-stats/sections/chapter1/chapter1.qmd": {
+    "chapter1.html": "85c194e5",
+    "chapter1.tex": "30af5df7"
+  },
+  "notes/ap-stats/sections/chapter2/chapter2.qmd": {
+    "chapter2.html": "9177d05e",
+    "chapter2.tex": "760c7d18"
+  }
+}

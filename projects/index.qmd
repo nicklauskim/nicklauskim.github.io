@@ -1,0 +1,9 @@
+---
+title: "Projects"
+listing:
+  type: default  # or 'grid', 'table', 'carousel', etc.
+  contents: posts    # will list all index pages in the posts folder
+  sort: "date desc"
+---
+
+My data science/data analysis projects, mainly executed using Python, SQL, and Dash.

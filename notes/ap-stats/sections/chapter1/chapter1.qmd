@@ -1,0 +1,10 @@
+---
+title: "Unit 1: Exploring One-Variable Data"
+description: "Review notes/study guide for Unit 1"
+date: 2025-04-14
+number-sections: true
+format: html
+page-layout: full
+---
+
+<meta http-equiv="refresh" content="0; url=chapter1.pdf">

@@ -1,0 +1,24 @@
+{
+  "listingMap": {
+    "blog/index.qmd": [
+      "posts"
+    ],
+    "projects/index.qmd": [
+      ".",
+      "posts"
+    ],
+    "notes/index.qmd": [
+      ".",
+      "ap-stats/index.qmd",
+      "statistical-inference/index.qmd"
+    ],
+    "notes/ap-stats/index.qmd": [
+      "sections/*.qmd",
+      "sections"
+    ],
+    "notes/statistical-inference/index.qmd": [
+      "sections/*.qmd",
+      "sections"
+    ]
+  }
+}

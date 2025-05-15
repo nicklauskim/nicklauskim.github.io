@@ -1,0 +1,40 @@
+project:
+  type: website
+  output-dir: _site
+  resources: 
+    - "**/*.pdf"
+
+website:
+  title: "Nicklaus Kim"
+  navbar:
+    background: light
+    left:
+      - href: index.qmd
+        text: "Home"
+        icon: house-door
+      - href: blog/index.qmd
+        text: "Blog"
+        icon: pencil
+      - href: projects/index.qmd
+        text: "Projects"
+        icon: grid
+      - href: notes/index.qmd
+        icon: file-earmark-text
+      - href: about.qmd
+    tools:
+      - icon: github
+        href: https://github.com/nicklauskim
+  reader-mode: true
+  page-footer: "Last updated May 2025"
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    toggle: true
+    css: styles.css
+    toc: true
+
+
+

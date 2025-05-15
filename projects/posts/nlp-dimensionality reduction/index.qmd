@@ -1,0 +1,12 @@
+---
+title: Dimensionality Reduction Techniques in NLP
+description: "Exploring Use of Singular Value Decomposition to Reduce High Dimensionality in Logistic Regression Models for Text Classification"
+date: 2025-05-09
+categories: [statistics, nlp, logistic regression, regularization, dimensionality]
+image: "images/pages.jpg"
+format: html
+page-layout: full
+---
+
+<meta http-equiv="refresh" content="0; url=../../../assets/files/STATS_202B_Final_Report.pdf">
+

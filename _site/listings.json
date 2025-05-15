@@ -1,0 +1,40 @@
+[
+  {
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/posts/blog-post/index.html",
+      "/blog/posts/sample-post-with-code/index.html",
+      "/blog/posts/welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/index.html",
+    "items": [
+      "/projects/posts/experimental-design-hyperparameter-tuning/index.html",
+      "/projects/posts/ms-thesis/index.html",
+      "/projects/posts/nlp-dimensionality reduction/index.html",
+      "/projects/posts/supervised-text-classification/index.html"
+    ]
+  },
+  {
+    "listing": "/notes/index.html",
+    "items": [
+      "/notes/statistical-inference/index.html",
+      "/notes/ap-stats/index.html"
+    ]
+  },
+  {
+    "listing": "/notes/ap-stats/index.html",
+    "items": [
+      "/notes/ap-stats/sections/chapter2/chapter2.html",
+      "/notes/ap-stats/sections/chapter1/chapter1.html"
+    ]
+  },
+  {
+    "listing": "/notes/statistical-inference/index.html",
+    "items": [
+      "/notes/statistical-inference/sections/chapter1/chapter1.pdf",
+      "/notes/statistical-inference/sections/chapter2/chapter2.pdf"
+    ]
+  }
+]

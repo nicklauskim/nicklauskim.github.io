@@ -1,0 +1,17 @@
+---
+title: "Chapter 2: Transformations and Expectations"
+description: "Notes for Chapter 2"
+date: 2025-04-25
+format: 
+  pdf:
+    pdf-engine: pdflatex
+    #mainfont: "Palatino"
+    include-in-header: ../../latex/macros.tex
+    header-includes:
+    - \newtheorem{theorem}{Theorem}[section]
+number-sections: false
+---
+
+```{=latex}
+\input{chapter2.tex}
+
