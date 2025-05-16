@@ -48,6 +48,10 @@
     "index.html": "5fadae63"
   },
   "notes/statistical-inference/sections/chapter1/chapter1.qmd": {
-    "chapter1.tex": "bb5ea56f"
+    "chapter1.tex": "bb5ea56f",
+    "chapter1.html": "0668e2ae"
+  },
+  "notes/statistical-inference/sections/chapter2/chapter2.qmd": {
+    "chapter2.tex": "7e56b5fd"
   }
 }
