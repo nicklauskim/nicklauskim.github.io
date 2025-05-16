@@ -1,0 +1,9 @@
+{
+  "listing": "/projects/index.html",
+  "items": [
+    "/projects/posts/experimental-design-hyperparameter-tuning/index.html",
+    "/projects/posts/ms-thesis/index.html",
+    "/projects/posts/nlp-dimensionality reduction/index.html",
+    "/projects/posts/supervised-text-classification/index.html"
+  ]
+}

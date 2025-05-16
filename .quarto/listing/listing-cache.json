@@ -1,24 +1,17 @@
 {
   "listingMap": {
+    "projects/index.qmd": [
+      "posts"
+    ],
     "blog/index.qmd": [
       "posts"
     ],
-    "projects/index.qmd": [
-      ".",
-      "posts"
+    "notes/ap-stats/index.qmd": [
+      "sections"
     ],
     "notes/index.qmd": [
-      ".",
-      "ap-stats/index.qmd",
-      "statistical-inference/index.qmd"
-    ],
-    "notes/ap-stats/index.qmd": [
-      "sections/*.qmd",
-      "sections"
-    ],
-    "notes/statistical-inference/index.qmd": [
-      "sections/*.qmd",
-      "sections"
+      "statistical-inference/index.qmd",
+      "ap-stats/index.qmd"
     ]
   }
 }
