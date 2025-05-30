@@ -12,6 +12,9 @@
     "notes/index.qmd": [
       "statistical-inference/index.qmd",
       "ap-stats/index.qmd"
+    ],
+    "notes/statistical-inference/index.qmd": [
+      "sections"
     ]
   }
 }

@@ -52,6 +52,10 @@
     "chapter1.html": "0668e2ae"
   },
   "notes/statistical-inference/sections/chapter2/chapter2.qmd": {
-    "chapter2.tex": "7e56b5fd"
+    "chapter2.tex": "7e56b5fd",
+    "chapter2.html": "215c6377"
+  },
+  "notes/statistical-inference/index.qmd": {
+    "index.html": "35234c45"
   }
 }
