@@ -9,7 +9,8 @@ title: "Nicklaus Kim"
 
 Welcome to my professional and academic portfolio.
 
-I'm a statistician and data scientist passionate about using my mathematical background and programming skills to build tools like data visualization platforms and production-level statistical learning models. I have experience in statistical and machine learning research in academia and a diverse set of data analysis/science skills. In particular I specialize in Python, R, SQL, and Dash — and I love turning complex data into intuitive interfaces that enable visual storytelling.
+I recently completed my M.S. in Statistics at UCLA and am currently searching for research-oriented statistician or data scientist/analyst opportunities. I'm passionate about using my mathematical background and programming skills to build tools like data dashboards and web applications and production-level statistical learning models. I have experience in statistical and machine learning research in academia and a diverse set of data analysis/science skills; in particular I specialize in Python, R, Dash, and SQL (PostgreSQL).
+<!--— and I love turning complex data into intuitive interfaces that enable visual storytelling.-->
 
 Here is some of my highlighted work:
 
@@ -19,11 +20,11 @@ Here is some of my highlighted work:
     + Data Privacy (Differential Privacy)
 * [NBA Data Dashboard](projects/index.qmd)
     + Dynamic Data Visualization with Dash and Plotly
-    + Rich Database Served with FastAPI
-    + Video Generation Engine
+    + Rich Database of Statistics Served with FastAPI Backend
+    + Video Generation Engine Delivering Filtered Plays
 <!--* [Founding Fathers Correspondence Network](projects/index.qmd)
-    + Flask Web Programming
-    + Knowledge Graphs
+    + Knowledge Networks and Other Visualizations in Dash
+    + Temporal and Geospatial Analysis of Letter Frequencies
     + Large Language Model Topic Analysis-->
 <br>
 
