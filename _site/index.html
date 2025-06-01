@@ -158,10 +158,10 @@ ul.task-list li input[type="checkbox"] {
 <!-- Left side (text) -->
 <div style="flex: 2;">
 <p>Welcome to my professional and academic portfolio.</p>
-<p>I’m a statistician and data scientist passionate about using my mathematical background and programming skills to build tools like data visualization platforms and production-level statistical learning models. I have experience in statistical and machine learning research in academia and a diverse set of data analysis/science skills. In particular I specialize in Python, R, SQL, and Dash — and I love turning complex data into intuitive interfaces that enable visual storytelling.</p>
+<p>I recently completed my M.S. in Statistics at UCLA and am currently searching for research-oriented statistician or data scientist/analyst opportunities. I’m passionate about using my mathematical background and programming skills to build tools like data dashboards and web applications and production-level statistical learning models. I have experience in statistical and machine learning research in academia and a diverse set of data analysis/science skills; in particular I specialize in Python, R, Dash, and SQL (PostgreSQL). <!--— and I love turning complex data into intuitive interfaces that enable visual storytelling.--></p>
 <p>Here is some of my highlighted work:</p>
 <ul>
-<li><a href="./projects/posts/ms-thesis/index.html">Synthetic Data Research</a>
+<li><a href="projects/posts/ms-thesis/index.qmd">Synthetic Data Research</a>
 <ul>
 <li>Data-centric Machine Learning</li>
 <li>Generative Modeling</li>
@@ -170,10 +170,10 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="./projects/index.html">NBA Data Dashboard</a>
 <ul>
 <li>Dynamic Data Visualization with Dash and Plotly</li>
-<li>Rich Database Served with FastAPI</li>
-<li>Video Generation Engine <!--* [Founding Fathers Correspondence Network](projects/index.qmd)
-  + Flask Web Programming
-  + Knowledge Graphs
+<li>Rich Database of Statistics Served with FastAPI Backend</li>
+<li>Video Generation Engine Delivering Filtered Plays <!--* [Founding Fathers Correspondence Network](projects/index.qmd)
+  + Knowledge Networks and Other Visualizations in Dash
+  + Temporal and Geospatial Analysis of Letter Frequencies
   + Large Language Model Topic Analysis--> <br></li>
 </ul></li>
 </ul>
@@ -290,7 +290,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/nicklauskim\.github\.io\/portfolio\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

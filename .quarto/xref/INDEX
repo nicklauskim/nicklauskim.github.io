@@ -57,5 +57,17 @@
   },
   "notes/statistical-inference/index.qmd": {
     "index.html": "35234c45"
+  },
+  "projects/all/experimental-parameter-tuning/index.qmd": {
+    "index.html": "d4e8390b"
+  },
+  "projects/all/ms-thesis/index.qmd": {
+    "index.html": "e1de24d8"
+  },
+  "projects/all/supervised-text-classification/index.qmd": {
+    "index.html": "83b90a76"
+  },
+  "projects/all/nlp-dimensionality reduction/index.qmd": {
+    "index.html": "af7d619c"
   }
 }
