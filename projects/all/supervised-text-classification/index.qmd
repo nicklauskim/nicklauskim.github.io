@@ -3,7 +3,7 @@ title: Overview of Machine Learning Methods for Text Classification
 description: "An Empirical Comparison of Common Classification Models Applied to Topic Distinguishing Problem"
 date: 2025-05-08
 categories: [statistics, machine learning, classification, nlp]
-image: "images/bookstack.jpg"
+image: "images/bookstack.webp"
 format: html
 page-layout: full
 ---

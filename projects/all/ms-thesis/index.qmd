@@ -3,7 +3,7 @@ title: Privacy Auditing of Synthetic Data Generation Models Using Adversarial At
 description: "Thesis Research for Master of Science in Statistics"
 date: 2025-05-10
 categories: [machine learning, generative modeling, synthetic data, privacy]
-image: "random_data.jpg"
+image: "random_data.webp"
 ---
 
 Overview presentation of my research:

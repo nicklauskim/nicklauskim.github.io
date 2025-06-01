@@ -3,7 +3,7 @@ title: Hyperparameter Tuning for Gradient Boosting Frameworks Using Statistical 
 description: "Applying Advanced Experimental Designs to Optimization of Hyperparameters in XGBoost"
 date: 2025-05-10
 categories: [statistics, bayesian, experimental design]
-image: "images/test_tubes.jpg"
+image: "images/test_tubes.webp"
 ---
 
 
