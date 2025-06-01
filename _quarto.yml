@@ -26,7 +26,7 @@ website:
       - icon: github
         href: https://github.com/nicklauskim
   reader-mode: true
-  page-footer: "Last updated May 2025"
+  page-footer: "Last updated June 2025"
 
 format:
   html:
