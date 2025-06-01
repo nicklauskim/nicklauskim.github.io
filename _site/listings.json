@@ -15,7 +15,12 @@
   },
   {
     "listing": "/projects/index.html",
-    "items": []
+    "items": [
+      "/projects/all/experimental-parameter-tuning/index.html",
+      "/projects/all/ms-thesis/index.html",
+      "/projects/all/nlp-dimensionality reduction/index.html",
+      "/projects/all/supervised-text-classification/index.html"
+    ]
   },
   {
     "listing": "/blog/index.html",

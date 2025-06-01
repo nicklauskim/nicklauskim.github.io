@@ -14,7 +14,7 @@ I recently completed my M.S. in Statistics at UCLA and am currently searching fo
 
 Here is some of my highlighted work:
 
-* [Synthetic Data Research](projects/posts/ms-thesis/index.qmd)
+* [Synthetic Data Research](projects/all/ms-thesis/index.qmd)
     + Data-centric Machine Learning
     + Generative Modeling
     + Data Privacy (Differential Privacy)
