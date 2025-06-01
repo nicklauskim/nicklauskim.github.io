@@ -6,6 +6,7 @@ project:
 
 website:
   title: "Nicklaus Kim"
+  favicon: assets/img/n.png
   navbar:
     background: light
     left:
