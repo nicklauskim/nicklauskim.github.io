@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "notes/statistical-inference/index.html",
+    "href": "notes/statistical-inference/index.html",
+    "title": "Statistical Inference Notes",
+    "section": "",
+    "text": "Chapter 1: Probability Theory\n\n\nNotes for Chapter 1\n\n\n\n\n\n\nApr 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nChapter 2: Transformations and Expectations\n\n\nNotes for Chapter 2\n\n\n\n\n\n\nApr 25, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "notes/ap-stats/index.html",
+    "href": "notes/ap-stats/index.html",
+    "title": "Introductory Statistics Notes",
+    "section": "",
+    "text": "Unit 2: Exploring Two-Variable Data\n\n\nReview notes/study guide for Unit 2\n\n\n\n\n\n\nApr 21, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nUnit 1: Exploring One-Variable Data\n\n\nReview notes/study guide for Unit 1\n\n\n\n\n\n\nApr 14, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/about.html",
+    "href": "blog/about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "blog/posts/welcome/index.html",
+    "href": "blog/posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "blog/posts/sample-post-with-code/index.html",
+    "href": "blog/posts/sample-post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "My data science/data analysis projects, mainly executed using Python, SQL, and Dash.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHyperparameter Tuning for Gradient Boosting Frameworks Using Statistical Experimental Design\n\n\n\n\n\nApplying Advanced Experimental Designs to Optimization of Hyperparameters in XGBoost\n\n\n\n\n\nMay 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPrivacy Auditing of Synthetic Data Generation Models Using Adversarial Attacks\n\n\n\n\n\nThesis Research for Master of Science in Statistics\n\n\n\n\n\nMay 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nDimensionality Reduction Techniques in NLP\n\n\n\n\n\nExploring Use of Singular Value Decomposition to Reduce High Dimensionality in Logistic Regression Models for Text Classification\n\n\n\n\n\nMay 9, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nOverview of Machine Learning Methods for Text Classification\n\n\n\n\n\nAn Empirical Comparison of Common Classification Models Applied to Topic Distinguishing Problem\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/all/experimental-parameter-tuning/index.html",
+    "href": "projects/all/experimental-parameter-tuning/index.html",
+    "title": "Hyperparameter Tuning for Gradient Boosting Frameworks Using Statistical Experimental Design",
+    "section": "",
+    "text": "Experimental design is a crucial part of any statistical experiment, including computer simulations. To explore the eﬀects of eﬃcient design on a computer experiment, we examine three published scientific papers and repeat the papers’ experiments with alternative methods of analysis using advanced experimental designs such as Latin Hypercube Sampling (LHS) and Maximum Projection Designs.\nIn the computer simulations discussed here, the experiments at hand are the machine learning models themselves, with the predictive performance of the model serving as the output and the various hyperparameters serving as inputs. A common theme throughout statistical and machine learning research papers – and all the computational papers we examine here – is that the authors implement an expensive grid search to optimize the model parameters. However, this approach can be very computationally expensive, both in terms of model run times and computing resources. Moreover, choosing hyperparameters in this way does not attempt to model or account for the relationships between the model performance and hyperparameters. We would like to address these shortcomings in our analysis.\nFor this project, we keep a few key goals in mind. First of all, we would like to achieve better predictive performance than what was reported in each of the individual papers, which are geared towards computational physics and chemistry and not super statistically fine-tuned for the utmost optimal model results. Secondly, we look to reduce the estimated run time to save on computational resources. And lastly, we seek to produce a systematic framework with which one can continually improve model performance. As for our methodology, we incorporate principles of computer experiment design in conjunction with Gaussian Process (GP) modeling, with more details presented in the Appendix section below.\nIn each paper, the authors use a common method: XGBoost (Chen et al. 2016). For a quick description of the model parameters see (Chen et al. 2018a). In the remainder of this report we discuss each of the investigated research papers in turn, comparing their experimental design methodology and final model results to that of our analysis."
+  },
+  {
+    "objectID": "projects/all/experimental-parameter-tuning/index.html#introductionbackground",
+    "href": "projects/all/experimental-parameter-tuning/index.html#introductionbackground",
+    "title": "Hyperparameter Tuning for Gradient Boosting Frameworks Using Statistical Experimental Design",
+    "section": "",
+    "text": "Experimental design is a crucial part of any statistical experiment, including computer simulations. To explore the eﬀects of eﬃcient design on a computer experiment, we examine three published scientific papers and repeat the papers’ experiments with alternative methods of analysis using advanced experimental designs such as Latin Hypercube Sampling (LHS) and Maximum Projection Designs.\nIn the computer simulations discussed here, the experiments at hand are the machine learning models themselves, with the predictive performance of the model serving as the output and the various hyperparameters serving as inputs. A common theme throughout statistical and machine learning research papers – and all the computational papers we examine here – is that the authors implement an expensive grid search to optimize the model parameters. However, this approach can be very computationally expensive, both in terms of model run times and computing resources. Moreover, choosing hyperparameters in this way does not attempt to model or account for the relationships between the model performance and hyperparameters. We would like to address these shortcomings in our analysis.\nFor this project, we keep a few key goals in mind. First of all, we would like to achieve better predictive performance than what was reported in each of the individual papers, which are geared towards computational physics and chemistry and not super statistically fine-tuned for the utmost optimal model results. Secondly, we look to reduce the estimated run time to save on computational resources. And lastly, we seek to produce a systematic framework with which one can continually improve model performance. As for our methodology, we incorporate principles of computer experiment design in conjunction with Gaussian Process (GP) modeling, with more details presented in the Appendix section below.\nIn each paper, the authors use a common method: XGBoost (Chen et al. 2016). For a quick description of the model parameters see (Chen et al. 2018a). In the remainder of this report we discuss each of the investigated research papers in turn, comparing their experimental design methodology and final model results to that of our analysis."
+  },
+  {
+    "objectID": "projects/all/experimental-parameter-tuning/index.html#critical-temperatures-of-superconductors",
+    "href": "projects/all/experimental-parameter-tuning/index.html#critical-temperatures-of-superconductors",
+    "title": "Hyperparameter Tuning for Gradient Boosting Frameworks Using Statistical Experimental Design",
+    "section": "Critical Temperatures of Superconductors",
+    "text": "Critical Temperatures of Superconductors\nThe first paper we analyze is “A Data-Driven Statistical Model for Predicting the Critical Temperature of a Superconductor”, published in the Journal of Computational Material Science. The author’s objective in this first paper is to predict at which temperature amaterial becomes a superconductor. A good use case for modeling this relationship is to pre-screen various compounds and find their critical temperatures. There is currently no widely accepted physical theory for the critical temperature of a superconductor, so using a statistical model is a good alternative to model the behavior.1\nIn the dataset that the author used and provided, the outcome variable is the critical temperature and the predictor variables are various physical properties of the material, such as atomic mass, atomic radius, etc. The data has 21,263 observations in total with 82 columns. For their analysis, the author conducted an exhaustive 198-point grid search over five hyperparameters: learning rate, column subsampling, row subsampling, minimum nodes, and maximum depth (Table 1). This amounts to taking all possible combinations of their chosen level settings. For performance evaluation, they used a 25-fold Monte Carlo cross-validation (CV) using root mean square error (RMSE) as the performance metric. For each iteration they split the data in two thirds for model fitting and one third for model evaluation.\n\n\n\n\nParameters\nLevels\n\n\n\n\nLearning rate\n0.010, 0.015, 0.020\n\n\nColumn subsampling\n0.25, 0.50, 0.75\n\n\nSubsample ratio\n0.5\n\n\nMinimum nodes\n1, 10\n\n\nMaximum depth\n15, 16, …, 25\n\n\n\n\nTable 1: Superconductors Hyperparameter Levels\n\n\n\nFor our analysis, we construct a Maximum Projection Latin Hypercube with 10 data points (using the MaxPro package in R) and use the same evaluation procedure as the author of the original paper. To transform samples from our design to integers, for discrete hyperparameters such as maximum depth (number of leaves) of trees, we apply the samples to the inverse CDF of the uniform distribution and take the ceiling of the resulting values. To transform the continuous hyperparameters from our design into the appropriate range we can simply shift them by a linear transformation. (We repeat this procedure for all three papers.)\nWe can visualize the comparison of all two-dimensional projections of the design that we generate and the design used by the author (Figure 1). From the plots we can see that the author’s design is not space filling in all of its projections, however our design does enjoy nice space filling and projection properties. Some of the projections of the author’s design are absurd, such as the max depth and min node - discrete parameters - which project as a continuous line. Although some of the author’s parameters are uniformly distributed, like maximum depth, this is not the case for all of their parameters, especially for the continuous parameters like learning rate.\n\n\nFigure 1: Two-Dimensional Hyperparameter Projections. Author’s Design in Black. Our Design in Red.\n\nFor the Gaussian Process (GP) Model, we use the Matern (5/2) covariance function with a small noise term added and linear mean functions. We introduce the noise term due to the fact that parameters like row and column subsampling are inherently random and lead to diﬀerent performance evaluation. The estimated GP parameters can be seen in Table 2 and Table 3 below. Then, we run 10 iterations of the Expectation Globalization Optimization (EGO) algorithm. We can see from that after only a couple iterations, the gradient boosting model is performing at a lower RMSE than the author’s final reported value (Figure 2). In the end we arrive at an entirely diﬀerent set of parameters than the author’s set (Table 4). Further, the computation cost of running the model from start to finish is drastically reduced. In this instance, we are able to achieve better performance in approximately 1/10th of the run time for the author’s experiment. We estimate the author’s run time by taking the average run time on our 12 core desktop computer and multiplying by the number of configurations the author used to find hyperparamter values.\n\n\n\n\nParameters\nEstimates\n\n\n\n\n(Intercept)\n88.299\n\n\nLearning rate\n1.532\n\n\nSubsample ratio\n0.4\n\n\nMinimum nodes\n-2.56\n\n\nMaximum depth\n0.490\n\n\n\n\nTable 2: Gaussian Process Parameters: Trend Coefficients\n\n\n\n\n\n\n\nParameters\nEstimates\n\n\n\n\nTheta(Learning rate)\n0.455\n\n\nTheta(Subsample ratio)\n1.800\n\n\nTheta(Minimum nodes)\n0.164\n\n\nTheta(Maximum depth)\n1.800\n\n\n\n\nTable 3: Gaussian Process Parameters: Covariance\n\n\n\n\n\nFigure 2: EGO Algorithm Results\n\n\n\n\n\n\nAuthor’s Results\nOur Results\n\n\n\n\nLearning rate\n0.016\n0.029\n\n\nSubsample ratio\n0.400\n0.200\n\n\nMinimum nodes\n10\n11\n\n\nMaximum depth\n16\n10\n\n\nRMSE\n44.090\n41.911\n\n\nEstimated Runtime\n2 hours\n8 minutes\n\n\n\n\nTable 4: Final XGBoost Model Comparison\n\n\n\nTo be continued…"
+  },
+  {
+    "objectID": "projects/all/experimental-parameter-tuning/index.html#footnotes",
+    "href": "projects/all/experimental-parameter-tuning/index.html#footnotes",
+    "title": "Hyperparameter Tuning for Gradient Boosting Frameworks Using Statistical Experimental Design",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nA superconductor is classified as any material which can transport electric charge with no resistance or with no energy loss.↩︎"
+  },
+  {
+    "objectID": "projects/all/ms-thesis/index.html",
+    "href": "projects/all/ms-thesis/index.html",
+    "title": "Privacy Auditing of Synthetic Data Generation Models Using Adversarial Attacks",
+    "section": "",
+    "text": "Overview presentation of my research:\n\nThis browser does not support PDFs. Please download the PDF to view it: &lt;a href=\"../../../assets/files/Research Presentation.pdf\"&gt;Download PDF&lt;/a&gt;.\n\nAlso, you can view my thesis here: 📄 Privacy Auditing of Tabular Synthetic Data Generators Using Membership Inference Attacks"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Nicklaus Kim",
+    "section": "",
+    "text": "Welcome to my professional and academic portfolio.\nI recently completed my M.S. in Statistics at UCLA and am currently searching for research-oriented statistician or data scientist/analyst opportunities. I’m passionate about using my mathematical background and programming skills to build tools like data dashboards and web applications and production-level statistical learning models. I have experience in statistical and machine learning research in academia and a diverse set of data analysis/science skills; in particular I specialize in Python, R, Dash, and SQL (PostgreSQL). \nHere is some of my highlighted work:\n\nSynthetic Data Research\n\nData-centric Machine Learning\nGenerative Modeling\nData Privacy (Differential Privacy)\n\nNBA Data Dashboard\n\nDynamic Data Visualization with Dash and Plotly\nRich Database of Statistics Served with FastAPI Backend\nVideo Generation Engine Delivering Filtered Plays  \n\n\n\nYou can find the source code for my data science projects and other work I’ve done at my GitHub.\n\nThis website was built using Quarto."
+  },
+  {
+    "objectID": "blog/posts/blog-post/index.html",
+    "href": "blog/posts/blog-post/index.html",
+    "title": "Title",
+    "section": "",
+    "text": "Content…"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Blog posts on a wide range of topics, including but not limited to: math, stats, data science, and history.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTitle\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMay 14, 2025\n\n\nNick Kim\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMay 9, 2025\n\n\nNick Kim\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nMay 6, 2025\n\n\nNick Kim\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Hello, I’m Nick and welcome to my website!\nI recently graduated from UCLA with my M.S. in Statistics and am currently looking for full-time statistician/data scientist/data analyst roles where I can apply the statistical concepts and computational tools in my skillset (Python, R, and SQL, among others!) towards extracting meaningful insights and knowledge from complex data. I also previously earned a B.S. in Applied Mathematics at UCLA.\nPreviously, I have conducted research on topics in generative AI at the Trustworthy AI Lab at UCLA. My research emphasized the methodology and application of synthetic data to improve modern statistical/ML modeling pipelines, particularly in terms of robustness and differential privacy. Specifically, I investigated the paradigm of privacy auditing – investigating the true privacy offered by different synthetic data generation methods when put under the risk of adversarial attacks.\nI am also passionate about teaching math and stats. I currently work as a private tutor for a variety of subjects, mainly AP Statistics. In the past I have also served as a teaching assistant for introductory statistics at UCLA and as a tutor and reader for a wide range of stats courses."
+  },
+  {
+    "objectID": "notes/index.html",
+    "href": "notes/index.html",
+    "title": "Notes",
+    "section": "",
+    "text": "Detailed notes of topics in statistics and mathematics that I have used for self-study as well as teaching.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStatistical Inference Notes\n\n\nNotes for Statistical Inference by Casella and Berger\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroductory Statistics Notes\n\n\nOriginally written for teaching AP Statistics\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  }
+]
