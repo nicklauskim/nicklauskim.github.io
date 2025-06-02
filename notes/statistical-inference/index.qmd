@@ -5,8 +5,7 @@ listing:
   type: grid  # or 'grid', 'table', 'carousel', etc.
   contents: sections    
   sort: "date desc"
-image: "../../../assets/img/optimized/network-art.webp"
+image: "../../assets/img/optimized/network-art.webp"
 ---
-
 
 
