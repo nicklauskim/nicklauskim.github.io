@@ -7,4 +7,3 @@ listing:
   sort: "date desc"
 image: "../../assets/img/optimized/dice.webp"
 ---
-
