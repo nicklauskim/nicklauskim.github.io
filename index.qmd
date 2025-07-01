@@ -12,7 +12,11 @@ Welcome to my professional and academic portfolio.
 I recently completed my M.S. in Statistics at UCLA and am currently searching for research-oriented statistician or data scientist/analyst opportunities. I'm passionate about using my mathematical background and programming skills to build tools like data dashboards and web applications and production-level statistical learning models. I have experience in statistical and machine learning research in academia and a diverse set of data analysis/science skills; in particular I specialize in Python, R, Dash, and SQL (PostgreSQL).
 <!--— and I love turning complex data into intuitive interfaces that enable visual storytelling.-->
 
-Here is some of my highlighted work:
+
+> You can find the source code for my data science projects and other work I've done at my [GitHub](https://github.com/nicklauskim){.underline}.
+
+
+Here are some quick links to some of my highlighted work:
 
 * [Synthetic Data Research](projects/all/ms-thesis/index.qmd)
     + Data-centric Machine Learning
@@ -28,10 +32,9 @@ Here is some of my highlighted work:
     + Large Language Model Topic Analysis-->
 <br>
 
-> You can find the source code for my data science projects and other work I've done at my [GitHub](https://github.com/nicklauskim){.underline}.
-
 
 This website was built using Quarto.
+
 
 <!-- Also, check out some of my writing, from blog posts on ideas in stats and data science in the real world, both past and present
 
@@ -48,7 +51,7 @@ to math and stats notes from both my own self-learning and my teaching/tutoring 
 
 <!-- Right side (image) -->
 <div style="flex: 1; display: flex; justify-content: center; padding: 1rem;">
-  <img src="assets/img/me.png" alt="alt" style="width: 100%; border-radius: 10px;">
+  <img src="assets/img/me.png" alt="alt" style="width: 150%; border-radius: 10px;">
 
 </div>
 
