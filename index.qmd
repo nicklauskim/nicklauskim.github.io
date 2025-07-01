@@ -9,7 +9,7 @@ title: "Nicklaus Kim"
 
 Welcome to my professional and academic portfolio.
 
-I recently completed my M.S. in Statistics at UCLA and am currently searching for research-oriented statistician or data scientist/analyst opportunities. I'm passionate about using my mathematical background and programming skills to build tools like data dashboards and web applications and production-level statistical learning models. I have experience in statistical and machine learning research in academia and a diverse set of data analysis/science skills; in particular I specialize in Python, R, Dash, and SQL (PostgreSQL).
+I recently completed my M.S. in Statistics at UCLA and am currently searching for research-oriented statistician or data scientist/analyst opportunities. I'm passionate about using my mathematical background and programming skills to build tools like data dashboards and production-level statistical learning models to help uncover meaningful insights about data. I have experience in statistical and machine learning research in academia and a diverse set of data science skills; in particular I specialize in Python, R, Dash, and SQL (PostgreSQL).
 <!--— and I love turning complex data into intuitive interfaces that enable visual storytelling.-->
 
 
