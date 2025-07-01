@@ -1,9 +1,0 @@
----
-title: "Post With Code"
-author: "Nick Kim"
-date: "2025-05-09"
-categories: [news, code, analysis]
-image: "../../../assets/img/optimized/image.webp"
----
-
-This is a post with executable code.

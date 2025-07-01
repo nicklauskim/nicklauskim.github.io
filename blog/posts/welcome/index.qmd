@@ -1,12 +1,13 @@
 ---
 title: "Welcome To My Blog"
 author: "Nick Kim"
-date: "2025-05-06"
+date: "2025-06-06"
 categories: [news]
 ---
 
-This is the first post in a Quarto blog. Welcome!
+This is my first post in my Quarto blog. Welcome!
 
 ![](../../../assets/img/optimized/thumbnail.webp)
 
-Since this post doesn't specify an explicit `image`, the first image in the post will be used in the listing page of posts.
+Here I plan to post articles and blogs about a host of different topics in statistics and mathematics. I plan to write about both how they're used to analyze and model real-world phenomena today and some historical cases and applications I find interesting or illuminating!
+

@@ -16,6 +16,7 @@
   {
     "listing": "/projects/index.html",
     "items": [
+      "/projects/all/nba-dash/index.html",
       "/projects/all/experimental-parameter-tuning/index.html",
       "/projects/all/ms-thesis/index.html",
       "/projects/all/nlp-dimensionality reduction/index.html",
@@ -25,8 +26,6 @@
   {
     "listing": "/blog/index.html",
     "items": [
-      "/blog/posts/blog-post/index.html",
-      "/blog/posts/sample-post-with-code/index.html",
       "/blog/posts/welcome/index.html"
     ]
   },

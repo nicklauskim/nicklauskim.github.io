@@ -48,7 +48,7 @@ to math and stats notes from both my own self-learning and my teaching/tutoring 
 
 <!-- Right side (image) -->
 <div style="flex: 1; display: flex; justify-content: center; padding: 1rem;">
-  <img src="blog/profile.jpg" alt="alt" style="width: 100%; border-radius: 10px;">
+  <img src="assets/img/me.png" alt="alt" style="width: 100%; border-radius: 10px;">
 
 </div>
 

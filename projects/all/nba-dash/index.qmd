@@ -1,0 +1,9 @@
+---
+title: Play-by-Play NBA Analytics Dashboard
+description: "An interactive application, built in Dash, for exploring and visualizing NBA play-by-play data and video"
+date: 2025-06-10
+categories: [data visualization, data dashboard, data analytics, sports analytics]
+image: "ball-hoop.webp"
+---
+
+Check out my [GitHub repository](https://www.github.com/nicklauskim/nba-dash).

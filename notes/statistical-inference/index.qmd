@@ -3,7 +3,7 @@ title: Statistical Inference Notes
 description: "Notes for Statistical Inference by Casella and Berger"
 listing:
   type: grid  # or 'grid', 'table', 'carousel', etc.
-  contents: sections    
+  contents: sections
   sort: "date desc"
 image: "../../assets/img/optimized/network-art.webp"
 ---

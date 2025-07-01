@@ -25,21 +25,28 @@
     "href": "blog/posts/welcome/index.html",
     "title": "Welcome To My Blog",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
-    "objectID": "blog/posts/sample-post-with-code/index.html",
-    "href": "blog/posts/sample-post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code."
+    "text": "This is my first post in my Quarto blog. Welcome!\n\nHere I plan to post articles and blogs about a host of different topics in statistics and mathematics. I plan to write about both how they’re used to analyze and model real-world phenomena today and some historical cases and applications I find interesting or illuminating!"
   },
   {
     "objectID": "projects/index.html",
     "href": "projects/index.html",
     "title": "Projects",
     "section": "",
-    "text": "My data science/data analysis projects, mainly executed using Python, SQL, and Dash.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHyperparameter Tuning for Gradient Boosting Frameworks Using Statistical Experimental Design\n\n\n\n\n\nApplying Advanced Experimental Designs to Optimization of Hyperparameters in XGBoost\n\n\n\n\n\nMay 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPrivacy Auditing of Synthetic Data Generation Models Using Adversarial Attacks\n\n\n\n\n\nThesis Research for Master of Science in Statistics\n\n\n\n\n\nMay 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nDimensionality Reduction Techniques in NLP\n\n\n\n\n\nExploring Use of Singular Value Decomposition to Reduce High Dimensionality in Logistic Regression Models for Text Classification\n\n\n\n\n\nMay 9, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nOverview of Machine Learning Methods for Text Classification\n\n\n\n\n\nAn Empirical Comparison of Common Classification Models Applied to Topic Distinguishing Problem\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "My data science/data analysis projects, mainly executed using Python, SQL, and Dash.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlay-by-Play NBA Analytics Dashboard\n\n\n\n\n\nAn interactive application, built in Dash, for exploring and visualizing NBA play-by-play data and video\n\n\n\n\n\nJun 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHyperparameter Tuning for Gradient Boosting Frameworks Using Statistical Experimental Design\n\n\n\n\n\nApplying Advanced Experimental Designs to Optimization of Hyperparameters in XGBoost\n\n\n\n\n\nMay 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPrivacy Auditing of Synthetic Data Generation Models Using Adversarial Attacks\n\n\n\n\n\nThesis Research for Master of Science in Statistics\n\n\n\n\n\nMay 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nDimensionality Reduction Techniques in NLP\n\n\n\n\n\nExploring Use of Singular Value Decomposition to Reduce High Dimensionality in Logistic Regression Models for Text Classification\n\n\n\n\n\nMay 9, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nOverview of Machine Learning Methods for Text Classification\n\n\n\n\n\nAn Empirical Comparison of Common Classification Models Applied to Topic Distinguishing Problem\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/all/nba-dash/index.html",
+    "href": "projects/all/nba-dash/index.html",
+    "title": "Play-by-Play NBA Analytics Dashboard",
+    "section": "",
+    "text": "Check out my GitHub repository."
+  },
+  {
+    "objectID": "projects/all/ms-thesis/index.html",
+    "href": "projects/all/ms-thesis/index.html",
+    "title": "Privacy Auditing of Synthetic Data Generation Models Using Adversarial Attacks",
+    "section": "",
+    "text": "Overview presentation of my research:\n\nThis browser does not support PDFs. Please download the PDF to view it: &lt;a href=\"../../../assets/files/Research Presentation.pdf\"&gt;Download PDF&lt;/a&gt;.\n\nAlso, you can view my thesis here: 📄 Privacy Auditing of Tabular Synthetic Data Generators Using Membership Inference Attacks"
   },
   {
     "objectID": "projects/all/experimental-parameter-tuning/index.html",
@@ -70,13 +77,6 @@
     "text": "Footnotes\n\n\nA superconductor is classified as any material which can transport electric charge with no resistance or with no energy loss.↩︎"
   },
   {
-    "objectID": "projects/all/ms-thesis/index.html",
-    "href": "projects/all/ms-thesis/index.html",
-    "title": "Privacy Auditing of Synthetic Data Generation Models Using Adversarial Attacks",
-    "section": "",
-    "text": "Overview presentation of my research:\n\nThis browser does not support PDFs. Please download the PDF to view it: &lt;a href=\"../../../assets/files/Research Presentation.pdf\"&gt;Download PDF&lt;/a&gt;.\n\nAlso, you can view my thesis here: 📄 Privacy Auditing of Tabular Synthetic Data Generators Using Membership Inference Attacks"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Nicklaus Kim",
@@ -84,18 +84,11 @@
     "text": "Welcome to my professional and academic portfolio.\nI recently completed my M.S. in Statistics at UCLA and am currently searching for research-oriented statistician or data scientist/analyst opportunities. I’m passionate about using my mathematical background and programming skills to build tools like data dashboards and web applications and production-level statistical learning models. I have experience in statistical and machine learning research in academia and a diverse set of data analysis/science skills; in particular I specialize in Python, R, Dash, and SQL (PostgreSQL). \nHere is some of my highlighted work:\n\nSynthetic Data Research\n\nData-centric Machine Learning\nGenerative Modeling\nData Privacy (Differential Privacy)\n\nNBA Data Dashboard\n\nDynamic Data Visualization with Dash and Plotly\nRich Database of Statistics Served with FastAPI Backend\nVideo Generation Engine Delivering Filtered Plays  \n\n\n\nYou can find the source code for my data science projects and other work I’ve done at my GitHub.\n\nThis website was built using Quarto."
   },
   {
-    "objectID": "blog/posts/blog-post/index.html",
-    "href": "blog/posts/blog-post/index.html",
-    "title": "Title",
-    "section": "",
-    "text": "Content…"
-  },
-  {
     "objectID": "blog/index.html",
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "Blog posts on a wide range of topics, including but not limited to: math, stats, data science, and history.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTitle\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMay 14, 2025\n\n\nNick Kim\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMay 9, 2025\n\n\nNick Kim\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nMay 6, 2025\n\n\nNick Kim\n\n\n\n\n\n\nNo matching items"
+    "text": "Blog posts on a wide range of topics, including but not limited to: math, stats, data science, and history.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJun 6, 2025\n\n\nNick Kim\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
