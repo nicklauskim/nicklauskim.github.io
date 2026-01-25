@@ -72,5 +72,14 @@
   },
   "projects/all/nba-dash/index.qmd": {
     "index.html": "6ab918f9"
+  },
+  "projects/all/project-1775/index.qmd": {
+    "index.html": "ed788002"
+  },
+  "projects/all/bayesian-ode/index.qmd": {
+    "index.html": "d8e2439b"
+  },
+  "notes/bayesian-data-analysis/index.qmd": {
+    "index.html": "f96b0129"
   }
 }

@@ -4,7 +4,7 @@
     "href": "notes/statistical-inference/index.html",
     "title": "Statistical Inference Notes",
     "section": "",
-    "text": "Chapter 1: Probability Theory\n\n\nNotes for Chapter 1\n\n\n\n\n\n\nApr 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nChapter 2: Transformations and Expectations\n\n\nNotes for Chapter 2\n\n\n\n\n\n\nApr 25, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "These notes are designed to be comprehensive chapter-wise summaries for the textbook Statistical Inference. I include any relevant definitions, theorems, and some key examples, capturing all the main concepts that I think I should know about this topic as a budding statistician. I may also upload some worked problems as well at a future date.\n\n\n\n\n\n\n\n\n\n\n\n\nChapter 1: Probability Theory\n\n\nNotes for Chapter 1\n\n\n\n\n\n\nApr 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nChapter 2: Transformations and Expectations\n\n\nNotes for Chapter 2\n\n\n\n\n\n\nApr 25, 2025\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "notes/ap-stats/index.html",
@@ -14,39 +14,39 @@
     "text": "Unit 2: Exploring Two-Variable Data\n\n\nReview notes/study guide for Unit 2\n\n\n\n\n\n\nApr 21, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nUnit 1: Exploring One-Variable Data\n\n\nReview notes/study guide for Unit 1\n\n\n\n\n\n\nApr 14, 2025\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "blog/about.html",
-    "href": "blog/about.html",
+    "objectID": "about.html",
+    "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this blog"
+    "text": "Hello, I’m Nick and welcome to my website!\nI recently graduated from UCLA with my M.S. in Statistics and am currently looking for full-time statistician/data scientist/data analyst roles where I can apply the statistical concepts and computational tools in my skillset (Python, R, and SQL, among others!) towards extracting meaningful insights and knowledge from complex data. I also previously earned a B.S. in Applied Mathematics at UCLA.\nPreviously, I have conducted research on topics in generative AI at the Trustworthy AI Lab at UCLA. My research emphasized the methodology and application of synthetic data to improve modern statistical/ML modeling pipelines, particularly in terms of robustness and differential privacy. Specifically, I investigated the paradigm of privacy auditing – investigating the true privacy offered by different synthetic data generation methods when put under the risk of adversarial attacks.\nI am also passionate about teaching math and stats. I currently work as a private tutor for a variety of subjects, mainly AP Statistics. In the past I have also served as a teaching assistant for introductory statistics at UCLA and as a tutor and reader for a wide range of stats courses."
   },
   {
-    "objectID": "blog/posts/welcome/index.html",
-    "href": "blog/posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
     "section": "",
-    "text": "This is my first post in my Quarto blog. Welcome!\n\nHere I plan to post articles and blogs about a host of different topics in statistics and mathematics. I plan to write about both how they’re used to analyze and model real-world phenomena today and some historical cases and applications I find interesting or illuminating!"
+    "text": "Blog posts on a wide range of topics, including but not limited to: math, stats, data science, and history.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJun 6, 2025\n\n\nNick Kim\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Nicklaus Kim",
     "section": "",
-    "text": "My data science/data analysis projects, mainly executed using Python, SQL, and Dash.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlay-by-Play NBA Analytics Dashboard\n\n\n\n\n\nAn interactive application, built in Python using Dash, for exploring and visualizing NBA play-by-play data and video\n\n\n\n\n\nJun 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHyperparameter Tuning for Gradient Boosting Frameworks Using Statistical Experimental Design\n\n\n\n\n\nApplying Advanced Experimental Designs to Optimization of Hyperparameters in XGBoost\n\n\n\n\n\nMay 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPrivacy Auditing of Synthetic Data Generation Models Using Adversarial Attacks\n\n\n\n\n\nThesis Research for Master of Science in Statistics\n\n\n\n\n\nMay 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nDimensionality Reduction Techniques in NLP\n\n\n\n\n\nExploring Use of Singular Value Decomposition to Reduce High Dimensionality in Logistic Regression Models for Text Classification\n\n\n\n\n\nMay 9, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nOverview of Machine Learning Methods for Text Classification\n\n\n\n\n\nAn Empirical Comparison of Common Classification Models Applied to Topic Distinguishing Problem\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "Hello, I’m Nick. Welcome to my professional and academic portfolio website.\nI completed my M.S. in Statistics at UCLA and am currently planning to go back to school for a PhD in Statistics beginning in Fall 2026.\nI’m interested in a wide array of areas in statistics, especially ideas lying at the intersection of statistics and applied mathematics. My research interests lie broadly in Bayesian modeling and inference, with particular emphasis on inverse problems, uncertainty quantification, and Bayesian data assimilation. I am also interested in probabilistic modeling frameworks that incorporate mathematical structure, including stochastic processes, spatial and spatiotemporal statistics, and functional data analysis.\nI have experience in building tools like data dashboards and statistical learning models to help uncover meaningful insights about data, including performing statistical/machine learning research in academia. I try to maintain and continually expand a diverse, up-to-date set of data analysis and research skills; in particular I specialize in Python, R, SQL (PostgreSQL), and frameworks like Dash and Flask that allow me to turn complex data into intuitive interfaces that enable visual storytelling.\nI’m also very passionate about statistics and mathematics education. I produce instructive videos and articles explaining core concepts, discussing interesting historical uses of statistics, and exploring more niche advanced topics. (Check out my blog here.) I also work as a tutor part-time, which gives me the opportunity to help high school and college students grow their mastery (and hopefully appreciation!) of stats and math.\n\nYou can find links to my statistics research, data science projects, and other work I’ve done on my Projects page and at my GitHub.\n\nHere are quick links to some of my highlighted work.\n\n\n\n\nStatistical Inference\nBayesian Data Analysis\nAP Statistics\n\n\n\n\n\nBayesian Model Misspecification for ODEs\n\nBayesian Inverse Problems, Uncertainty Quantification, Functional Data Analysis\nTheoretical and applied investigations into the effects of Bayesian model misspecification on statistical inference in nonlinear ordinary differential equations and dynamical system models (e.g., SIR, Lotka–Volterra, and their extensions) using Python/PyMC.\n\nData-Centric Machine Learning (Synthetic Data) Research\n\nAn investigation into the true privacy benefits of the use of synthetic data in sensitive domains such as healthcare, incorporating generative models for producing datasets and adversarial attack frameworks to assess (differential) privacy versus model utility.\n\nFounding Fathers Correspondence Network An ongoing initiative to analyze and gain new data-driven insights into early writings and correspondence of early American figures from the founding era via a Flask website displaying temporal and geospatial analysis of letter frequencies, knowledge networks and other visualizations, large language model-driven topic analysis\nNBA Statistics Data Dashboard\n\nA dynamic data visualization platform built with Dash and Plotly, incorporating a rich database of official NBA statistics served with a FastAPI backend and allowing for deep exploration of play-by-play and other detailed data as well as customizable filtering and generation of visualizations and video clips. \n\n\n\nThis website was built using Quarto."
   },
   {
-    "objectID": "projects/all/nba-dash/index.html",
-    "href": "projects/all/nba-dash/index.html",
-    "title": "Play-by-Play NBA Analytics Dashboard",
+    "objectID": "index.html#research-and-notes",
+    "href": "index.html#research-and-notes",
+    "title": "Nicklaus Kim",
     "section": "",
-    "text": "Check out my GitHub repository."
+    "text": "Statistical Inference\nBayesian Data Analysis\nAP Statistics"
   },
   {
-    "objectID": "projects/all/ms-thesis/index.html",
-    "href": "projects/all/ms-thesis/index.html",
-    "title": "Privacy Auditing of Synthetic Data Generation Models Using Adversarial Attacks",
+    "objectID": "index.html#projects",
+    "href": "index.html#projects",
+    "title": "Nicklaus Kim",
     "section": "",
-    "text": "Overview presentation of my research:\n\nThis browser does not support PDFs. Please download the PDF to view it: &lt;a href=\"../../../assets/files/Research Presentation.pdf\"&gt;Download PDF&lt;/a&gt;.\n\nAlso, you can view my thesis here: 📄 Privacy Auditing of Tabular Synthetic Data Generators Using Membership Inference Attacks"
+    "text": "Bayesian Model Misspecification for ODEs\n\nBayesian Inverse Problems, Uncertainty Quantification, Functional Data Analysis\nTheoretical and applied investigations into the effects of Bayesian model misspecification on statistical inference in nonlinear ordinary differential equations and dynamical system models (e.g., SIR, Lotka–Volterra, and their extensions) using Python/PyMC.\n\nData-Centric Machine Learning (Synthetic Data) Research\n\nAn investigation into the true privacy benefits of the use of synthetic data in sensitive domains such as healthcare, incorporating generative models for producing datasets and adversarial attack frameworks to assess (differential) privacy versus model utility.\n\nFounding Fathers Correspondence Network An ongoing initiative to analyze and gain new data-driven insights into early writings and correspondence of early American figures from the founding era via a Flask website displaying temporal and geospatial analysis of letter frequencies, knowledge networks and other visualizations, large language model-driven topic analysis\nNBA Statistics Data Dashboard\n\nA dynamic data visualization platform built with Dash and Plotly, incorporating a rich database of official NBA statistics served with a FastAPI backend and allowing for deep exploration of play-by-play and other detailed data as well as customizable filtering and generation of visualizations and video clips. \n\n\n\nThis website was built using Quarto."
   },
   {
     "objectID": "projects/all/experimental-parameter-tuning/index.html",
@@ -77,25 +77,46 @@
     "text": "Footnotes\n\n\nA superconductor is classified as any material which can transport electric charge with no resistance or with no energy loss.↩︎"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Nicklaus Kim",
+    "objectID": "projects/all/ms-thesis/index.html",
+    "href": "projects/all/ms-thesis/index.html",
+    "title": "Privacy Auditing of Synthetic Data Generation Models Using Adversarial Attacks",
     "section": "",
-    "text": "Welcome to my professional and academic portfolio.\nI recently completed my M.S. in Statistics at UCLA and am currently searching for research-oriented statistician or data scientist/analyst opportunities. I’m passionate about using my mathematical background and programming skills to build tools like data dashboards and production-level statistical learning models to help uncover meaningful insights about data. I have experience in statistical and machine learning research in academia and a diverse set of data science skills; in particular I specialize in Python, R, Dash, and SQL (PostgreSQL). \n\nYou can find the source code for my data science projects and other work I’ve done at my GitHub.\n\nHere are some quick links to some of my highlighted work:\n\nSynthetic Data Research\n\nData-centric Machine Learning\nGenerative Modeling\nData Privacy (Differential Privacy)\n\nNBA Data Dashboard\n\nDynamic Data Visualization with Dash and Plotly\nRich Database of Statistics Served with FastAPI Backend\nVideo Generation Engine Delivering Filtered Plays  \n\n\nThis website was built using Quarto."
+    "text": "Overview presentation of my research:\n\nThis browser does not support PDFs. Please download the PDF to view it: &lt;a href=\"../../../assets/files/Research Presentation.pdf\"&gt;Download PDF&lt;/a&gt;.\n\nAlso, you can view my thesis here: 📄 Privacy Auditing of Tabular Synthetic Data Generators Using Membership Inference Attacks"
   },
   {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
+    "objectID": "projects/all/project-1775/index.html",
+    "href": "projects/all/project-1775/index.html",
+    "title": "Founding Fathers Correspondence Network Analysis",
     "section": "",
-    "text": "Blog posts on a wide range of topics, including but not limited to: math, stats, data science, and history.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJun 6, 2025\n\n\nNick Kim\n\n\n\n\n\n\nNo matching items"
+    "text": "Check out my GitHub repository."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
+    "objectID": "projects/all/nba-dash/index.html",
+    "href": "projects/all/nba-dash/index.html",
+    "title": "Play-by-Play NBA Analytics Dashboard",
+    "section": "",
+    "text": "Check out my GitHub repository."
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "My data science/data analysis projects, mainly executed using Python, SQL, and Dash.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBayesian Misspecification in ODE Systems\n\n\n\n\n\nExploring Misspecification, Identifiability, and Posterior Uncertainty in Bayesian Inverse Problems\n\n\n\n\n\nDec 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nFounding Fathers Correspondence Network Analysis\n\n\n\n\n\nAn interactive application, built in Python using Dash, for exploring and visualizing historical/political correspondence trends in early American history\n\n\n\n\n\nJun 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPlay-by-Play NBA Analytics Dashboard\n\n\n\n\n\nAn interactive application, built in Python using Dash, for exploring and visualizing NBA play-by-play data and video\n\n\n\n\n\nJun 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHyperparameter Tuning for Gradient Boosting Frameworks Using Statistical Experimental Design\n\n\n\n\n\nApplying Advanced Experimental Designs to Optimization of Hyperparameters in XGBoost\n\n\n\n\n\nMay 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPrivacy Auditing of Synthetic Data Generation Models Using Adversarial Attacks\n\n\n\n\n\nThesis Research for Master of Science in Statistics\n\n\n\n\n\nMay 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nDimensionality Reduction Techniques in NLP\n\n\n\n\n\nExploring Use of Singular Value Decomposition to Reduce High Dimensionality in Logistic Regression Models for Text Classification\n\n\n\n\n\nMay 9, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nOverview of Machine Learning Methods for Text Classification\n\n\n\n\n\nAn Empirical Comparison of Common Classification Models Applied to Topic Distinguishing Problem\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/posts/welcome/index.html",
+    "href": "blog/posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is my first post in my Quarto blog. Welcome!\n\nHere I plan to post articles and blogs about a host of different topics in statistics and mathematics. I plan to write about both how they’re used to analyze and model real-world phenomena today and some historical cases and applications I find interesting or illuminating!"
+  },
+  {
+    "objectID": "blog/about.html",
+    "href": "blog/about.html",
     "title": "About",
     "section": "",
-    "text": "Hello, I’m Nick and welcome to my website!\nI recently graduated from UCLA with my M.S. in Statistics and am currently looking for full-time statistician/data scientist/data analyst roles where I can apply the statistical concepts and computational tools in my skillset (Python, R, and SQL, among others!) towards extracting meaningful insights and knowledge from complex data. I also previously earned a B.S. in Applied Mathematics at UCLA.\nPreviously, I have conducted research on topics in generative AI at the Trustworthy AI Lab at UCLA. My research emphasized the methodology and application of synthetic data to improve modern statistical/ML modeling pipelines, particularly in terms of robustness and differential privacy. Specifically, I investigated the paradigm of privacy auditing – investigating the true privacy offered by different synthetic data generation methods when put under the risk of adversarial attacks.\nI am also passionate about teaching math and stats. I currently work as a private tutor for a variety of subjects, mainly AP Statistics. In the past I have also served as a teaching assistant for introductory statistics at UCLA and as a tutor and reader for a wide range of stats courses."
+    "text": "About this blog"
   },
   {
     "objectID": "notes/index.html",
