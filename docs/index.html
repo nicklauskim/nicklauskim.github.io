@@ -129,9 +129,10 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content page-columns page-full column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -140,7 +141,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -153,50 +154,30 @@ ul.task-list li input[type="checkbox"] {
 
 
 <style>
-.profile-layout {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 3rem;
-  align-items: start;
-}
-
-.profile-sidebar {
+.profile-card {
   position: sticky;
   top: 2rem;
-}
-
-.profile-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: 12px;
 }
 
 .profile-card img {
   width: 100%;
   max-width: 240px;
   border-radius: 12px;
+  display: block;
+  margin: 0 auto;
 }
 
 .profile-contact {
   font-size: 0.9rem;
   text-align: center;
-}
-
-/* Mobile layout */
-@media (max-width: 900px) {
-  .profile-layout {
-    grid-template-columns: 1fr;
-  }
-  .profile-sidebar {
-    position: static;
-    margin-bottom: 2rem;
-  }
+  margin-top: 0.75rem;
 }
 </style>
-<div class="profile-layout">
-<!-- ================= LEFT COLUMN ================= -->
-<div>
+<div class="page-columns page-full">
+<!-- LEFT COLUMN -->
+<div class="content">
 <p>Hello, I’m Nick. Welcome to my professional and academic portfolio website.</p>
 <p>I completed my M.S. in Statistics at UCLA and am currently planning to go back to school for a PhD in Statistics beginning in Fall 2026.</p>
 <p>In my research, I’m interested in a wide array of ideas lying at the intersection of statistics and applied mathematics. My primary interests lie in Bayesian modeling and inference, with particular emphasis on inverse problems, uncertainty quantification, and Bayesian data assimilation. I am also interested in probabilistic modeling frameworks that incorporate mathematical structure, including stochastic processes, spatial and spatiotemporal statistics, and functional data analysis.</p>
@@ -217,40 +198,27 @@ ul.task-list li input[type="checkbox"] {
 <section id="projects" class="level2">
 <h2 class="anchored" data-anchor-id="projects">Projects</h2>
 <ul>
-<li><a href="./projects/all/bayesian-ode/index.html">Bayesian Model Misspecification for ODEs</a>
-<ul>
-<li>Theoretical and applied investigations into the effects of Bayesian model misspecification on statistical inference in nonlinear ordinary differential equations and dynamical system models (e.g., SIR, Lotka–Volterra, and their extensions) using Python/PyMC.</li>
-</ul></li>
-<li><a href="./projects/all/ms-thesis/index.html">Data-Centric Machine Learning (Synthetic Data) Research</a>
-<ul>
-<li>An investigation into the true privacy benefits of the use of synthetic data in sensitive domains such as healthcare, incorporating generative models for producing datasets and adversarial attack frameworks to assess (differential) privacy versus model utility.</li>
-</ul></li>
-<li><a href="./projects/all/project-1775/index.html">Founding Fathers Correspondence Network</a>
-<ul>
-<li>An ongoing initiative to analyze and gain new data-driven insights into early American figures from the founding era via a Flask website displaying temporal and geospatial analysis of letter frequencies, knowledge networks and other visualizations.</li>
-</ul></li>
-<li><a href="./projects/all/nba-dash/index.html">NBA Statistics Data Dashboard</a>
-<ul>
-<li>A dynamic data visualization platform built with Dash and Plotly, incorporating a rich database of official NBA statistics served with a FastAPI backend and allowing for deep exploration of play-by-play and other detailed data as well as customizable filtering and generation of video clips.</li>
-</ul></li>
+<li><a href="./projects/all/bayesian-ode/index.html">Bayesian Model Misspecification for ODEs</a></li>
+<li><a href="./projects/all/ms-thesis/index.html">Data-Centric Machine Learning (Synthetic Data) Research</a></li>
+<li><a href="./projects/all/project-1775/index.html">Founding Fathers Correspondence Network</a></li>
+<li><a href="./projects/all/nba-dash/index.html">NBA Statistics Data Dashboard</a></li>
 </ul>
 <hr>
 <p>This website was built using Quarto.</p>
 </section>
 </div>
-<!-- ================= RIGHT COLUMN ================= -->
-<div class="profile-sidebar">
+<!-- RIGHT SIDEBAR -->
+
+<div class="no-row-height column-margin column-container"><div class="">
 <div class="profile-card">
 <pre><code>&lt;img src="assets/img/me.png" alt="Nicklaus Kim"&gt;
-
 &lt;div class="profile-contact"&gt;
   &lt;div&gt;&lt;strong&gt;Email:&lt;/strong&gt; nickausjkim@gmail.com&lt;/div&gt;
   &lt;div&gt;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href="https://github.com/nicklauskim"&gt;github.com/nicklauskim&lt;/a&gt;&lt;/div&gt;
   &lt;div&gt;&lt;strong&gt;LinkedIn:&lt;/strong&gt; &lt;a href="#"&gt;linkedin.com/in/...&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
-</div>
-</div>
+</div></div></div>
 
 
 
