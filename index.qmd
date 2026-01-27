@@ -78,10 +78,10 @@ I'm also very passionate about statistics and mathematics education. I produce i
 
 > You can find links to my statistics research, data science projects, and other work I've done on my [Projects](https://nicklauskim.github.io/projects) page and at my [GitHub](https://github.com/nicklauskim).
 
-Here are quick links to some of my highlighted work.
+Below are quick links to some of my highlighted work.
 
 
-## Projects
+### Projects
 
 * [Bayesian Model Misspecification for ODEs](projects/all/bayesian-ode/index.qmd)
 <!-- + Bayesian Inverse Problems, Uncertainty Quantification, Functional Data Analysis -->
@@ -94,14 +94,14 @@ Here are quick links to some of my highlighted work.
     + A dynamic data visualization platform built with Dash and Plotly, incorporating a rich database of official NBA statistics served with a FastAPI backend and allowing for deep exploration of play-by-play and other detailed data as well as customizable filtering and generation of video clips.
 
 
-## Notes
+### Notes
 
 * [Statistical Inference](notes/statistical-inference/index.qmd)
 * [Bayesian Data Analysis](notes/bayesian-data-analysis/index.qmd)
 * [AP Statistics](notes/ap-stats/index.qmd)
 
 
-<br>
+<hr>
 <p>This website was built using Quarto.</p> 
 
 </div> <!-- end left column -->
@@ -112,7 +112,7 @@ Here are quick links to some of my highlighted work.
 
 <div class="profile-card">
   <img src="assets/img/me.png" alt="Nicklaus Kim">
-    **Email:** [nickausjkim@gmail.com](mailto:nickausjkim@gmail.com)<br>
+    **Email:** [nickausjkim@gmail.com](mailto:nickausjkim@gmail.com)<br><br>
     <strong>GitHub:</strong> <a href="https://github.com/nicklauskim">github.com/nicklauskim</a><br>
     <!-- <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/...</a></p> -->
   
