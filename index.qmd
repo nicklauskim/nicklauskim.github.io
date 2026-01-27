@@ -26,7 +26,7 @@ format:
 
 /* Sidebar card styling */
 .profile-card {
-  position: sticky;
+  /* position: sticky; */
   top: 2rem;
   padding: 1rem;
   border-radius: 12px;
@@ -90,12 +90,15 @@ Check out my blog [here](https://nicklauskim.github.io/blog).
 * [Bayesian Data Analysis](notes/bayesian-data-analysis/index.qmd)
 * [AP Statistics](notes/ap-stats/index.qmd)
 
+<p>This website was built using Quarto.</p> 
+
   </div> <!-- end left column -->
+
 
   <!-- RIGHT SIDEBAR -->
   <div class="column-margin">
 
-```{=html}
+
 <div class="profile-card">
   <img src="assets/img/me.png" alt="Nicklaus Kim">
   <div class="profile-contact">
@@ -107,5 +110,3 @@ Check out my blog [here](https://nicklauskim.github.io/blog).
 
 </div> <!-- end right sidebar --> 
 </div> <!-- end page-columns --> 
-<p>This website was built using Quarto.</p> 
-```

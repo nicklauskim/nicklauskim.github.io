@@ -32,7 +32,7 @@
     "href": "index.html",
     "title": "Nicklaus Kim",
     "section": "",
-    "text": "Hello, I’m Nick. Welcome to my professional and academic portfolio website.\nI completed my M.S. in Statistics at UCLA and am currently planning to go back to school for a PhD in Statistics beginning in Fall 2026.\nI am interested in Bayesian modeling, inverse problems, uncertainty quantification, and probabilistic frameworks with structure (stochastic processes, spatial/spatiotemporal, functional data).\nI build tools like dashboards and models for data insights, with Python, R, SQL, Dash, Flask, and more.\nCheck out my blog here.\n\nLinks to projects and GitHub are on my Projects page.\n\n\n\n\nBayesian Model Misspecification for ODEs\nData-Centric Machine Learning (Synthetic Data) Research\nFounding Fathers Correspondence Network\nNBA Statistics Data Dashboard\n\n\n\n\n\nStatistical Inference\nBayesian Data Analysis\nAP Statistics\n\n\n\n\n\n\n\n\n  \n  \n    Email: nickausjkim@gmail.com\n    GitHub: github.com/nicklauskim"
+    "text": "Hello, I’m Nick. Welcome to my professional and academic portfolio website.\nI completed my M.S. in Statistics at UCLA and am currently planning to go back to school for a PhD in Statistics beginning in Fall 2026.\nI am interested in Bayesian modeling, inverse problems, uncertainty quantification, and probabilistic frameworks with structure (stochastic processes, spatial/spatiotemporal, functional data).\nI build tools like dashboards and models for data insights, with Python, R, SQL, Dash, Flask, and more.\nCheck out my blog here.\n\nLinks to projects and GitHub are on my Projects page.\n\n\n\n\nBayesian Model Misspecification for ODEs\nData-Centric Machine Learning (Synthetic Data) Research\nFounding Fathers Correspondence Network\nNBA Statistics Data Dashboard\n\n\n\n\n\nStatistical Inference\nBayesian Data Analysis\nAP Statistics\n\n\nThis website was built using Quarto.\n\n\n\n\n\n\n\n\n\n\n&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=\"mailto:nickausjkim@gmail.com\"&gt;nickausjkim@gmail.com&lt;/a&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href=\"https://github.com/nicklauskim\"&gt;github.com/nicklauskim&lt;/a&gt;&lt;/p&gt;\n&lt;!-- &lt;p&gt;&lt;strong&gt;LinkedIn:&lt;/strong&gt; &lt;a href=\"#\"&gt;linkedin.com/in/...&lt;/a&gt;&lt;/p&gt; --&gt;"
   },
   {
     "objectID": "index.html#projects",
@@ -46,7 +46,7 @@
     "href": "index.html#notes",
     "title": "Nicklaus Kim",
     "section": "",
-    "text": "Statistical Inference\nBayesian Data Analysis\nAP Statistics"
+    "text": "Statistical Inference\nBayesian Data Analysis\nAP Statistics\n\n\nThis website was built using Quarto."
   },
   {
     "objectID": "projects/all/bayesian-ode/index.html",
