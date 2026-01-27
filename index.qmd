@@ -81,16 +81,22 @@ I'm also very passionate about statistics and mathematics education. I produce i
 
 
   <!-- RIGHT SIDEBAR -->
+<!-- RIGHT SIDEBAR -->
 <div class="column-margin">
-  <div class="profile-card">
-    <img src="assets/img/me.png" alt="Nicklaus Kim">
-    <div class="profile-contact">
-      **Email:**nickausjkim@gmail.com<br>
-      **GitHub:**<a href="https://github.com/nicklauskim">github.com/nicklauskim</a><br>
-      <!-- **LinkedIn:**<a href="#">linkedin.com/in/...</a></div> -->
-    </div>
+
+```{=html}
+<div class="profile-card">
+  <img src="assets/img/me.png" alt="Nicklaus Kim">
+  <div class="profile-contact">
+    <p><strong>Email:</strong> nickausjkim@gmail.com</p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/nicklauskim">github.com/nicklauskim</a></p>
+    <!--
+    <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/...</a></p>
+    -->
   </div>
 </div>
+</div>
+```
 
 This website was built using Quarto.
 
