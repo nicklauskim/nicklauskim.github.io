@@ -7,11 +7,14 @@ format:
 ---
 
 <style>
+/* Sidebar card styling */
 .profile-card {
   position: sticky;
   top: 2rem;
   padding: 1rem;
   border-radius: 12px;
+  background-color: #f8f9fa; /* optional subtle background */
+  text-align: center;
 }
 
 .profile-card img {
@@ -19,20 +22,31 @@ format:
   max-width: 240px;
   border-radius: 12px;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 0.75rem auto;
 }
 
 .profile-contact {
   font-size: 0.9rem;
   text-align: center;
-  margin-top: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 900px) {
+  .page-columns {
+    display: block;
+  }
+  .profile-card {
+    position: static;
+    margin-bottom: 2rem;
+  }
 }
 </style>
 
 <div class="page-columns">
 
-<!-- LEFT COLUMN -->
-<div class="content">
+  <!-- LEFT COLUMN -->
+  <div class="content">
 
 Hello, I'm Nick. Welcome to my professional and academic portfolio website.
 
@@ -46,8 +60,6 @@ I'm also very passionate about statistics and mathematics education. I produce i
 
 > You can find links to my statistics research, data science projects, and other work I've done on my [Projects](https://nicklauskim.github.io/projects) page and at my [GitHub](https://github.com/nicklauskim).
 
-Here are quick links to some of my highlighted work.
-
 ## Research and Notes
 
 * [Statistical Inference](notes/statistical-inference/index.qmd)
@@ -57,30 +69,30 @@ Here are quick links to some of my highlighted work.
 ## Projects
 
 * [Bayesian Model Misspecification for ODEs](projects/all/bayesian-ode/index.qmd)
-<!-- + Bayesian Inverse Problems, Uncertainty Quantification, Functional Data Analysis -->
-+ Theoretical and applied investigations into the effects of Bayesian model misspecification on statistical inference in nonlinear ordinary differential equations and dynamical system models (e.g., SIR, Lotka–Volterra, and their extensions) using Python/PyMC.
+  + Theoretical and applied investigations into Bayesian model misspecification in nonlinear dynamical systems (SIR, Lotka–Volterra, etc.) using Python/PyMC.
 * [Data-Centric Machine Learning (Synthetic Data) Research](projects/all/ms-thesis/index.qmd)
-+ An investigation into the true privacy benefits of the use of synthetic data in sensitive domains such as healthcare, incorporating generative models for producing datasets and adversarial attack frameworks to assess (differential) privacy versus model utility.
+  + Investigation of privacy vs. utility tradeoffs of synthetic data in sensitive domains.
 * [Founding Fathers Correspondence Network](projects/all/project-1775/index.qmd)
-+ An ongoing initiative to analyze and gain new data-driven insights into early writings and correspondence of early American figures from the founding era via a Flask website displaying temporal and geospatial analysis of letter frequencies, knowledge networks and other visualizations.
+  + Temporal and geospatial analysis of early American correspondence networks via a Flask web app.
 * [NBA Statistics Data Dashboard](projects/all/nba-dash/index.qmd)
-+ A dynamic data visualization platform built with Dash and Plotly, incorporating a rich database of official NBA statistics served with a FastAPI backend and allowing for deep exploration of play-by-play and other detailed data as well as customizable filtering and generation of video clips.
-    
-<br>
+  + Interactive Dash + FastAPI platform for NBA analytics and video clip exploration.
 
 ---
 
 This website was built using Quarto.
 
-</div>
-
-<!-- RIGHT SIDEBAR -->
-```{=html}
-<!-- Right side (image) -->
-<div style="flex: 1; display: flex; justify-content: center; padding: 1rem;">
-  <div style="display:flex; flex-direction:column; align-items:center;">
-    <img src="assets/img/me.png" alt="alt" style="width: 240px; border-radius: 10px;">
-    <p>Email: nickausjkim@gmail.com</p>
   </div>
-</div>
 
+  <!-- RIGHT SIDEBAR -->
+  ```{=html}
+  <div class="profile-card">
+    <img src="assets/img/me.png" alt="Nicklaus Kim" style="width: 240px; border-radius: 10px;">
+    <div class="profile-contact">
+      <div><strong>Email:</strong> nickausjkim@gmail.com</div>
+      <div><strong>GitHub:</strong> <a href="https://github.com/nicklauskim">github.com/nicklauskim</a></div>
+      <div><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/...</a></div>
+    </div>
+  </div>
+
+</div>
+```
