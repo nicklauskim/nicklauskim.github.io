@@ -4,6 +4,9 @@ page-layout: full
 format:
   html:
     toc: false
+    theme:
+      - cosmo
+      - flatly
 ---
 
 <style>
@@ -69,24 +72,20 @@ Hello, I'm Nick. Welcome to my professional and academic portfolio website.
 
 I completed my M.S. in Statistics at UCLA and am currently planning to go back to school for a PhD in Statistics beginning in Fall 2026. 
 
-In my research, I'm interested in a wide array of ideas lying at the intersection of statistics and applied mathematics. My primary interests lie in Bayesian modeling and inference, with particular emphasis on inverse problems, uncertainty quantification, and Bayesian data assimilation. I am also interested in probabilistic modeling frameworks that incorporate mathematical structure, including stochastic processes, spatial and spatiotemporal statistics, and functional data analysis. 
+I am interested in Bayesian modeling, inverse problems, uncertainty quantification, and probabilistic frameworks with structure (stochastic processes, spatial/spatiotemporal, functional data).
 
-I have experience in building tools like data dashboards and statistical learning models to help uncover meaningful insights about data, including performing statistical/machine learning research in academia. I try to maintain and continually expand a diverse, up-to-date set of data analysis and research skills; in particular I specialize in Python, R, SQL (PostgreSQL), and frameworks like Dash and Flask that allow me to turn complex data into intuitive interfaces that enable visual storytelling.
+I build tools like dashboards and models for data insights, with Python, R, SQL, Dash, Flask, and more.
 
-I'm also very passionate about statistics and mathematics education. I produce instructive videos and articles explaining core concepts, discussing interesting historical uses of statistics, and exploring more niche advanced topics. (Check out my blog [here](https://nicklauskim.github.io/blog).) I also work as a tutor part-time, which gives me the opportunity to help high school and college students grow their mastery (and hopefully appreciation!) of stats and math.
+Check out my blog [here](https://nicklauskim.github.io/blog).
 
-> You can find links to my statistics research, data science projects, and other work I've done on my [Projects](https://nicklauskim.github.io/projects) page and at my [GitHub](https://github.com/nicklauskim).
+> Links to projects and GitHub are on my [Projects](https://nicklauskim.github.io/projects) page.
 
 ## Projects
 
 * [Bayesian Model Misspecification for ODEs](projects/all/bayesian-ode/index.qmd)
-  + Theoretical and applied investigations into Bayesian model misspecification in nonlinear dynamical systems (SIR, Lotka–Volterra, etc.) using Python/PyMC.
 * [Data-Centric Machine Learning (Synthetic Data) Research](projects/all/ms-thesis/index.qmd)
-  + Investigation of privacy vs. utility tradeoffs of synthetic data in sensitive domains.
 * [Founding Fathers Correspondence Network](projects/all/project-1775/index.qmd)
-  + Temporal and geospatial analysis of early American correspondence networks via a Flask web app.
 * [NBA Statistics Data Dashboard](projects/all/nba-dash/index.qmd)
-  + Interactive Dash + FastAPI platform for NBA analytics and video clip exploration.
 
 ## Notes
 
@@ -98,18 +97,18 @@ I'm also very passionate about statistics and mathematics education. I produce i
 
   <!-- RIGHT SIDEBAR -->
   <div class="column-margin">
-    <div class="profile-card">
-      <img src="assets/img/me.png" alt="Nicklaus Kim">
-      <div class="profile-contact">
-        <p><strong>Email:</strong> <a href="mailto:nickausjkim@gmail.com">nickausjkim@gmail.com</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/nicklauskim">github.com/nicklauskim</a></p>
-        <!--
-        <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/...</a></p>
-        -->
-      </div>
-    </div>
-  </div> <!-- end right sidebar -->
 
-</div> <!-- end page-columns -->
+```{=html}
+<div class="profile-card">
+  <img src="assets/img/me.png" alt="Nicklaus Kim">
+  <div class="profile-contact">
+    <p><strong>Email:</strong> <a href="mailto:nickausjkim@gmail.com">nickausjkim@gmail.com</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/nicklauskim">github.com/nicklauskim</a></p>
+    <!-- <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/...</a></p> -->
+  </div>
+</div>
 
-<p>This website was built using Quarto.</p>
+</div> <!-- end right sidebar --> 
+</div> <!-- end page-columns --> 
+<p>This website was built using Quarto.</p> 
+```
