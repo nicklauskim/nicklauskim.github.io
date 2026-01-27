@@ -85,9 +85,9 @@ I'm also very passionate about statistics and mathematics education. I produce i
   <div class="profile-card">
     <img src="assets/img/me.png" alt="Nicklaus Kim">
     <div class="profile-contact">
-      <div><strong>Email:</strong> nickausjkim@gmail.com</div>
-      <div><strong>GitHub:</strong> <a href="https://github.com/nicklauskim">github.com/nicklauskim</a></div>
-      <div><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/...</a></div>
+      **Email:**nickausjkim@gmail.com</div>
+      **GitHub:**<a href="https://github.com/nicklauskim">github.com/nicklauskim</a></div>
+      <!-- **LinkedIn:**<a href="#">linkedin.com/in/...</a></div> -->
     </div>
   </div>
 </div>
