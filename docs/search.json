@@ -1,0 +1,142 @@
+[
+  {
+    "objectID": "notes/statistical-inference/index.html",
+    "href": "notes/statistical-inference/index.html",
+    "title": "Statistical Inference Notes",
+    "section": "",
+    "text": "These notes are designed to be comprehensive chapter-wise summaries for the textbook Statistical Inference. I include any relevant definitions, theorems, and some key examples, capturing all the main concepts that I think I should know about this topic as a budding statistician. I may also upload some worked problems as well at a future date.\n\n\n\n\n\n\n\n\n\n\n\n\nChapter 1: Probability Theory\n\n\nNotes for Chapter 1\n\n\n\n\n\n\nApr 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nChapter 2: Transformations and Expectations\n\n\nNotes for Chapter 2\n\n\n\n\n\n\nApr 25, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "notes/ap-stats/index.html",
+    "href": "notes/ap-stats/index.html",
+    "title": "Introductory Statistics Notes",
+    "section": "",
+    "text": "Unit 2: Exploring Two-Variable Data\n\n\nReview notes/study guide for Unit 2\n\n\n\n\n\n\nApr 21, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nUnit 1: Exploring One-Variable Data\n\n\nReview notes/study guide for Unit 1\n\n\n\n\n\n\nApr 14, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Hello, I’m Nick and welcome to my website!\nI recently graduated from UCLA with my M.S. in Statistics and am currently looking for full-time statistician/data scientist/data analyst roles where I can apply the statistical concepts and computational tools in my skillset (Python, R, and SQL, among others!) towards extracting meaningful insights and knowledge from complex data. I also previously earned a B.S. in Applied Mathematics at UCLA.\nPreviously, I have conducted research on topics in generative AI at the Trustworthy AI Lab at UCLA. My research emphasized the methodology and application of synthetic data to improve modern statistical/ML modeling pipelines, particularly in terms of robustness and differential privacy. Specifically, I investigated the paradigm of privacy auditing – investigating the true privacy offered by different synthetic data generation methods when put under the risk of adversarial attacks.\nI am also passionate about teaching math and stats. I currently work as a private tutor for a variety of subjects, mainly AP Statistics. In the past I have also served as a teaching assistant for introductory statistics at UCLA and as a tutor and reader for a wide range of stats courses."
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Blog posts on a wide range of topics, including but not limited to: math, stats, data science, and history.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJun 6, 2025\n\n\nNick Kim\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Nicklaus Kim",
+    "section": "",
+    "text": "Hello, I’m Nick. Welcome to my professional and academic portfolio website.\nI completed my M.S. in Statistics at UCLA and am currently planning to go back to school for a PhD in Statistics beginning in Fall 2026.\nIn my research, I’m interested in a wide array of ideas lying at the intersection of statistics and applied mathematics. My primary interests lie in Bayesian modeling and inference, with particular emphasis on inverse problems, uncertainty quantification, and Bayesian data assimilation. I am also interested in probabilistic modeling frameworks that incorporate mathematical structure, including stochastic processes, spatial and spatiotemporal statistics, and functional data analysis.\nI have experience in building tools like data dashboards and statistical learning models to help uncover meaningful insights about data, including performing statistical/machine learning research in academia. I try to maintain and continually expand a diverse, up-to-date set of data analysis and research skills; in particular I specialize in Python, R, SQL (PostgreSQL), and frameworks like Dash and Flask that allow me to turn complex data into intuitive interfaces that enable visual storytelling.\nI’m also very passionate about statistics and mathematics education. I produce instructive videos and articles explaining core concepts, discussing interesting historical uses of statistics, and exploring more niche advanced topics. (Check out my blog here.) I also work as a tutor part-time, which gives me the opportunity to help high school and college students grow their mastery (and hopefully appreciation!) of stats and math.\n\nYou can find links to my statistics research, data science projects, and other work I’ve done on my Projects page and at my GitHub.\n\nHere are quick links to some of my highlighted work.\n\n\n\nBayesian Model Misspecification for ODEs \n\nTheoretical and applied investigations into the effects of Bayesian model misspecification on statistical inference in nonlinear ordinary differential equations and dynamical system models (e.g., SIR, Lotka–Volterra, and their extensions) using Python/PyMC.\n\nData-Centric Machine Learning (Synthetic Data) Research\n\nAn investigation into the true privacy benefits of the use of synthetic data in sensitive domains such as healthcare, incorporating generative models for producing datasets and adversarial attack frameworks to assess (differential) privacy versus model utility.\n\nFounding Fathers Correspondence Network\n\nAn ongoing initiative to analyze and gain new data-driven insights into early writings and correspondence of early American figures from the founding era via a Flask website displaying temporal and geospatial analysis of letter frequencies, knowledge networks and other visualizations.\n\nNBA Statistics Data Dashboard\n\nA dynamic data visualization platform built with Dash and Plotly, incorporating a rich database of official NBA statistics served with a FastAPI backend and allowing for deep exploration of play-by-play and other detailed data as well as customizable filtering and generation of video clips.\n\n\n\n\n\n\nStatistical Inference\nBayesian Data Analysis\nAP Statistics\n\n\n\nThis website was built using Quarto.\n\n\n\n\n\n\n\n\n\n\n&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=\"mailto:nickausjkim@gmail.com\"&gt;nickausjkim@gmail.com&lt;/a&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href=\"https://github.com/nicklauskim\"&gt;github.com/nicklauskim&lt;/a&gt;&lt;/p&gt;\n&lt;!-- &lt;p&gt;&lt;strong&gt;LinkedIn:&lt;/strong&gt; &lt;a href=\"#\"&gt;linkedin.com/in/...&lt;/a&gt;&lt;/p&gt; --&gt;"
+  },
+  {
+    "objectID": "index.html#projects",
+    "href": "index.html#projects",
+    "title": "Nicklaus Kim",
+    "section": "",
+    "text": "Bayesian Model Misspecification for ODEs \n\nTheoretical and applied investigations into the effects of Bayesian model misspecification on statistical inference in nonlinear ordinary differential equations and dynamical system models (e.g., SIR, Lotka–Volterra, and their extensions) using Python/PyMC.\n\nData-Centric Machine Learning (Synthetic Data) Research\n\nAn investigation into the true privacy benefits of the use of synthetic data in sensitive domains such as healthcare, incorporating generative models for producing datasets and adversarial attack frameworks to assess (differential) privacy versus model utility.\n\nFounding Fathers Correspondence Network\n\nAn ongoing initiative to analyze and gain new data-driven insights into early writings and correspondence of early American figures from the founding era via a Flask website displaying temporal and geospatial analysis of letter frequencies, knowledge networks and other visualizations.\n\nNBA Statistics Data Dashboard\n\nA dynamic data visualization platform built with Dash and Plotly, incorporating a rich database of official NBA statistics served with a FastAPI backend and allowing for deep exploration of play-by-play and other detailed data as well as customizable filtering and generation of video clips."
+  },
+  {
+    "objectID": "index.html#notes",
+    "href": "index.html#notes",
+    "title": "Nicklaus Kim",
+    "section": "",
+    "text": "Statistical Inference\nBayesian Data Analysis\nAP Statistics\n\n\n\nThis website was built using Quarto."
+  },
+  {
+    "objectID": "projects/all/bayesian-ode/index.html",
+    "href": "projects/all/bayesian-ode/index.html",
+    "title": "Bayesian Misspecification in ODE Systems",
+    "section": "",
+    "text": "link to notes"
+  },
+  {
+    "objectID": "projects/all/bayesian-ode/index.html#introductionbackground",
+    "href": "projects/all/bayesian-ode/index.html#introductionbackground",
+    "title": "Bayesian Misspecification in ODE Systems",
+    "section": "",
+    "text": "link to notes"
+  },
+  {
+    "objectID": "projects/all/experimental-parameter-tuning/index.html",
+    "href": "projects/all/experimental-parameter-tuning/index.html",
+    "title": "Hyperparameter Tuning for Gradient Boosting Frameworks Using Statistical Experimental Design",
+    "section": "",
+    "text": "Experimental design is a crucial part of any statistical experiment. This includes computer experiments, where we develop some predictive machine learning (ML) model trained on a real dataset, with the predictive performance of the model serving as the response and the various hyperparameters serving as different treatments. A common theme throughout many computational research papers that apply statistical and machine learning techniques, particularly in research in other fields where the statistical methodology or novelty is not the central insight, is that the authors implement an exhaustive, inefficient grid search to find the “best” model hyperparameters – those which yield the most optimal predictive performance. However, this approach can be very computationally expensive, both in terms of model run times and computing resources. Moreover, choosing hyperparameters in this way does not attempt to describe or account for the relationships between overall model performance and hyperparameter choices. We would like to address these shortcomings in our analysis by combining smart computer experimental design with Bayesian optimization frameworks to efficiently tune hyperparameters of ML models in a more rigorous, statistically informed way.\nFor this project, we keep a few key goals in mind. First of all, we would like to achieve better predictive performance than what was reported in each of the individual papers, which are geared towards computational physics and chemistry and not super statistically fine-tuned for the utmost optimal model results. Secondly, we look to reduce the estimated run time to save on computational resources. And lastly, we seek to produce a systematic framework with which one can continually improve model performance. As for our methodology, we incorporate principles of computer experiment design — including the use of advanced experimental designs such as Latin Hypercube Sampling (LHS) and Maximum Projection Designs – in conjunction with Bayesian optimization algorithms leveraging Gaussian Process (GP) modeling, with more details presented in the following sections.\nWe apply this approach to regression modeling problems found in computational research papers published in physical sciences journals, comparing their methodologies and final model results to those of our analysis. In these papers, the authors use a common method: XGBoost (Chen et al. 2016); For a quick description of the model parameters see (Chen et al. 2018a). In addition, we show the results of using our methodology to tune the hyperparameters of XGBoost models on a common benchmark ML dataset to compare the effectiveness of our hyperparameter choices versus well-known baseline performance levels."
+  },
+  {
+    "objectID": "projects/all/experimental-parameter-tuning/index.html#introductionbackground",
+    "href": "projects/all/experimental-parameter-tuning/index.html#introductionbackground",
+    "title": "Hyperparameter Tuning for Gradient Boosting Frameworks Using Statistical Experimental Design",
+    "section": "",
+    "text": "Experimental design is a crucial part of any statistical experiment. This includes computer experiments, where we develop some predictive machine learning (ML) model trained on a real dataset, with the predictive performance of the model serving as the response and the various hyperparameters serving as different treatments. A common theme throughout many computational research papers that apply statistical and machine learning techniques, particularly in research in other fields where the statistical methodology or novelty is not the central insight, is that the authors implement an exhaustive, inefficient grid search to find the “best” model hyperparameters – those which yield the most optimal predictive performance. However, this approach can be very computationally expensive, both in terms of model run times and computing resources. Moreover, choosing hyperparameters in this way does not attempt to describe or account for the relationships between overall model performance and hyperparameter choices. We would like to address these shortcomings in our analysis by combining smart computer experimental design with Bayesian optimization frameworks to efficiently tune hyperparameters of ML models in a more rigorous, statistically informed way.\nFor this project, we keep a few key goals in mind. First of all, we would like to achieve better predictive performance than what was reported in each of the individual papers, which are geared towards computational physics and chemistry and not super statistically fine-tuned for the utmost optimal model results. Secondly, we look to reduce the estimated run time to save on computational resources. And lastly, we seek to produce a systematic framework with which one can continually improve model performance. As for our methodology, we incorporate principles of computer experiment design — including the use of advanced experimental designs such as Latin Hypercube Sampling (LHS) and Maximum Projection Designs – in conjunction with Bayesian optimization algorithms leveraging Gaussian Process (GP) modeling, with more details presented in the following sections.\nWe apply this approach to regression modeling problems found in computational research papers published in physical sciences journals, comparing their methodologies and final model results to those of our analysis. In these papers, the authors use a common method: XGBoost (Chen et al. 2016); For a quick description of the model parameters see (Chen et al. 2018a). In addition, we show the results of using our methodology to tune the hyperparameters of XGBoost models on a common benchmark ML dataset to compare the effectiveness of our hyperparameter choices versus well-known baseline performance levels."
+  },
+  {
+    "objectID": "projects/all/experimental-parameter-tuning/index.html#critical-temperatures-of-superconductors",
+    "href": "projects/all/experimental-parameter-tuning/index.html#critical-temperatures-of-superconductors",
+    "title": "Hyperparameter Tuning for Gradient Boosting Frameworks Using Statistical Experimental Design",
+    "section": "Critical Temperatures of Superconductors",
+    "text": "Critical Temperatures of Superconductors\nThe first paper we analyze is “A Data-Driven Statistical Model for Predicting the Critical Temperature of a Superconductor”, published in the Journal of Computational Material Science. The author’s objective in this first paper is to predict at which temperature amaterial becomes a superconductor. A good use case for modeling this relationship is to pre-screen various compounds and find their critical temperatures. There is currently no widely accepted physical theory for the critical temperature of a superconductor, so using a statistical model is a good alternative to model the behavior.1\nIn the dataset that the author used and provided, the outcome variable is the critical temperature and the predictor variables are various physical properties of the material, such as atomic mass, atomic radius, etc. The data has 21,263 observations in total with 82 columns. For their analysis, the author conducted an exhaustive 198-point grid search over five hyperparameters: learning rate, column subsampling, row subsampling, minimum nodes, and maximum depth (Table 1). This amounts to taking all possible combinations of their chosen level settings. For performance evaluation, they used a 25-fold Monte Carlo cross-validation (CV) using root mean square error (RMSE) as the performance metric. For each iteration they split the data in two thirds for model fitting and one third for model evaluation.\n\n\n\n\nParameters\nLevels\n\n\n\n\nLearning rate\n0.010, 0.015, 0.020\n\n\nColumn subsampling\n0.25, 0.50, 0.75\n\n\nSubsample ratio\n0.5\n\n\nMinimum nodes\n1, 10\n\n\nMaximum depth\n15, 16, …, 25\n\n\n\n\nTable 1: Superconductors Hyperparameter Levels\n\n\n\nFor our analysis, we construct a Maximum Projection Latin Hypercube with 10 data points (using the MaxPro package in R) and use the same evaluation procedure as the author of the original paper. To transform samples from our design to integers, for discrete hyperparameters such as maximum depth (number of leaves) of trees, we apply the samples to the inverse CDF of the uniform distribution and take the ceiling of the resulting values. To transform the continuous hyperparameters from our design into the appropriate range we can simply shift them by a linear transformation. (We repeat this procedure for all three papers.)\nWe can visualize the comparison of all two-dimensional projections of the design that we generate and the design used by the author (Figure 1). From the plots we can see that the author’s design is not space filling in all of its projections, however our design does enjoy nice space filling and projection properties. Some of the projections of the author’s design are absurd, such as the max depth and min node - discrete parameters - which project as a continuous line. Although some of the author’s parameters are uniformly distributed, like maximum depth, this is not the case for all of their parameters, especially for the continuous parameters like learning rate.\n\n\nFigure 1: Two-Dimensional Hyperparameter Projections. Author’s Design in Black. Our Design in Red.\n\nFor the Gaussian Process (GP) Model, we use the Matern (5/2) covariance function with a small noise term added and linear mean functions. We introduce the noise term due to the fact that parameters like row and column subsampling are inherently random and lead to diﬀerent performance evaluation. The estimated GP parameters can be seen in Table 2 and Table 3 below. Then, we run 10 iterations of the Expectation Globalization Optimization (EGO) algorithm. We can see from that after only a couple iterations, the gradient boosting model is performing at a lower RMSE than the author’s final reported value (Figure 2). In the end we arrive at an entirely diﬀerent set of parameters than the author’s set (Table 4). Further, the computation cost of running the model from start to finish is drastically reduced. In this instance, we are able to achieve better performance in approximately 1/10th of the run time for the author’s experiment. We estimate the author’s run time by taking the average run time on our 12 core desktop computer and multiplying by the number of configurations the author used to find hyperparamter values.\n\n\n\n\nParameters\nEstimates\n\n\n\n\n(Intercept)\n88.299\n\n\nLearning rate\n1.532\n\n\nSubsample ratio\n0.4\n\n\nMinimum nodes\n-2.56\n\n\nMaximum depth\n0.490\n\n\n\n\nTable 2: Gaussian Process Parameters: Trend Coefficients\n\n\n\n\n\n\n\nParameters\nEstimates\n\n\n\n\nTheta(Learning rate)\n0.455\n\n\nTheta(Subsample ratio)\n1.800\n\n\nTheta(Minimum nodes)\n0.164\n\n\nTheta(Maximum depth)\n1.800\n\n\n\n\nTable 3: Gaussian Process Parameters: Covariance\n\n\n\n\n\nFigure 2: EGO Algorithm Results\n\n\n\n\n\n\nAuthor’s Results\nOur Results\n\n\n\n\nLearning rate\n0.016\n0.029\n\n\nSubsample ratio\n0.400\n0.200\n\n\nMinimum nodes\n10\n11\n\n\nMaximum depth\n16\n10\n\n\nRMSE\n44.090\n41.911\n\n\nEstimated Runtime\n2 hours\n8 minutes\n\n\n\n\nTable 4: Final XGBoost Model Comparison\n\n\n\nTo be continued…"
+  },
+  {
+    "objectID": "projects/all/experimental-parameter-tuning/index.html#footnotes",
+    "href": "projects/all/experimental-parameter-tuning/index.html#footnotes",
+    "title": "Hyperparameter Tuning for Gradient Boosting Frameworks Using Statistical Experimental Design",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nA superconductor is classified as any material which can transport electric charge with no resistance or with no energy loss.↩︎"
+  },
+  {
+    "objectID": "projects/all/ms-thesis/index.html",
+    "href": "projects/all/ms-thesis/index.html",
+    "title": "Privacy Auditing of Synthetic Data Generation Models Using Adversarial Attacks",
+    "section": "",
+    "text": "Overview presentation of my research:\n\nThis browser does not support PDFs. Please download the PDF to view it: &lt;a href=\"../../../assets/files/Research Presentation.pdf\"&gt;Download PDF&lt;/a&gt;.\n\nAlso, you can view my thesis here: 📄 Privacy Auditing of Tabular Synthetic Data Generators Using Membership Inference Attacks"
+  },
+  {
+    "objectID": "projects/all/project-1775/index.html",
+    "href": "projects/all/project-1775/index.html",
+    "title": "Founding Fathers Correspondence Network Analysis",
+    "section": "",
+    "text": "This project takes users on an interactive exploration into the writings of the Founding Fathers. Here you will find visuals of when, where, and between whom information was communicated during the Founding era of American history – correspondence and topic networks, timelines, spatial maps – as well as fully customizable query functionality to search for specific phrases or documents. Check it out here."
+  },
+  {
+    "objectID": "projects/all/nba-dash/index.html",
+    "href": "projects/all/nba-dash/index.html",
+    "title": "Play-by-Play NBA Analytics Dashboard",
+    "section": "",
+    "text": "Searching, filtering, and visualizing of play-by-play NBA data from the 1999-2000 season to present-day. Shot charts, player comparisons, and play video clip generation. Check it out here."
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "My data science/data analysis projects, mainly executed using Python, SQL, and Dash.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBayesian Misspecification in ODE Systems\n\n\n\n\n\nExploring Misspecification, Identifiability, and Posterior Uncertainty in Bayesian Inverse Problems\n\n\n\n\n\nDec 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nFounding Fathers Correspondence Network Analysis\n\n\n\n\n\nAn interactive application, built in Python using Dash, for exploring and visualizing historical/political correspondence trends in early American history\n\n\n\n\n\nJun 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPlay-by-Play NBA Analytics Dashboard\n\n\n\n\n\nAn interactive application, built in Python using Dash, for exploring and visualizing NBA play-by-play data and video\n\n\n\n\n\nJun 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHyperparameter Tuning for Gradient Boosting Frameworks Using Statistical Experimental Design\n\n\n\n\n\nApplying Advanced Experimental Designs to Optimization of Hyperparameters in XGBoost\n\n\n\n\n\nMay 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPrivacy Auditing of Synthetic Data Generation Models Using Adversarial Attacks\n\n\n\n\n\nThesis Research for Master of Science in Statistics\n\n\n\n\n\nMay 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nDimensionality Reduction Techniques in NLP\n\n\n\n\n\nExploring Use of Singular Value Decomposition to Reduce High Dimensionality in Logistic Regression Models for Text Classification\n\n\n\n\n\nMay 9, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nOverview of Machine Learning Methods for Text Classification\n\n\n\n\n\nAn Empirical Comparison of Common Classification Models Applied to Topic Distinguishing Problem\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/posts/welcome/index.html",
+    "href": "blog/posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is my first post in my Quarto blog. Welcome!\n\nHere I plan to post articles and blogs about a host of different topics in statistics and mathematics. I plan to write about both how they’re used to analyze and model real-world phenomena today and some historical cases and applications I find interesting or illuminating!"
+  },
+  {
+    "objectID": "blog/about.html",
+    "href": "blog/about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "notes/index.html",
+    "href": "notes/index.html",
+    "title": "Notes",
+    "section": "",
+    "text": "Detailed notes of topics in statistics and mathematics that I have used for self-study as well as teaching.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStatistical Inference Notes\n\n\nNotes for Statistical Inference by Casella and Berger\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroductory Statistics Notes\n\n\nOriginally written for teaching AP Statistics\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  }
+]
