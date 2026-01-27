@@ -16,12 +16,12 @@ format:
 
 /* Left content column */
 .content {
-  flex: 4;
+  flex: 5;
 }
 
 /* Right sidebar */
 .column-margin {
-  flex: 1;
+  flex: 2;
 }
 
 /* Sidebar card styling */
@@ -112,8 +112,8 @@ Here are quick links to some of my highlighted work.
 
 <div class="profile-card">
   <img src="assets/img/me.png" alt="Nicklaus Kim">
-    Email: [nickausjkim@gmail.com](mailto:nickausjkim@gmail.com)<br>
-    <p><strong>GitHub:</strong> <a href="https://github.com/nicklauskim">github.com/nicklauskim</a></p>
+    **Email:** [nickausjkim@gmail.com](mailto:nickausjkim@gmail.com)<br>
+    <strong>GitHub:</strong> <a href="https://github.com/nicklauskim">github.com/nicklauskim</a><br>
     <!-- <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/...</a></p> -->
   
 </div>
