@@ -129,9 +129,10 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content page-columns page-full column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -140,7 +141,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -188,7 +189,7 @@ ul.task-list li input[type="checkbox"] {
   }
 }
 </style>
-<div class="page-columns">
+<div class="page-columns page-full">
 <!-- LEFT COLUMN -->
 <div class="content">
 <p>Hello, I’m Nick. Welcome to my professional and academic portfolio website.</p>
@@ -231,22 +232,24 @@ ul.task-list li input[type="checkbox"] {
 <p>This website was built using Quarto.</p>
 </section>
 </div>
-<p><!-- RIGHT SIDEBAR --></p>
-<div class="profile-card">
-  <img src="assets/img/me.png" alt="Nicklaus Kim" style="width: 240px; border-radius: 10px;">
-  <div class="profile-contact">
-    <div><strong>Email:</strong> nickausjkim@gmail.com</div>
-    <div><strong>GitHub:</strong> <a href="https://github.com/nicklauskim">github.com/nicklauskim</a></div>
-    <div><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/...</a></div>
-  </div>
-</div>
+<!-- RIGHT SIDEBAR -->
 
-</div>
+<div class="no-row-height column-margin column-container"><div class="">
+<pre><code>&lt;!-- ```{=html} --&gt;
+&lt;div class="profile-card"&gt;
+    &lt;img src="assets/img/me.png" alt="Nicklaus Kim" style="width: 240px; border-radius: 10px;"&gt;
+    &lt;div class="profile-contact"&gt;
+    &lt;div&gt;&lt;strong&gt;Email:&lt;/strong&gt; nickausjkim@gmail.com&lt;/div&gt;
+    &lt;div&gt;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href="https://github.com/nicklauskim"&gt;github.com/nicklauskim&lt;/a&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;strong&gt;LinkedIn:&lt;/strong&gt; &lt;a href="#"&gt;linkedin.com/in/...&lt;/a&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div></div></div>
+<!-- ``` -->
 
 
-</main></div>
 
- <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -664,7 +667,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
- <!-- /content -->
+</div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
