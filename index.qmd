@@ -1,12 +1,58 @@
 ---
 title: "Nicklaus Kim"
+format:
+  html:
+    toc: false
+    page-layout: full
 ---
 
+<style>
+.profile-layout {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
 
-<div style="display: flex; align-items: flex-start; gap: 5rem; width: 100%;">
+.profile-sidebar {
+  position: sticky;
+  top: 2rem;
+}
 
-<!-- Left side (text) -->
-<div style="flex: 4;">
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.profile-card img {
+  width: 100%;
+  max-width: 240px;
+  border-radius: 12px;
+}
+
+.profile-contact {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Mobile layout */
+@media (max-width: 900px) {
+  .profile-layout {
+    grid-template-columns: 1fr;
+  }
+  .profile-sidebar {
+    position: static;
+    margin-bottom: 2rem;
+  }
+}
+</style>
+
+<div class="profile-layout">
+
+<!-- ================= LEFT COLUMN ================= -->
+<div>
 
 Hello, I'm Nick. Welcome to my professional and academic portfolio website.
 
@@ -18,69 +64,49 @@ I have experience in building tools like data dashboards and statistical learnin
 
 I'm also very passionate about statistics and mathematics education. I produce instructive videos and articles explaining core concepts, discussing interesting historical uses of statistics, and exploring more niche advanced topics. (Check out my blog [here](https://nicklauskim.github.io/blog).) I also work as a tutor part-time, which gives me the opportunity to help high school and college students grow their mastery (and hopefully appreciation!) of stats and math.
 
-> You can find links to my statistics research, data science projects, and other work I've done on my [Projects](https://nicklauskim.github.io/projects) page and at my [GitHub](https://github.com/nicklauskim){.underline}.
+> You can find links to my statistics research, data science projects, and other work I've done on my [Projects](https://nicklauskim.github.io/projects) page and at my [GitHub](https://github.com/nicklauskim).
 
 Here are quick links to some of my highlighted work.
 
 ## Research and Notes
 
-* 
 * [Statistical Inference](notes/statistical-inference/index.qmd)
-* [Bayesian Data Analysis](notes/bayesian-data=analysis/index.qmd)
+* [Bayesian Data Analysis](notes/bayesian-data-analysis/index.qmd)
 * [AP Statistics](notes/ap-stats/index.qmd)
-
 
 ## Projects
 
-* [Bayesian Model Misspecification for ODEs](projects/all/bayesian-ode/index.qmd)
-    <!-- + Bayesian Inverse Problems, Uncertainty Quantification, Functional Data Analysis -->
-    + Theoretical and applied investigations into the effects of Bayesian model misspecification on statistical inference in nonlinear ordinary differential equations and dynamical system models (e.g., SIR, Lotka–Volterra, and their extensions) using Python/PyMC.
-* [Data-Centric Machine Learning (Synthetic Data) Research](projects/all/ms-thesis/index.qmd)
-    + An investigation into the true privacy benefits of the use of synthetic data in sensitive domains such as healthcare, incorporating generative models for producing datasets and adversarial attack frameworks to assess (differential) privacy versus model utility.
-* [Founding Fathers Correspondence Network](projects/all/project-1775/index.qmd)
-    + An ongoing initiative to analyze and gain new data-driven insights into early writings and correspondence of early American figures from the founding era via a Flask website displaying temporal and geospatial analysis of letter frequencies, knowledge networks and other visualizations.
-* [NBA Statistics Data Dashboard](projects/all/nba-dash/index.qmd)
-    + A dynamic data visualization platform built with Dash and Plotly, incorporating a rich database of official NBA statistics served with a FastAPI backend and allowing for deep exploration of play-by-play and other detailed data as well as customizable filtering and generation of video clips.
-<br>
+* [Bayesian Model Misspecification for ODEs](projects/all/bayesian-ode/index.qmd)  
+  + Theoretical and applied investigations into the effects of Bayesian model misspecification on statistical inference in nonlinear ordinary differential equations and dynamical system models (e.g., SIR, Lotka–Volterra, and their extensions) using Python/PyMC.
 
+* [Data-Centric Machine Learning (Synthetic Data) Research](projects/all/ms-thesis/index.qmd)  
+  + An investigation into the true privacy benefits of the use of synthetic data in sensitive domains such as healthcare, incorporating generative models for producing datasets and adversarial attack frameworks to assess (differential) privacy versus model utility.
 
-<!-- Also, check out some of my writing, from blog posts on ideas in stats and data science in the real world, both past and present
+* [Founding Fathers Correspondence Network](projects/all/project-1775/index.qmd)  
+  + An ongoing initiative to analyze and gain new data-driven insights into early American figures from the founding era via a Flask website displaying temporal and geospatial analysis of letter frequencies, knowledge networks and other visualizations.
 
-* [Sample Post 1](blog/index.qmd)
-* [Sample Post 2](blog/index.qmd)
+* [NBA Statistics Data Dashboard](projects/all/nba-dash/index.qmd)  
+  + A dynamic data visualization platform built with Dash and Plotly, incorporating a rich database of official NBA statistics served with a FastAPI backend and allowing for deep exploration of play-by-play and other detailed data as well as customizable filtering and generation of video clips.
 
-to math and stats notes from both my own self-learning and my teaching/tutoring ventures
-
-* [Sample Notes 1](notes/index.qmd)
-* [Sample Notes ](notes/index.qmd)--->
-
+---
 
 This website was built using Quarto.
 
 </div>
 
+<!-- ================= RIGHT COLUMN ================= -->
+<div class="profile-sidebar">
+  <div class="profile-card">
 
+    <img src="assets/img/me.png" alt="Nicklaus Kim">
 
-<!-- Right side (image + contact info) -->
-<div style="flex: 1; display: flex; align-items: flex-start; padding: 1rem;">
-  
-  <div style="display: flex; flex-direction: column; align-items: center; gap: 0.75rem;">
-    
-    <img src="assets/img/me.png" alt="alt" style="width: 150%; max-width: 250px; border-radius: 10px;">
-    
-    <div style="font-size: 0.9rem; text-align: center;">
+    <div class="profile-contact">
       <div><strong>Email:</strong> nickausjkim@gmail.com</div>
-      <div><strong>GitHub:</strong> github.com/...</div>
-      <div><strong>LinkedIn:</strong> linkedin.com/in/...</div>
+      <div><strong>GitHub:</strong> <a href="https://github.com/nicklauskim">github.com/nicklauskim</a></div>
+      <div><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/...</a></div>
     </div>
 
   </div>
-
 </div>
 
-
 </div>
-
-
-
-

@@ -126,14 +126,12 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -142,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -154,31 +152,72 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div style="display: flex; align-items: flex-start; gap: 5rem; width: 100%;">
-<!-- Left side (text) -->
-<div style="flex: 4;">
+<style>
+.profile-layout {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.profile-sidebar {
+  position: sticky;
+  top: 2rem;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.profile-card img {
+  width: 100%;
+  max-width: 240px;
+  border-radius: 12px;
+}
+
+.profile-contact {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Mobile layout */
+@media (max-width: 900px) {
+  .profile-layout {
+    grid-template-columns: 1fr;
+  }
+  .profile-sidebar {
+    position: static;
+    margin-bottom: 2rem;
+  }
+}
+</style>
+<div class="profile-layout">
+<!-- ================= LEFT COLUMN ================= -->
+<div>
 <p>Hello, I’m Nick. Welcome to my professional and academic portfolio website.</p>
 <p>I completed my M.S. in Statistics at UCLA and am currently planning to go back to school for a PhD in Statistics beginning in Fall 2026.</p>
 <p>In my research, I’m interested in a wide array of ideas lying at the intersection of statistics and applied mathematics. My primary interests lie in Bayesian modeling and inference, with particular emphasis on inverse problems, uncertainty quantification, and Bayesian data assimilation. I am also interested in probabilistic modeling frameworks that incorporate mathematical structure, including stochastic processes, spatial and spatiotemporal statistics, and functional data analysis.</p>
 <p>I have experience in building tools like data dashboards and statistical learning models to help uncover meaningful insights about data, including performing statistical/machine learning research in academia. I try to maintain and continually expand a diverse, up-to-date set of data analysis and research skills; in particular I specialize in Python, R, SQL (PostgreSQL), and frameworks like Dash and Flask that allow me to turn complex data into intuitive interfaces that enable visual storytelling.</p>
 <p>I’m also very passionate about statistics and mathematics education. I produce instructive videos and articles explaining core concepts, discussing interesting historical uses of statistics, and exploring more niche advanced topics. (Check out my blog <a href="https://nicklauskim.github.io/blog">here</a>.) I also work as a tutor part-time, which gives me the opportunity to help high school and college students grow their mastery (and hopefully appreciation!) of stats and math.</p>
 <blockquote class="blockquote">
-<p>You can find links to my statistics research, data science projects, and other work I’ve done on my <a href="https://nicklauskim.github.io/projects">Projects</a> page and at my <a href="https://github.com/nicklauskim" class="underline">GitHub</a>.</p>
+<p>You can find links to my statistics research, data science projects, and other work I’ve done on my <a href="https://nicklauskim.github.io/projects">Projects</a> page and at my <a href="https://github.com/nicklauskim">GitHub</a>.</p>
 </blockquote>
 <p>Here are quick links to some of my highlighted work.</p>
 <section id="research-and-notes" class="level2">
 <h2 class="anchored" data-anchor-id="research-and-notes">Research and Notes</h2>
 <ul>
-<li></li>
 <li><a href="./notes/statistical-inference/index.html">Statistical Inference</a></li>
-<li><a href="notes/bayesian-data=analysis/index.qmd">Bayesian Data Analysis</a></li>
+<li><a href="./notes/bayesian-data-analysis/index.html">Bayesian Data Analysis</a></li>
 <li><a href="./notes/ap-stats/index.html">AP Statistics</a></li>
 </ul>
 </section>
 <section id="projects" class="level2">
 <h2 class="anchored" data-anchor-id="projects">Projects</h2>
 <ul>
-<li><a href="./projects/all/bayesian-ode/index.html">Bayesian Model Misspecification for ODEs</a> <!-- + Bayesian Inverse Problems, Uncertainty Quantification, Functional Data Analysis -->
+<li><a href="./projects/all/bayesian-ode/index.html">Bayesian Model Misspecification for ODEs</a>
 <ul>
 <li>Theoretical and applied investigations into the effects of Bayesian model misspecification on statistical inference in nonlinear ordinary differential equations and dynamical system models (e.g., SIR, Lotka–Volterra, and their extensions) using Python/PyMC.</li>
 </ul></li>
@@ -188,34 +227,26 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 <li><a href="./projects/all/project-1775/index.html">Founding Fathers Correspondence Network</a>
 <ul>
-<li>An ongoing initiative to analyze and gain new data-driven insights into early writings and correspondence of early American figures from the founding era via a Flask website displaying temporal and geospatial analysis of letter frequencies, knowledge networks and other visualizations.</li>
+<li>An ongoing initiative to analyze and gain new data-driven insights into early American figures from the founding era via a Flask website displaying temporal and geospatial analysis of letter frequencies, knowledge networks and other visualizations.</li>
 </ul></li>
 <li><a href="./projects/all/nba-dash/index.html">NBA Statistics Data Dashboard</a>
 <ul>
-<li>A dynamic data visualization platform built with Dash and Plotly, incorporating a rich database of official NBA statistics served with a FastAPI backend and allowing for deep exploration of play-by-play and other detailed data as well as customizable filtering and generation of video clips. <br></li>
+<li>A dynamic data visualization platform built with Dash and Plotly, incorporating a rich database of official NBA statistics served with a FastAPI backend and allowing for deep exploration of play-by-play and other detailed data as well as customizable filtering and generation of video clips.</li>
 </ul></li>
 </ul>
-<!-- Also, check out some of my writing, from blog posts on ideas in stats and data science in the real world, both past and present
-
-* [Sample Post 1](blog/index.qmd)
-* [Sample Post 2](blog/index.qmd)
-
-to math and stats notes from both my own self-learning and my teaching/tutoring ventures
-
-* [Sample Notes 1](notes/index.qmd)
-* [Sample Notes ](notes/index.qmd)--->
+<hr>
 <p>This website was built using Quarto.</p>
 </section>
 </div>
-<!-- Right side (image + contact info) -->
-<div style="flex: 1; display: flex; align-items: flex-start; padding: 1rem;">
-<div style="display: flex; flex-direction: column; align-items: center; gap: 0.75rem;">
-<pre><code>&lt;img src="assets/img/me.png" alt="alt" style="width: 150%; max-width: 250px; border-radius: 10px;"&gt;
+<!-- ================= RIGHT COLUMN ================= -->
+<div class="profile-sidebar">
+<div class="profile-card">
+<pre><code>&lt;img src="assets/img/me.png" alt="Nicklaus Kim"&gt;
 
-&lt;div style="font-size: 0.9rem; text-align: center;"&gt;
+&lt;div class="profile-contact"&gt;
   &lt;div&gt;&lt;strong&gt;Email:&lt;/strong&gt; nickausjkim@gmail.com&lt;/div&gt;
-  &lt;div&gt;&lt;strong&gt;GitHub:&lt;/strong&gt; github.com/...&lt;/div&gt;
-  &lt;div&gt;&lt;strong&gt;LinkedIn:&lt;/strong&gt; linkedin.com/in/...&lt;/div&gt;
+  &lt;div&gt;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href="https://github.com/nicklauskim"&gt;github.com/nicklauskim&lt;/a&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;strong&gt;LinkedIn:&lt;/strong&gt; &lt;a href="#"&gt;linkedin.com/in/...&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
 </div>
