@@ -8,3 +8,5 @@ image: "images/{}.webp"
 
 
 ## Introduction/Background
+
+link to notes
