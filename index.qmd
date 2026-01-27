@@ -112,8 +112,7 @@ Here are quick links to some of my highlighted work.
 
 <div class="profile-card">
   <img src="assets/img/me.png" alt="Nicklaus Kim">
-  
-    Email:</strong> <a href="mailto:nickausjkim@gmail.com">nickausjkim@gmail.com</a></p>
+    Email: [nickausjkim@gmail.com](mailto:nickausjkim@gmail.com)<br>
     <p><strong>GitHub:</strong> <a href="https://github.com/nicklauskim">github.com/nicklauskim</a></p>
     <!-- <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/...</a></p> -->
   
