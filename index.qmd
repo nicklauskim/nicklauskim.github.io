@@ -7,13 +7,30 @@ format:
 ---
 
 <style>
+/* Layout: two columns */
+.page-columns {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+/* Left content column */
+.content {
+  flex: 4;
+}
+
+/* Right sidebar */
+.column-margin {
+  flex: 1;
+}
+
 /* Sidebar card styling */
 .profile-card {
   position: sticky;
   top: 2rem;
   padding: 1rem;
   border-radius: 12px;
-  background-color: #f8f9fa; /* optional subtle background */
+  background-color: #f8f9fa;
   text-align: center;
 }
 
@@ -77,25 +94,22 @@ I'm also very passionate about statistics and mathematics education. I produce i
 * [Bayesian Data Analysis](notes/bayesian-data-analysis/index.qmd)
 * [AP Statistics](notes/ap-stats/index.qmd)
 
-  </div>
+  </div> <!-- end left column -->
 
   <!-- RIGHT SIDEBAR -->
   <div class="column-margin">
+    <div class="profile-card">
+      <img src="assets/img/me.png" alt="Nicklaus Kim">
+      <div class="profile-contact">
+        <p><strong>Email:</strong> <a href="mailto:nickausjkim@gmail.com">nickausjkim@gmail.com</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/nicklauskim">github.com/nicklauskim</a></p>
+        <!--
+        <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/...</a></p>
+        -->
+      </div>
+    </div>
+  </div> <!-- end right sidebar -->
 
-```{=html}
-<div class="profile-card">
-  <img src="assets/img/me.png" alt="Nicklaus Kim">
-  <div class="profile-contact">
-    <p><strong>Email:</strong> <a href="mailto:nickausjkim@gmail.com">nickausjkim@gmail.com</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/nicklauskim">github.com/nicklauskim</a></p>
-    <!--
-    <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/...</a></p>
-    -->
-  </div>
-</div>
+</div> <!-- end page-columns -->
 
-</div> <!-- end column-margin --> 
-</div> <!-- end page-columns --> 
-
-<p>This website was built using Quarto.</p> 
-```
+<p>This website was built using Quarto.</p>

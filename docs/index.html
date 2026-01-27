@@ -154,13 +154,30 @@ ul.task-list li input[type="checkbox"] {
 
 
 <style>
+/* Layout: two columns */
+.page-columns {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+/* Left content column */
+.content {
+  flex: 4;
+}
+
+/* Right sidebar */
+.column-margin {
+  flex: 1;
+}
+
 /* Sidebar card styling */
 .profile-card {
   position: sticky;
   top: 2rem;
   padding: 1rem;
   border-radius: 12px;
-  background-color: #f8f9fa; /* optional subtle background */
+  background-color: #f8f9fa;
   text-align: center;
 }
 
@@ -228,31 +245,31 @@ ul.task-list li input[type="checkbox"] {
 <li><p><a href="./notes/bayesian-data-analysis/index.html">Bayesian Data Analysis</a></p></li>
 <li><p><a href="./notes/ap-stats/index.html">AP Statistics</a></p>
 </li></ul></section></div>
+<!-- end left column -->
 <!-- RIGHT SIDEBAR -->
 
-
 <div class="no-row-height column-margin column-container"><div class="">
-
-</div></div><div class="profile-card">
-  <img src="assets/img/me.png" alt="Nicklaus Kim">
-  <div class="profile-contact">
-    <p><strong>Email:</strong> <a href="mailto:nickausjkim@gmail.com">nickausjkim@gmail.com</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/nicklauskim">github.com/nicklauskim</a></p>
-    <!--
-    <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/...</a></p>
-    -->
-  </div>
+<div class="profile-card">
+<pre><code>&lt;img src="assets/img/me.png" alt="Nicklaus Kim"&gt;
+&lt;div class="profile-contact"&gt;
+  &lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href="mailto:nickausjkim@gmail.com"&gt;nickausjkim@gmail.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href="https://github.com/nicklauskim"&gt;github.com/nicklauskim&lt;/a&gt;&lt;/p&gt;
+  &lt;!--
+  &lt;p&gt;&lt;strong&gt;LinkedIn:&lt;/strong&gt; &lt;a href="#"&gt;linkedin.com/in/...&lt;/a&gt;&lt;/p&gt;
+  --&gt;
+&lt;/div&gt;</code></pre>
 </div>
-
-</div> <!-- end column-margin --> 
-</main></div> <!-- end page-columns --> 
-
-<p>This website was built using Quarto.</p> 
+</div></div><p><!-- end right sidebar --></p>
 
 
+</div>
+<p><!-- end page-columns --></p>
+<p>
+This website was built using Quarto.
+</p>
 
 
-
+</main></div>
 
  <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
