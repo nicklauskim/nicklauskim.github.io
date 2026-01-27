@@ -6,4 +6,4 @@ categories: [data visualization, data dashboard, data analytics, sports analytic
 image: "ball-hoop.webp"
 ---
 
-Check out my [GitHub repository](https://www.github.com/nicklauskim/nba-dash).
+Searching, filtering, and visualizing of play-by-play NBA data from the 1999-2000 season to present-day. Shot charts, player comparisons, and play video clip generation. Check it out [here](https://nicklauskim.github.io/nba-dash).
