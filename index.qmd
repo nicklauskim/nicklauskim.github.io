@@ -4,9 +4,6 @@ page-layout: full
 format:
   html:
     toc: false
-    theme:
-      - cosmo
-      - flatly
 ---
 
 <style>
