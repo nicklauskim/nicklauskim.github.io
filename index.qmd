@@ -77,11 +77,8 @@ I'm also very passionate about statistics and mathematics education. I produce i
 * [NBA Statistics Data Dashboard](projects/all/nba-dash/index.qmd)
   + Interactive Dash + FastAPI platform for NBA analytics and video clip exploration.
 
----
-
-This website was built using Quarto.
-
   </div>
+
 
   <!-- RIGHT SIDEBAR -->
 <div class="column-margin">
@@ -95,5 +92,7 @@ This website was built using Quarto.
     </div>
   </div>
 </div>
+
+This website was built using Quarto.
 
 </div>
