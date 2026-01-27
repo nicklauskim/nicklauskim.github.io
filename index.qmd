@@ -3,7 +3,7 @@ title: "Nicklaus Kim"
 ---
 
 
-<div style="display: flex; align-items: center; gap: 5rem; width: 100%;">
+<div style="display: flex; align-items: flex-start; gap: 5rem; width: 100%;">
 
 <!-- Left side (text) -->
 <div style="flex: 4;">
@@ -61,13 +61,23 @@ This website was built using Quarto.
 
 
 
-<!-- Right side (image) -->
-<div style="flex: 1; display: flex; justify-content: center; padding: 1rem;">
-  <img src="assets/img/me.png" alt="alt" style="width: 150%; border-radius: 10px;">
-  <br>
-  <p>Email: nickausjkim@gmail.com</p>
+<!-- Right side (image + contact info) -->
+<div style="flex: 1; display: flex; align-items: flex-start; padding: 1rem;">
+  
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 0.75rem;">
+    
+    <img src="assets/img/me.png" alt="alt" style="width: 150%; max-width: 250px; border-radius: 10px;">
+    
+    <div style="font-size: 0.9rem; text-align: center;">
+      <div><strong>Email:</strong> nickausjkim@gmail.com</div>
+      <div><strong>GitHub:</strong> github.com/...</div>
+      <div><strong>LinkedIn:</strong> linkedin.com/in/...</div>
+    </div>
+
+  </div>
 
 </div>
+
 
 </div>
 
