@@ -85,7 +85,7 @@ This website was built using Quarto.
 
   <!-- RIGHT SIDEBAR -->
   <div class="column-margin">
-    <!-- ```{=html} -->
+    ```{=html}
     <div class="profile-card">
         <img src="assets/img/me.png" alt="Nicklaus Kim" style="width: 240px; border-radius: 10px;">
         <div class="profile-contact">
@@ -96,4 +96,4 @@ This website was built using Quarto.
     </div>
   </div>
 </div>
-<!-- ``` -->
+```
