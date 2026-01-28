@@ -1,13 +1,13 @@
 #!/bin/bash
 # This script optimizes images in the specified directory and creates thumbnails.
-# Make sure current working directory is assets/scripts
+# Make sure current working directory is root folder of project
 
 # Input directory
-INPUT_DIR="../img"
+INPUT_DIR="./assets/img"
 
 # Output directories
-OPTIMIZED_DIR="../img/optimized"
-THUMBNAIL_DIR="../img/thumbnails"
+OPTIMIZED_DIR="./assets/img/optimized"
+THUMBNAIL_DIR="./assets/img/thumbnails"
 
 # Create output directories if they don't exist
 mkdir -p "$OPTIMIZED_DIR" "$THUMBNAIL_DIR"

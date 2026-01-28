@@ -3,7 +3,7 @@ title: Founding Fathers Correspondence Network Analysis
 description: "An interactive application, built in Python using Dash, for exploring and visualizing historical/political correspondence trends in early American history"
 date: 2025-06-10
 categories: [data visualization, data dashboard, data analytics, historical data]
-image: "{}.webp"
+image: "Declaration-of-Independence.webp"
 ---
 
 This project takes users on an interactive exploration into the writings of the Founding Fathers. Here you will find visuals of when, where, and between whom information was communicated during the Founding era of American history – correspondence and topic networks, timelines, spatial maps – as well as fully customizable query functionality to search for specific phrases or documents. Check it out [here](https://nicklauskim.github.io/founding-stats).
