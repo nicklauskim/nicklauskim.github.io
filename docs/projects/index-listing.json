@@ -1,0 +1,12 @@
+{
+  "listing": "/projects/index.html",
+  "items": [
+    "/projects/all/bayesian-ode/index.html",
+    "/projects/all/ms-thesis/index.html",
+    "/projects/all/experimental-parameter-tuning/index.html",
+    "/projects/all/project-1775/index.html",
+    "/projects/all/nba-dash/index.html",
+    "/projects/all/nlp-dimensionality reduction/index.html",
+    "/projects/all/supervised-text-classification/index.html"
+  ]
+}
