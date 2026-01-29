@@ -216,4 +216,20 @@ Calibration curve: If we plot nominal level $(0.1, 0.2, \dots, 0.9)$ on the $x$-
 In real science, models are always wrong. In particular, much of science relies upon the use of differential equations to model phenomena, and these equations are always wrong/misspecified. But, many people, including researchers, still trust inference under these misspecified conditions, which can lead to some dangerous overconfidence when interpreting results. We should be wary of the pitfalls of model misspecification and make more conscious efforts to quantify the uncertainty inherent in any modeling done on data. This is much of the driving motivation behind this project...
 
 
+
+::: {.callout-note collapse="false"}
+##  Background on the Lotka–Volterra Model
+
+
+
 :::
+
+
+::: {.callout-note collapse="false"}
+##  Background on the SIR Model
+
+
+
+:::
+
+
