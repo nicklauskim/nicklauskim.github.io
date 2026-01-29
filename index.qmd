@@ -118,11 +118,10 @@ Below are quick links to some of my highlighted work.
   <img src="assets/img/me.png" alt="Nicklaus Kim">
     **Email:** [nickausjkim@gmail.com](mailto:nickausjkim@gmail.com)<br><br>
     <strong>GitHub:</strong> <a href="https://github.com/nicklauskim">github.com/nicklauskim</a><br>
-    <!-- <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/...</a></p> -->
-  
+    <!-- <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/...</a></p> --> 
 </div>
 
-</div> <!-- end right sidebar --> 
+</div> <!-- end column-margin --> 
 
 
 </div> <!-- end page-columns --> 
