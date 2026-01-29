@@ -1,6 +1,6 @@
 ---
 title: Bayesian Misspecification in ODE Systems
-description: "Exploring Misspecification, Identifiability, and Posterior Uncertainty in Bayesian Inverse Problems"
+description: "Exploring Model Misspecification, Parameter Identifiability, and Posterior Uncertainty in Bayesian Inverse Problems for the Lotka–Volterra and SIR Models"
 date: 2025-12-10
 categories: [statistics, bayesian, differential equations, inverse problems]
 image: "dynamic2.webp"
