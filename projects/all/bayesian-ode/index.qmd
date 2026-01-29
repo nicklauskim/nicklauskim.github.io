@@ -3,10 +3,214 @@ title: Bayesian Misspecification in ODE Systems
 description: "Exploring Misspecification, Identifiability, and Posterior Uncertainty in Bayesian Inverse Problems"
 date: 2025-12-10
 categories: [statistics, bayesian, differential equations, inverse problems]
-image: "images/{}.webp"
+image: "dynamic.webp"
 ---
 
+This page contains working notes and analyses for this ongoing project.
+Link to code notebook: []()
 
-## Introduction/Background
 
-link to notes
+
+## Big Picture
+
+Inverse problem: There is an ordinary differential equation (ODE)/dynamical system with unknown parameters. We observe noisy data derived from the system and want to infer the parameters and quantify uncertainty.
+
+If we have a solution to an ODE $x(t; \theta)$, then there is a deterministic forward map
+$$
+\theta \mapsto x(t; \theta).
+$$
+
+We observe data
+$$
+y_i = H(x(t_i; \theta)) + \varepsilon_i,
+$$
+where $H$ is an observation operator (often the identity map or some projection), $\varepsilon_i$ is a noise term.
+
+The inverse problem is: Given $y_i (i = 1, \dots, n)$, infer $\theta$.
+
+In general, these problems are ill-posed:
+- Many values of $\theta$ can produce similar trajectories, preventing identifiability of $\theta$.
+- Noise amplifies ambiguity behind inference.
+- Models are often (more like *always*) wrong/misspecified.
+
+For these types of problems, Bayesian inference serves as a regularization and uncertainty quantification framework.
+
+
+## ODE Models as Statistical Objects
+
+For now, we stick to a single ordinary differential equation (ODE) in order to introduce the Bayesian inference background. Later, we will see how these ideas extend to the case of dynamical systems containing multiple differential equations. Specifically, we will investigate the SIR model and the Lotka–Volterra system.
+
+An ODE, given by:
+$$
+\frac{dx}{dt} = f(x(t); \theta), x(0) = x_0,
+$$
+defines a deterministic mapping between parameters and solution trajectories,
+$$
+\theta \mapsto x(\cdot; \theta).
+$$
+This map is:
+- generally nonlinear
+- smooth in $\theta$ under mild conditions
+- can be very insensitive in some directions but very sensitive in other directions – this sensitivity structure is the root of many parameter identifiability issues
+
+We never observe the state $x(t)$ exactly. Rather, we observe:
+$$
+y_i = H(x(t_i; \theta)) + \varepsilon_i, \text{ for } i = 1, \dots, n,
+$$
+where  $\varepsilon_i \sim \mathcal{N}(0, \sigma^2)$.
+
+For example, in a simple case, we may have $H(x(t_i; \theta)) = x(t_i; \theta)$, the identity map, which means our observation model is simply the state with added Gaussian noise.
+
+Then, our likelihood (observation model) is given by:
+$$
+p(y \mid \theta) = \prod_{i=1}^{n}{\mathcal{N}(y_i \mid x(t_i; \theta), \sigma^2)}.
+$$
+
+It is important to note that all “statistical difficulty” behind the parameter inference problem comes from the geometry of the map
+$$
+\theta \mapsto (x(t_1; \theta), \dots, x(t_n; \theta))
+$$
+We call this map the forward operator of the inverse problem.
+
+
+## Bayesian Formulation of ODE Parameter Inference
+
+In the previous section we looked at the form of the data likelihood function, given by the observation model of the ODE. We can now define the prior and posterior in the Bayesian context.
+
+### Prior
+$$
+\theta \sim \pi(\theta)
+$$
+For ODEs, parameters are typically positive, so we typically use the following distributions: Log-normal, Half-normal, Gamma, Inverse-gamma, etc.
+
+### Posterior
+$$
+\pi(\theta \mid y) \propto p(y \mid \theta)\pi(\theta)
+$$
+For ODE inference problems, since in practice the forward map (likelihood) is nonlinear and partially non-identifiable, the posterior distribution is:
+- often strongly correlated
+- sometimes multimodal
+- frequently ridge-like in geometry
+
+### Posterior Predictive Distribution
+$$
+p(y^{rep} \mid y) = \int{p(y^{rep} \mid \theta) \pi(\theta \mid y) d\theta}
+$$
+Since this expression will certainly be intractable, we solve numerically then plot the resulting distribution using the following procedure:
+1. Sample $\theta^{(s)} \sim \pi(\theta \mid y)$.
+2. Simulate ODE to get $x^{(s)}(t)$.
+3. Add Gaussian noise to obtain $y_{rep}^{(s)}$.
+
+This is what uncertainty quantification (UQ) is all about – obtaining uncertainty bounds for solution trajectories.
+
+
+## Identifiability
+
+A model is structurally identifiable if
+$$
+x(t; \theta_1) = x(t; \theta_2) \text{ for all } t \implies \theta_1 = \theta_2.
+$$
+That is, there is only one parameter value that produces the observed trajectory (caveat: in the noise-free, infinite-data limit).
+Otherwise, the parameters are non-identifiable.
+
+Even if the model is *structurally identifiable*, under the typical setting of finite, noisy, sparse data, the posterior may still be extremely wide, highly correlated, or exhibit some other degeneracy, so the parameters may be *practically non-identifiable*.
+
+In general, non-identifiability in Bayesian inference will exhibit some particular patterns:
+- flat directions or ridges in the posterior
+- large or near-perfect correlations between parameters
+- very large credible intervals
+
+Identifiability can often be studied in terms of geometry. Recall that we let
+$$
+G(\theta) = (x(t_1; \theta), \dots, x(t_n; \theta))
+$$
+represent our forward map. Then, we can study the Jacobian of $G$, given by
+$$
+J(\theta) = \frac{\partial G(\theta)}{\partial \theta}.
+$$
+^When we get small singular values of $J$, these represent the directions we cannot infer; model misspecification often flattens or twists along these directions (Why?).
+
+
+### Model Misspecification
+Model misspecification = the true governing dynamics are not in the model class being considered/used.
+
+Formally, suppose that the true data are generated via
+$$
+y \sim p_0(y).
+$$
+However, our model assumes
+$$
+y \sim p(y \mid \theta), \text{ where } \theta \in \Theta
+$$
+and
+$$
+p_0 \notin \{p(\cdot \mid \theta): \theta \in \Theta\}.
+$$
+A misspecified model for ODE inverse problems can lead to various harmful consequences, beyond merely inflating uncertainty or noise in inference outcomes. Indeed, inference can become *more* confident, but confidently *wrong*. 
+Specifically, from (Kleijn and Van der Vaart), we know that under quite general conditions,
+$$
+\pi(\theta \mid y_{1:n}) \rightarrow \delta_{\theta^*},
+$$
+where
+$$
+\theta^* = \operatorname*{argmin}_\theta {\mathrm{KL}\left(p_0(y) \,\|\, p(y \mid \theta)\right)}.
+$$
+That is, the posterior concentrates around the wrong value of the parameter—the ”best wrong” parameter—and with false confidence.
+
+Then, the credible intervals will be centered at the wrong value and tend to severely undercover.
+
+
+### Misspecification in ODE Inverse Problems
+
+Things can get even worse in differential equations settings:
+- The forward map is nonlinear.
+- The misspecification distorts the geometry drastically (More details on this in the next section).
+- The model compensates by:
+	- pushing parameters into “weird” correlated regimes
+	- inventing fake explanations of behavior
+- Typical misspecification effects include:
+	- strong posterior correlations
+	- parameter tradeoffs
+	- ridges
+	- sometimes multimodality
+	- narrow but incorrect posteriors – overconfidence
+
+
+### Posterior Geometry
+
+Given samples from the posterior distribution $\pi(\theta \mid y)$, we can look at various quantities and diagnostics of its geometry:
+- covariance/correlation matrix
+- pair plots
+- condition number
+- entropy proxy
+	- $H \approx \frac{1}{2}\log\det\vert{\Sigma}\vert$
+
+
+### Posterior Predictive Checking
+
+Additionally, we can investigate the posterior predictive distribution to analyze the effects of model misspecification on prediction. We can simulate
+$$
+y^{rep} \sim p(y \mid \theta) \,\text{ where } \theta \sim \pi(\theta \mid y)
+$$
+and compare the resulting data to the real data values, looking at trajectories, peaks, timing, shapes, residuals, etc. If our model cannot reproduce these key features of the original data, then the model is wrong.
+
+Be careful: Posterior predictive checks can sometimes to detect misspecification!
+
+
+### Calibration and Coverage
+
+If we know the true parameter value in the data generating process, we can run calibration and coverage checks to see how misspecification affects our ability to recover the correct parameter.
+
+Parameter coverage: Over repeated experiments, does the $95\%$ posterior credible interval contain the true parameter $95\%$ of the time?
+- Under model misspecification, the answer to this will be *no*.
+
+Predictive coverage: Does the $95\%$ posterior predictive band contain the true trajectory $95\%$ of the time?
+- Again, under misspecification, this will collapse (badly).
+
+Calibration curve: If we plot nominal level $(0.1, 0.2, \dots, 0.9)$ on the $x$-axis and empirical coverage on the $y$-axis, do we see a nearly diagonal line, reflecting perfect/strong calibration?
+
+
+### Key Takeaways
+
+In real science, models are always wrong. In particular, much of science relies upon the use of differential equations to model phenomena, and these equations are always wrong/misspecified. But, many people, including researchers, still trust inference under these misspecified conditions, which can lead to some dangerous overconfidence when interpreting results. We should be wary of the pitfalls of model misspecification and make more conscious efforts to quantify the uncertainty inherent in any modeling done on data. This is much of the driving motivation behind this project...
+
