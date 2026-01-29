@@ -2,7 +2,7 @@
 title: Play-by-Play NBA Analytics Dashboard
 description: "An interactive application, built in Python using Dash, for exploring and visualizing NBA play-by-play data and video"
 date: 2025-06-10
-categories: [data visualization, data dashboard, data analytics, sports analytics]
+categories: [data visualization, data dashboard, data analytics, sports analytics, Python, SQL, Dash]
 image: "ball-hoop.webp"
 ---
 

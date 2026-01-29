@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Projects – Nicklaus Kim</title>
+<title>About – Nicklaus Kim</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,12 +30,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
@@ -68,70 +65,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -154,7 +93,7 @@ window.Quarto = {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../projects/index.html" aria-current="page"> <i class="bi bi-grid" role="img">
+    <a class="nav-link" href="../projects/index.html"> <i class="bi bi-grid" role="img">
 </i> 
 <span class="menu-text">Projects</span></a>
   </li>  
@@ -189,218 +128,39 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-about-jolla">
+  <img src="profile.jpg" class="about-image
+  round " style="height: 15em; width: 15em;">
+ <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Projects</h1>
+<h1 class="title">About</h1>
 </div>
-
-
-
 <div class="quarto-title-meta">
-
-    
-  
-    
   </div>
-  
+</header><main class="content" id="quarto-document-content">
+<p>About this blog</p>
 
 
-</header>
-
-
-<p>My data science/data analysis projects, mainly executed using Python, SQL, and Dash.</p>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="c3RhdGlzdGljcyUyQ2JheWVzaWFuJTJDZGlmZmVyZW50aWFsJTIwZXF1YXRpb25zJTJDaW52ZXJzZSUyMHByb2JsZW1zJTJDdW5jZXJ0YWludHklMjBxdWFudGlmaWNhdGlvbiUyQ1B5dGhvbg==" data-listing-date-sort="1765353600000" data-listing-file-modified-sort="1769720713409" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1186">
-<div class="thumbnail">
-<p><a href="../projects/all/bayesian-ode/index.html" class="no-external"></a></p><a href="../projects/all/bayesian-ode/index.html" class="no-external">
-<p><img loading="lazy" src="../projects/all/bayesian-ode/dynamic2.webp" class="thumbnail-image"></p>
-</a><p><a href="../projects/all/bayesian-ode/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../projects/all/bayesian-ode/index.html" class="no-external">Bayesian Inverse Problems for ODE Systems under Model Misspecification</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../projects/all/bayesian-ode/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../projects/all/bayesian-ode/index.html" class="no-external">Exploring Model Misspecification, Parameter Identifiability, and Posterior Uncertainty in Bayesian Inverse Problems for the Lotka–Volterra and SIR Models</a>
+</main> 
+  <hr class="about-sep">
+   <div class="about-links">
+  <a href="https://twitter.com" class="about-link" rel="" target="">
+    <i class="bi bi-twitter"></i>
+     <span class="about-link-text">Twitter</span>
+  </a>
+  <a href="https://linkedin.com" class="about-link" rel="" target="">
+    <i class="bi bi-linkedin"></i>
+     <span class="about-link-text">LinkedIn</span>
+  </a>
+  <a href="https://github.com" class="about-link" rel="" target="">
+    <i class="bi bi-github"></i>
+     <span class="about-link-text">Github</span>
+  </a>
 </div>
 </div>
-<div class="metadata">
-<a href="../projects/all/bayesian-ode/index.html" class="no-external">
-<div class="listing-date">
-Dec 10, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="c3RhdGlzdGljcyUyQ21hY2hpbmUlMjBsZWFybmluZyUyQ2dlbmVyYXRpdmUlMjBtb2RlbGluZyUyQ3N5bnRoZXRpYyUyMGRhdGElMkNwcml2YWN5" data-listing-date-sort="1759302000000" data-listing-file-modified-sort="1769720639860" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="48">
-<div class="thumbnail">
-<p><a href="../projects/all/ms-thesis/index.html" class="no-external"></a></p><a href="../projects/all/ms-thesis/index.html" class="no-external">
-<p><img loading="lazy" src="../projects/all/ms-thesis/random_data.webp" class="thumbnail-image"></p>
-</a><p><a href="../projects/all/ms-thesis/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../projects/all/ms-thesis/index.html" class="no-external">Privacy Auditing of Synthetic Data Generation Models Using Adversarial Attacks</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../projects/all/ms-thesis/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../projects/all/ms-thesis/index.html" class="no-external">Thesis Research for Master of Science in Statistics</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../projects/all/ms-thesis/index.html" class="no-external">
-<div class="listing-date">
-Oct 1, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="c3RhdGlzdGljcyUyQ2JheWVzaWFuJTJDb3B0aW1pemF0aW9uJTJDR2F1c3NpYW4lMjBwcm9jZXNzZXMlMkNleHBlcmltZW50YWwlMjBkZXNpZ24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNS" data-listing-date-sort="1752562800000" data-listing-file-modified-sort="1769720733249" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1807">
-<div class="thumbnail">
-<p><a href="../projects/all/experimental-parameter-tuning/index.html" class="no-external"></a></p><a href="../projects/all/experimental-parameter-tuning/index.html" class="no-external">
-<p><img loading="lazy" src="../projects/all/experimental-parameter-tuning/images/test_tubes.webp" class="thumbnail-image"></p>
-</a><p><a href="../projects/all/experimental-parameter-tuning/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../projects/all/experimental-parameter-tuning/index.html" class="no-external">Hyperparameter Tuning for Gradient Boosting Frameworks Using Statistical Experimental Design</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../projects/all/experimental-parameter-tuning/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../projects/all/experimental-parameter-tuning/index.html" class="no-external">Applying Advanced Experimental Designs to Optimization of Hyperparameters in XGBoost</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../projects/all/experimental-parameter-tuning/index.html" class="no-external">
-<div class="listing-date">
-Jul 15, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="ZGF0YSUyMHZpc3VhbGl6YXRpb24lMkNkYXRhJTIwZGFzaGJvYXJkJTJDZGF0YSUyMGFuYWx5dGljcyUyQ2hpc3RvcmljYWwlMjBkYXRhJTJDaGlzdG9yeSUyQ1B5dGhvbiUyQ0ZsYXNr" data-listing-date-sort="1749538800000" data-listing-file-modified-sort="1769720671914" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="63">
-<div class="thumbnail">
-<p><a href="../projects/all/project-1775/index.html" class="no-external"></a></p><a href="../projects/all/project-1775/index.html" class="no-external">
-<p><img loading="lazy" src="../projects/all/project-1775/Declaration-of-Independence.webp" class="thumbnail-image"></p>
-</a><p><a href="../projects/all/project-1775/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../projects/all/project-1775/index.html" class="no-external">Founding Fathers Correspondence Network Analysis</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../projects/all/project-1775/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../projects/all/project-1775/index.html" class="no-external">An interactive application, built in Python using Dash, for exploring and visualizing historical/political correspondence trends in early American history</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../projects/all/project-1775/index.html" class="no-external">
-<div class="listing-date">
-Jun 10, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="ZGF0YSUyMHZpc3VhbGl6YXRpb24lMkNkYXRhJTIwZGFzaGJvYXJkJTJDZGF0YSUyMGFuYWx5dGljcyUyQ3Nwb3J0cyUyMGFuYWx5dGljcyUyQ1B5dGhvbiUyQ1NRTCUyQ0Rhc2g=" data-listing-date-sort="1749538800000" data-listing-file-modified-sort="1769720697145" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="27">
-<div class="thumbnail">
-<p><a href="../projects/all/nba-dash/index.html" class="no-external"></a></p><a href="../projects/all/nba-dash/index.html" class="no-external">
-<p><img loading="lazy" src="../projects/all/nba-dash/ball-hoop.webp" class="thumbnail-image"></p>
-</a><p><a href="../projects/all/nba-dash/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../projects/all/nba-dash/index.html" class="no-external">Play-by-Play NBA Analytics Dashboard</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../projects/all/nba-dash/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../projects/all/nba-dash/index.html" class="no-external">An interactive application, built in Python using Dash, for exploring and visualizing NBA play-by-play data and video</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../projects/all/nba-dash/index.html" class="no-external">
-<div class="listing-date">
-Jun 10, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="c3RhdGlzdGljcyUyQ25scCUyQ2xvZ2lzdGljJTIwcmVncmVzc2lvbiUyQ3JlZ3VsYXJpemF0aW9uJTJDZGltZW5zaW9uYWxpdHk=" data-listing-date-sort="1683615600000" data-listing-file-modified-sort="1769553850264" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
-<div class="thumbnail">
-<p><a href="../projects/all/nlp-dimensionality reduction/index.html" class="no-external"></a></p><a href="../projects/all/nlp-dimensionality reduction/index.html" class="no-external">
-<p><img loading="lazy" src="../projects/all/nlp-dimensionality reduction/images/pages.webp" class="thumbnail-image"></p>
-</a><p><a href="../projects/all/nlp-dimensionality reduction/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../projects/all/nlp-dimensionality reduction/index.html" class="no-external">Dimensionality Reduction Techniques in NLP</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../projects/all/nlp-dimensionality reduction/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../projects/all/nlp-dimensionality reduction/index.html" class="no-external">Exploring Use of Singular Value Decomposition to Reduce High Dimensionality in Logistic Regression Models for Text Classification</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../projects/all/nlp-dimensionality reduction/index.html" class="no-external">
-<div class="listing-date">
-May 9, 2023
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="c3RhdGlzdGljcyUyQ21hY2hpbmUlMjBsZWFybmluZyUyQ2NsYXNzaWZpY2F0aW9uJTJDbmxw" data-listing-date-sort="1683529200000" data-listing-file-modified-sort="1769553864404" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
-<div class="thumbnail">
-<p><a href="../projects/all/supervised-text-classification/index.html" class="no-external"></a></p><a href="../projects/all/supervised-text-classification/index.html" class="no-external">
-<p><img loading="lazy" src="../projects/all/supervised-text-classification/images/bookstack.webp" class="thumbnail-image"></p>
-</a><p><a href="../projects/all/supervised-text-classification/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../projects/all/supervised-text-classification/index.html" class="no-external">Overview of Machine Learning Methods for Text Classification</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../projects/all/supervised-text-classification/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../projects/all/supervised-text-classification/index.html" class="no-external">An Empirical Comparison of Common Classification Models Applied to Topic Distinguishing Problem</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../projects/all/supervised-text-classification/index.html" class="no-external">
-<div class="listing-date">
-May 8, 2023
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -421,13 +181,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

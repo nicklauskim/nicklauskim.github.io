@@ -1,0 +1,41 @@
+[
+  {
+    "listing": "/notes/statistical-inference/index.html",
+    "items": [
+      "/notes/statistical-inference/sections/chapter1/chapter1.html",
+      "/notes/statistical-inference/sections/chapter2/chapter2.html"
+    ]
+  },
+  {
+    "listing": "/notes/ap-stats/index.html",
+    "items": [
+      "/notes/ap-stats/sections/chapter2/chapter2.html",
+      "/notes/ap-stats/sections/chapter1/chapter1.html"
+    ]
+  },
+  {
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/posts/welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/index.html",
+    "items": [
+      "/projects/all/bayesian-ode/index.html",
+      "/projects/all/ms-thesis/index.html",
+      "/projects/all/experimental-parameter-tuning/index.html",
+      "/projects/all/project-1775/index.html",
+      "/projects/all/nba-dash/index.html",
+      "/projects/all/nlp-dimensionality reduction/index.html",
+      "/projects/all/supervised-text-classification/index.html"
+    ]
+  },
+  {
+    "listing": "/notes/index.html",
+    "items": [
+      "/notes/statistical-inference/index.html",
+      "/notes/ap-stats/index.html"
+    ]
+  }
+]

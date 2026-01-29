@@ -2,7 +2,7 @@
 title: Founding Fathers Correspondence Network Analysis
 description: "An interactive application, built in Python using Dash, for exploring and visualizing historical/political correspondence trends in early American history"
 date: 2025-06-10
-categories: [data visualization, data dashboard, data analytics, historical data]
+categories: [data visualization, data dashboard, data analytics, historical data, history, Python, Flask]
 image: "Declaration-of-Independence.webp"
 ---
 
