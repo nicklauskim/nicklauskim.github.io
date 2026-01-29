@@ -87,7 +87,7 @@ Below are quick links to some of my highlighted work.
 
 * [Data-Centric Machine Learning (Synthetic Data) Research](projects/all/ms-thesis/index.qmd)
     + An investigation into the true privacy benefits of the use of synthetic data in sensitive domains such as healthcare, incorporating generative models for producing datasets and adversarial attack frameworks to assess (differential) privacy versus model utility.
-* [Bayesian Model Misspecification for ODEs](projects/all/bayesian-ode/index.qmd)
+* [Bayesian Inverse Problems for ODE Systems under Model Misspecification](projects/all/bayesian-ode/index.qmd)
 <!-- + Bayesian Inverse Problems, Uncertainty Quantification, Functional Data Analysis -->
     + Theoretical and applied investigations into the effects of Bayesian model misspecification on statistical inference in nonlinear ordinary differential equations and dynamical system models (e.g., SIR, Lotka–Volterra, and their extensions) using Python/PyMC.
 * [Founding Fathers Correspondence Network](projects/all/project-1775/index.qmd)
