@@ -77,11 +77,9 @@ I have experience in building tools like data dashboards and statistical learnin
 I'm also very passionate about statistics and mathematics education. I produce instructive videos and articles explaining core concepts, discussing interesting historical uses of statistics, and exploring more niche advanced topics. I also work as a tutor part-time, which gives me the opportunity to help high school and college students grow their mastery (and hopefully appreciation!) of stats and math.
 <!-- (Check out my blog [here](https://nicklauskim.github.io/blog).) -->
 
-> You can find links to my statistics research, data science projects, and other work I've done on my [Projects](https://nicklauskim.github.io/projects) page and at my [GitHub](https://github.com/nicklauskim).
-
 (Note: I am continuously trying to consolidate all of my work here—which often feels scattered all over the place—on this website, so some things may be temporarily missing or incomplete. Work is ongoing! )
 
-Below are quick links to some of my highlighted work.
+> You can find quick links to my statistics research, data science projects, and other work I've done on my [Projects](https://nicklauskim.github.io/projects) page and at my [GitHub](https://github.com/nicklauskim).
 
 
 ### Projects
@@ -92,7 +90,7 @@ Below are quick links to some of my highlighted work.
     + Theoretical and applied investigations into the effects of Bayesian model misspecification on statistical inference in nonlinear ordinary differential equations and dynamical system models (e.g., SIR, Lotka–Volterra, and their extensions) using Python/PyMC.
     <!-- + Bayesian Inverse Problems, Uncertainty Quantification, Functional Data Analysis -->
 * [Founding Fathers Correspondence Network](projects/all/project-1775/index.qmd)
-    + An ongoing initiative to analyze and gain new data-driven insights into early writings and correspondence of early American figures from the founding era via a Flask website displaying contextual and spatiotemporal analysis of letter frequencies, knowledge networks and other visualizations.
+    + An ongoing initiative to analyze and gain new data-driven insights into early writings and correspondence of early American figures from the founding era via a Flask/Dash website displaying contextual and spatiotemporal analysis of letter frequencies, knowledge networks and other visualizations.
 * [NBA Statistics Data Dashboard](projects/all/nba-dash/index.qmd)
     + A dynamic data visualization platform built with Dash and Plotly, incorporating a rich database of official NBA statistics served with a FastAPI backend and allowing for deep exploration of play-by-play and other detailed data as well as customizable filtering, plotting, and generation of video clips.
 
