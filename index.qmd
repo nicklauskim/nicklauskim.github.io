@@ -90,7 +90,7 @@ I'm also very passionate about statistics and mathematics education. I produce i
     + Theoretical and applied investigations into the effects of Bayesian model misspecification on statistical inference in nonlinear ordinary differential equations and dynamical system models (e.g., SIR, Lotka–Volterra, and their extensions) using Python/PyMC.
     <!-- + Bayesian Inverse Problems, Uncertainty Quantification, Functional Data Analysis -->
 * [Founding Fathers Correspondence Network](projects/all/project-1775/index.qmd)
-    + An ongoing initiative to analyze and gain new data-driven insights into early writings and correspondence of early American figures from the founding era via a Flask/Dash website displaying contextual and spatiotemporal analysis of letter frequencies, knowledge networks and other visualizations.
+    + An ongoing initiative to analyze and gain new data-driven insights into early writings and correspondence of early American figures from the founding era via contextual and spatiotemporal analysis of letter frequencies, knowledge networks and other visualizations.
 * [NBA Statistics Data Dashboard](projects/all/nba-dash/index.qmd)
     + A dynamic data visualization platform built with Dash and Plotly, incorporating a rich database of official NBA statistics served with a FastAPI backend and allowing for deep exploration of play-by-play and other detailed data as well as customizable filtering, plotting, and generation of video clips.
 
