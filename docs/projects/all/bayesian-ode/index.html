@@ -341,9 +341,25 @@ Background on the Lotka–Volterra Model
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-
-</div>
+<section id="lotkavolterra-model" class="level3 callout-body-container callout-body">
+<h3 class="anchored" data-anchor-id="lotkavolterra-model">Lotka–Volterra Model</h3>
+<p>The Lotka–Volterra system of differential equations models the interactions between a prey species and a predator species in a population.</p>
+<p>The model is given by: <span class="math display">\[
+\frac{dx}{dt} = \alpha x - \beta xy
+\]</span> <span class="math display">\[
+\frac{dy}{dt} = -\gamma y + \delta xy
+\]</span></p>
+<p>The states in this model are <span class="math inline">\(X(t) = [x(t), y(t)]\)</span>, representing the population/density of the prey and predator species, respectively.</p>
+<p>The unknown model parameters are: - <span class="math inline">\(\alpha\)</span>: the prey growth rate when there are no predators - <span class="math inline">\(\beta\)</span>: the death rate of prey in the presence of predation - <span class="math inline">\(\gamma\)</span>: the death rate of predators when there are no prey - <span class="math inline">\(\delta\)</span>: the predator growth rate in the presence of prey</p>
+<p>(One important note to make for this model is that there exists a conserved quantity given by <span class="math inline">\(H(x, y) = \delta x - \gamma \ln(x) + \beta y - \alpha \ln(y)\)</span>. So, solution trajectories will live on the level sets of <span class="math inline">\(H\)</span>. This is a <em>Hamiltonian-like</em> conservative system. Since this project is focused on statistical inference, we omit the further interesting details of this system.)</p>
+<p>We make the following remarks on the qualitative dynamics of the model: - cyclic oscillations - closed orbits in the phase space - period and amplitude depend on parameter values - in an <em>ideal</em> model, no damping and no growth</p>
+<p>Crucially, since we observe oscillations, multiple parameter combinations could give us similar period/shape or phase shifts; that is, there could be strong tradeoffs between <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\gamma\)</span>, and between <span class="math inline">\(\beta\)</span> and <span class="math inline">\(\delta\)</span>. This can lead to potential parameter identifiability issues…</p>
+<p>In reality, we do <em>not</em> observe the states <span class="math inline">\(x(t), y(t)\)</span> directly. We may instead observe: - only prey or only predators - measurement noise - irregular or biased sampling</p>
+<p>We use the observation model <span class="math display">\[
+y_t = H(x(t; \theta)) + \varepsilon_t,
+\]</span> where typically <span class="math inline">\(H(\cdot)\)</span> is the identity map and <span class="math inline">\(\epsilon_t\)</span> is Gaussian noise.</p>
+<p>Misspecification enters because real systems will certainly have one or more of the following: - carrying capacity (like logistic growth assumptions) - damping - seasonal forcing - noise!</p>
+</section>
 </div>
 </div>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -357,9 +373,29 @@ Background on the SIR Model
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-
-</div>
+<section id="sir-model" class="level3 callout-body-container callout-body">
+<h3 class="anchored" data-anchor-id="sir-model">SIR Model</h3>
+<p>SIR = Susceptible–Infected–Recovered - models the spread of an infectious disease inside a closed population of<span class="math inline">\(N\)</span> individuals</p>
+<p>States: - <span class="math inline">\(S(t)\)</span>: the number of individuals that are susceptible to the disease - <span class="math inline">\(I(t)\)</span>: the number of individuals that are infected by the disease - <span class="math inline">\(R(t)\)</span>: the number of individuals that have recovered from the disease</p>
+<p>Since we assume the population is “closed,” meaning the population size stays constant, we have the constraint <span class="math inline">\(S(t) + I(t) + R(t) = N\)</span>; This effectively turns this system of 3 differential equations into a 2D system.</p>
+<p>We also assume that once an individual recovers, they are no longer susceptible to contracting the disease.</p>
+<p>Parameters: - <span class="math inline">\(\beta\)</span>: transmission rate (controls how fast the disease spreads) - <span class="math inline">\(\gamma\)</span>: recovery rate (controls how fast individuals recover from the disease) - <span class="math inline">\(R_0 := \frac{\beta}{\gamma}\)</span> (derived from the other parameters): basic reproduction number - Often only <span class="math inline">\(R_0\)</span> is specified or measured, not <span class="math inline">\(\beta\)</span> and <span class="math inline">\(\gamma\)</span> separately –&gt; structural identifiability issues!</p>
+<p>Equations: <span class="math display">\[
+\frac{dS}{dt} = -\beta \frac{SI}{N}
+\]</span> <span class="math display">\[
+\frac{dI}{dt} = \beta \frac{SI}{N} - \gamma I
+\]</span> <span class="math display">\[
+\frac{dR}{dt} = \gamma I
+\]</span></p>
+<p>Qualitative dynamics: - Initially, <span class="math inline">\(I(t)\)</span> has exponential growth if <span class="math inline">\(R_0 &gt; 1\)</span>. - Peak infections occur at <span class="math inline">\(S(t) = \frac{\gamma}{\beta}\)</span>. - Eventually, <span class="math inline">\(I(t) \rightarrow 0\)</span>, meaning the disease dies out. - The trajectory of <span class="math inline">\(I(t)\)</span> is controlled by <span class="math inline">\(R_0\)</span> – skewed, one peak/hump.</p>
+<p>In reality, we do not observe the states <span class="math inline">\(S(t), I(t), R(t)\)</span> directly or exactly. We may instead observe: - Daily new cases - Reported infected (prone to under-reporting bias) - Cumulative cases</p>
+<p>Observation model: <span class="math display">\[
+y_t = H(x(t)) + \varepsilon_t
+\]</span> For example, a reasonable model might be <span class="math inline">\(y_t = Poisson(\rho I(t))\)</span>.</p>
+<p>The SIR model is a textbook example of <em>practical</em> non-identifiability. For instance, if we can only observe <span class="math inline">\(I(t)\)</span>, then the parameters <span class="math inline">\(\beta\)</span> and <span class="math inline">\(\gamma\)</span> are heavily correlated (and the posterior will have a ridge along roughly constant <span class="math inline">\(R_0\)</span>).</p>
+<p>Misspecification is super relevant in models like this because with real epidemics, assumptions from the SIR model formulation are violated due to the following convenient assumptions taken instead: - Homogeneous mixing - Constant <span class="math inline">\(\beta\)</span> - Constant population (no entering or exiting, i.e., births or deaths) - No incubation period</p>
+<p>So, suppose that we fit the SIR model to a case where the behavior is more aptly described by an SEIR model, or perhaps with a time-varying transmission rate <span class="math inline">\(\beta(t)\)</span>. Then, we will get biased/wrong parameters, falsely confident posteriors, and the wrong uncertainty conclusions!</p>
+</section>
 </div>
 </div>
 

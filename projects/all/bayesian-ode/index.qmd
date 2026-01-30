@@ -221,7 +221,52 @@ In real science, models are always wrong. In particular, much of science relies 
 ::: {.callout-note collapse="false"}
 ##  Background on the Lotka–Volterra Model
 
+### Lotka–Volterra Model
 
+The Lotka–Volterra system of differential equations models the interactions between a prey species and a predator species in a population.
+
+The model is given by:
+$$
+\frac{dx}{dt} = \alpha x - \beta xy
+$$
+$$
+\frac{dy}{dt} = -\gamma y + \delta xy
+$$
+
+The states in this model are $X(t) = [x(t), y(t)]$, representing the population/density of the prey and predator species, respectively.
+
+The unknown model parameters are:
+- $\alpha$: the prey growth rate when there are no predators
+- $\beta$: the death rate of prey in the presence of predation
+- $\gamma$: the death rate of predators when there are no prey
+- $\delta$: the predator growth rate in the presence of prey
+
+(One important note to make for this model is that there exists a conserved quantity given by $H(x, y) = \delta x - \gamma \ln(x) + \beta y - \alpha \ln(y)$. So, solution trajectories will live on the level sets of $H$. This is a *Hamiltonian-like* conservative system. Since this project is focused on statistical inference, we omit the further interesting details of this system.)
+
+We make the following remarks on the qualitative dynamics of the model:
+- cyclic oscillations
+- closed orbits in the phase space
+- period and amplitude depend on parameter values
+- in an *ideal* model, no damping and no growth
+
+Crucially, since we observe oscillations, multiple parameter combinations could give us similar period/shape or phase shifts; that is, there could be strong tradeoffs between $\alpha$ and $\gamma$, and between $\beta$ and $\delta$. This can lead to potential parameter identifiability issues...
+
+In reality, we do *not* observe the states $x(t), y(t)$ directly. We may instead observe:
+- only prey or only predators
+- measurement noise
+- irregular or biased sampling
+
+We use the observation model 
+$$
+y_t = H(x(t; \theta)) + \varepsilon_t,
+$$
+where typically $H(\cdot)$ is the identity map and $\epsilon_t$ is Gaussian noise.
+
+Misspecification enters because real systems will certainly have one or more of the following:
+- carrying capacity (like logistic growth assumptions)
+- damping
+- seasonal forcing
+- noise!
 
 :::
 
@@ -229,7 +274,63 @@ In real science, models are always wrong. In particular, much of science relies 
 ::: {.callout-note collapse="false"}
 ##  Background on the SIR Model
 
+### SIR Model
 
+SIR = Susceptible–Infected–Recovered
+- models the spread of an infectious disease inside a closed population of$N$ individuals
+
+States:
+- $S(t)$: the number of individuals that are susceptible to the disease
+- $I(t)$: the number of individuals that are infected by the disease
+- $R(t)$: the number of individuals that have recovered from the disease
+
+Since we assume the population is "closed," meaning the population size stays constant, we have the constraint $S(t) + I(t) + R(t) = N$; This effectively turns this system of 3 differential equations into a 2D system.
+
+We also assume that once an individual recovers, they are no longer susceptible to contracting the disease.
+
+Parameters:
+- $\beta$: transmission rate (controls how fast the disease spreads)
+- $\gamma$: recovery rate (controls how fast individuals recover from the disease)
+- $R_0 := \frac{\beta}{\gamma}$ (derived from the other parameters): basic reproduction number
+	- Often only $R_0$ is specified or measured, not $\beta$ and $\gamma$ separately --> structural identifiability issues!
+
+Equations:
+$$
+\frac{dS}{dt} = -\beta \frac{SI}{N}
+$$
+$$
+\frac{dI}{dt} = \beta \frac{SI}{N} - \gamma I
+$$
+$$
+\frac{dR}{dt} = \gamma I
+$$
+
+Qualitative dynamics:
+- Initially, $I(t)$ has exponential growth if $R_0 > 1$.
+- Peak infections occur at $S(t) = \frac{\gamma}{\beta}$.
+- Eventually, $I(t) \rightarrow 0$, meaning the disease dies out.
+- The trajectory of $I(t)$ is controlled by $R_0$ – skewed, one peak/hump.
+
+In reality, we do not observe the states $S(t), I(t), R(t)$ directly or exactly. We may instead observe:
+- Daily new cases
+- Reported infected (prone to under-reporting bias)
+- Cumulative cases
+
+Observation model:
+$$
+y_t = H(x(t)) + \varepsilon_t
+$$
+For example, a reasonable model might be $y_t = Poisson(\rho I(t))$.
+
+The SIR model is a textbook example of *practical* non-identifiability. For instance, if we can only observe $I(t)$, then the parameters $\beta$ and $\gamma$ are heavily correlated (and the posterior will have a ridge along roughly constant $R_0$).
+
+Misspecification is super relevant in models like this because with real epidemics, assumptions from the SIR model formulation are violated due to the following convenient assumptions taken instead:
+- Homogeneous mixing
+- Constant $\beta$
+- Constant population (no entering or exiting, i.e., births or deaths)
+- No incubation period
+
+So, suppose that we fit the SIR model to a case where the behavior is more aptly described by an SEIR model, or perhaps with a time-varying transmission rate $\beta(t)$. Then, we will get biased/wrong parameters, falsely confident posteriors, and the wrong uncertainty conclusions!
 
 :::
 
