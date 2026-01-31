@@ -81,5 +81,14 @@
   },
   "notes/bayesian-data-analysis/index.qmd": {
     "index.html": "f96b0129"
+  },
+  "notes/intro-stats/sections/chapter1/chapter1.qmd": {
+    "chapter1.html": "fe9b6e40"
+  },
+  "notes/intro-stats/sections/chapter2/chapter2.qmd": {
+    "chapter2.html": "e20a615b"
+  },
+  "notes/intro-stats/index.qmd": {
+    "index.html": "bebdf5a5"
   }
 }

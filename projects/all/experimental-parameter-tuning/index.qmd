@@ -12,7 +12,10 @@ Here is a link to a written report for this project:
   <a href="./final_project.pdf">Download PDF</a>.
 </iframe>
 
-The rest of this page below contains more detailed notes on the background information behing this project and a condensed overview of my code results and analysis.
+The rest of this page below contains more detailed notes on the background information behind this project and a condensed overview of my code results and analysis.
+
+::: {.callout-note collapse="false"}
+##  Notes on Background and Methodology
 
 
 ## Introduction/Background
@@ -96,3 +99,5 @@ For the Gaussian Process (GP) Model, we use the Matern (5/2) covariance function
 
 To be continued...
 
+
+:::

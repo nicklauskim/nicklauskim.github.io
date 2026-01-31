@@ -1,7 +1,7 @@
 ---
 title: "Unit 2: Exploring Two-Variable Data"
 description: "Review notes/study guide for Unit 2"
-date: 2025-04-21
+date: 2025-05-21
 number-sections: true
 format: html
 page-layout: full

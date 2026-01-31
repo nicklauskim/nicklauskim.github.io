@@ -7,10 +7,10 @@
     ]
   },
   {
-    "listing": "/notes/ap-stats/index.html",
+    "listing": "/notes/intro-stats/index.html",
     "items": [
-      "/notes/ap-stats/sections/chapter2/chapter2.html",
-      "/notes/ap-stats/sections/chapter1/chapter1.html"
+      "/notes/intro-stats/sections/chapter2/chapter2.html",
+      "/notes/intro-stats/sections/chapter1/chapter1.html"
     ]
   },
   {
@@ -34,8 +34,7 @@
   {
     "listing": "/notes/index.html",
     "items": [
-      "/notes/statistical-inference/index.html",
-      "/notes/ap-stats/index.html"
+      "/notes/statistical-inference/index.html"
     ]
   }
 ]
