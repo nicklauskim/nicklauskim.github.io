@@ -195,6 +195,11 @@ ul.task-list li input[type="checkbox"] {
   margin-top: 0.5rem;
 }
 
+/* remove newline space before bulleted list */
+p + ul {
+  margin-top: 0;
+}
+
 /* Mobile responsiveness */
 @media (max-width: 900px) {
   .page-columns {
@@ -231,11 +236,8 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 <li><a href="./projects/all/project-1775/index.html">Founding Fathers Correspondence Network</a>
 <ul>
-<li>An ongoing initiative to analyze and gain new data-driven insights into early writings and correspondence of early American figures from the founding era via contextual and spatiotemporal analysis of letter frequencies, knowledge networks and other visualizations.</li>
-</ul></li>
-<li><a href="./projects/all/nba-dash/index.html">NBA Statistics Data Dashboard</a>
-<ul>
-<li>A dynamic data visualization platform built with Dash and Plotly, incorporating a rich database of official NBA statistics served with a FastAPI backend and allowing for deep exploration of play-by-play and other detailed data as well as customizable filtering, plotting, and generation of video clips.</li>
+<li>An ongoing initiative to analyze and gain new data-driven insights into early writings and correspondence of early American figures from the founding era via contextual and spatiotemporal analysis of letter frequencies, knowledge networks and other visualizations. <!-- * [NBA Statistics Data Dashboard](projects/all/nba-dash/index.qmd)
+  + A dynamic data visualization platform built with Dash and Plotly, incorporating a rich database of official NBA statistics served with a FastAPI backend and allowing for deep exploration of play-by-play and other detailed data as well as customizable filtering, plotting, and generation of video clips. --></li>
 </ul></li>
 </ul>
 </section>

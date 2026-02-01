@@ -2,12 +2,14 @@
 title: "About"
 ---
 
-Hello, I’m Nick and welcome to my website!
+I completed my M.S. in Statistics at UCLA and am currently planning to go back to school for a PhD in Statistics beginning in Fall 2026. 
 
-I recently graduated from UCLA with my M.S. in Statistics and am currently looking for full-time statistician/data scientist/data analyst roles where I can apply the statistical concepts and computational tools in my skillset (Python, R, and SQL, among others!) towards extracting meaningful insights and knowledge from complex data. I also previously earned a B.S. in Applied Mathematics at UCLA.
+Previously, I conducted research as a graduate student at the Trustworthy AI Lab at UCLA. My research emphasized the methodology and evaluation of synthetic data to improve modern statistical/ML modeling pipelines, particularly in terms of privacy in sensitive regimes like healthcare data. Specifically, I investigated the paradigm of privacy auditing – investigating the true (differential) privacy level offered by different synthetic data generation methods when put under the risk of adversarial attacks.
 
-Previously, I have conducted research on topics in generative AI at the Trustworthy AI Lab at UCLA. My research emphasized the methodology and application of synthetic data to improve modern statistical/ML modeling pipelines, particularly in terms of robustness and differential privacy. Specifically, I investigated the paradigm of privacy auditing – investigating the true privacy offered by different synthetic data generation methods when put under the risk of adversarial attacks.
+In my research today, I'm interested in a wide array of ideas lying at the intersection of statistics and applied mathematics. My primary interests lie in Bayesian modeling and inference, with particular emphasis on inverse problems, uncertainty quantification, and Bayesian data assimilation. I am also interested in probabilistic modeling frameworks that incorporate mathematical structure, including stochastic processes, spatial and spatiotemporal statistics, and functional data analysis. 
 
-I am also passionate about teaching math and stats. I currently work as a private tutor for a variety of subjects, mainly AP Statistics. In the past I have also served as a teaching assistant for introductory statistics at UCLA and as a tutor and reader for a wide range of stats courses.
+I have experience in building tools like data dashboards and statistical learning models to help uncover meaningful insights about data, including performing statistical/machine learning research in academia. I try to maintain and continually expand a diverse, up-to-date set of data analysis and research skills; in particular I specialize in Python, R, SQL (PostgreSQL), and frameworks like Dash and Flask for data dashboard applications and visual storytelling.
+
+I'm also very passionate about statistics and mathematics education. I produce instructive videos and articles explaining core concepts, discussing interesting historical uses of statistics, and exploring more niche advanced topics. I also work as a tutor part-time, which gives me the opportunity to help high school and college students grow their mastery (and hopefully appreciation!) of stats and math. In the past, I have also served as a teaching assistant for introductory statistics at UCLA and as a tutor and reader for a wide range of stats courses.
 
 

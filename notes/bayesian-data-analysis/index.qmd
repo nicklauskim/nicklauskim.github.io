@@ -1,0 +1,12 @@
+---
+title: Bayesian Data Analysis Notes
+description: "Notes for Bayesian Data Analysis by Gelman et al."
+listing:
+  type: grid  # or 'grid', 'table', 'carousel', etc.
+  contents: sections
+  sort: "date desc"
+image: "../../assets/img/optimized/tree2.webp"
+---
+
+COMING SOON: These notes are designed to be comprehensive chapter-by-chapter summaries for the textbook *Bayesian Data Analysis*. I include all of the relevant definitions, theorems, and some key examples, capturing the central concepts that a budding statistician (such as myself!) should know from this material. I will also upload some worked problems at a future date.
+

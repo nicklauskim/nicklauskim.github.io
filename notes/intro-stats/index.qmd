@@ -1,9 +1,11 @@
 ---
 title: Introductory Statistics Notes
-description: "Originally written for teaching AP Statistics"
+description: "Notes for teaching College-Level or AP Statistics"
 listing:
   type: grid  # or 'grid', 'table', 'carousel', etc.
   contents: sections   
   sort: "date desc"
 image: "../../assets/img/optimized/dice.webp"
 ---
+
+Original notes compiled from many introductory statistics resources and from my years of experience teaching this subject both as a TA at UCLA and as a private instructor and tutor. These notes do not follow a particular textbook, but they contain all of the core material that is relevant for AP Statistics students and college students taking a "first" statistics class alike.
