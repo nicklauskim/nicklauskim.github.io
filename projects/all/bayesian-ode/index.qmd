@@ -345,3 +345,17 @@ So, suppose that we fit the SIR model to a case where the behavior is more aptly
 :::
 
 
+## Code and Analysis
+
+The code and analysis for this project are ongoing and will be updated and amended regularly.
+
+```{python}
+#| echo: false
+#| show: true
+#| cache: true
+
+def placeholder_code():
+	pass
+```
+
+

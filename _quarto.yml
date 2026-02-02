@@ -35,6 +35,7 @@ format:
       - brand
     toggle: true
     css: styles.css
+    code-fold: true
     toc: true
 
 
