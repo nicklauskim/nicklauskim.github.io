@@ -199,7 +199,14 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#code-and-analysis" id="toc-code-and-analysis" class="nav-link active" data-scroll-target="#code-and-analysis">Code and Analysis</a></li>
+  <li><a href="#background-on-bayesian-inverse-problemsmodel-misspecification-for-odes" id="toc-background-on-bayesian-inverse-problemsmodel-misspecification-for-odes" class="nav-link active" data-scroll-target="#background-on-bayesian-inverse-problemsmodel-misspecification-for-odes">Background on Bayesian Inverse Problems/Model Misspecification for ODEs</a></li>
+  <li><a href="#background-on-the-lotkavolterra-model" id="toc-background-on-the-lotkavolterra-model" class="nav-link" data-scroll-target="#background-on-the-lotkavolterra-model">Background on the Lotka–Volterra Model</a></li>
+  <li><a href="#background-on-the-sir-model" id="toc-background-on-the-sir-model" class="nav-link" data-scroll-target="#background-on-the-sir-model">Background on the SIR Model</a></li>
+  <li><a href="#code-and-analysis" id="toc-code-and-analysis" class="nav-link" data-scroll-target="#code-and-analysis">Code and Analysis</a>
+  <ul class="collapse">
+  <li><a href="#the-correct-model" id="toc-the-correct-model" class="nav-link" data-scroll-target="#the-correct-model">1. The Correct Model</a></li>
+  <li><a href="#misspecified-models" id="toc-misspecified-models" class="nav-link" data-scroll-target="#misspecified-models">2. Misspecified Models</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -245,20 +252,20 @@ window.Quarto = {
 
 
 <p>This page contains working notes and analyses for this ongoing project. Link to code notebook: <a href=""></a></p>
+<section id="background-on-bayesian-inverse-problemsmodel-misspecification-for-odes" class="level2">
+<h2 class="anchored" data-anchor-id="background-on-bayesian-inverse-problemsmodel-misspecification-for-odes">Background on Bayesian Inverse Problems/Model Misspecification for ODEs</h2>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Background on Bayesian Inverse Problems/Model Misspecification for ODEs
+Big Picture
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
-<section id="big-picture" class="level2">
-<h2 class="anchored" data-anchor-id="big-picture">Big Picture</h2>
 <p>Inverse problem: There is an ordinary differential equation (ODE)/dynamical system with unknown parameters. We observe noisy data derived from the system and want to infer the parameters and quantify uncertainty.</p>
 <p>If we have a solution to an ODE <span class="math inline">\(x(t; \theta)\)</span>, then there is a deterministic forward map <span class="math display">\[
 \theta \mapsto x(t; \theta).
@@ -267,9 +274,13 @@ Background on Bayesian Inverse Problems/Model Misspecification for ODEs
 y_i = H(x(t_i; \theta)) + \varepsilon_i,
 \]</span> where <span class="math inline">\(H\)</span> is an observation operator (often the identity map or some projection), <span class="math inline">\(\varepsilon_i\)</span> is a noise term.</p>
 <p>The inverse problem is: Given <span class="math inline">\(y_i (i = 1, \dots, n)\)</span>, infer <span class="math inline">\(\theta\)</span>.</p>
-<p>In general, these problems are ill-posed: - Many values of <span class="math inline">\(\theta\)</span> can produce similar trajectories, preventing identifiability of <span class="math inline">\(\theta\)</span>. - Noise amplifies ambiguity behind inference. - Models are often (more like <em>always</em>) wrong/misspecified.</p>
+<p>In general, these problems are ill-posed:</p>
+<ul>
+<li>Many values of <span class="math inline">\(\theta\)</span> can produce similar trajectories, preventing identifiability of <span class="math inline">\(\theta\)</span>.</li>
+<li>Noise amplifies ambiguity behind inference.</li>
+<li>Models are often (more like <em>always</em>) wrong/misspecified.</li>
+</ul>
 <p>For these types of problems, Bayesian inference serves as a regularization and uncertainty quantification framework.</p>
-</section>
 <section id="ode-models-as-statistical-objects" class="level2">
 <h2 class="anchored" data-anchor-id="ode-models-as-statistical-objects">ODE Models as Statistical Objects</h2>
 <p>For now, we stick to a single ordinary differential equation (ODE) in order to introduce the Bayesian inference background. Later, we will see how these ideas extend to the case of dynamical systems containing multiple differential equations. Specifically, we will investigate the SIR model and the Lotka–Volterra system.</p>
@@ -277,7 +288,12 @@ y_i = H(x(t_i; \theta)) + \varepsilon_i,
 \frac{dx}{dt} = f(x(t); \theta), x(0) = x_0,
 \]</span> defines a deterministic mapping between parameters and solution trajectories, <span class="math display">\[
 \theta \mapsto x(\cdot; \theta).
-\]</span> This map is: - generally nonlinear - smooth in <span class="math inline">\(\theta\)</span> under mild conditions - can be very insensitive in some directions but very sensitive in other directions – this sensitivity structure is the root of many parameter identifiability issues</p>
+\]</span> This map is:</p>
+<ul>
+<li>generally nonlinear</li>
+<li>smooth in <span class="math inline">\(\theta\)</span> under mild conditions</li>
+<li>can be very insensitive in some directions but very sensitive in other directions – this sensitivity structure is the root of many parameter identifiability issues</li>
+</ul>
 <p>We never observe the state <span class="math inline">\(x(t)\)</span> exactly. Rather, we observe: <span class="math display">\[
 y_i = H(x(t_i; \theta)) + \varepsilon_i, \text{ for } i = 1, \dots, n,
 \]</span> where <span class="math inline">\(\varepsilon_i \sim \mathcal{N}(0, \sigma^2)\)</span>.</p>
@@ -302,13 +318,23 @@ p(y \mid \theta) = \prod_{i=1}^{n}{\mathcal{N}(y_i \mid x(t_i; \theta), \sigma^2
 <h3 class="anchored" data-anchor-id="posterior">Posterior</h3>
 <p><span class="math display">\[
 \pi(\theta \mid y) \propto p(y \mid \theta)\pi(\theta)
-\]</span> For ODE inference problems, since in practice the forward map (likelihood) is nonlinear and partially non-identifiable, the posterior distribution is: - often strongly correlated - sometimes multimodal - frequently ridge-like in geometry</p>
+\]</span> For ODE inference problems, since in practice the forward map (likelihood) is nonlinear and partially non-identifiable, the posterior distribution is:</p>
+<ul>
+<li>often strongly correlated</li>
+<li>sometimes multimodal</li>
+<li>frequently ridge-like in geometry</li>
+</ul>
 </section>
 <section id="posterior-predictive-distribution" class="level3">
 <h3 class="anchored" data-anchor-id="posterior-predictive-distribution">Posterior Predictive Distribution</h3>
 <p><span class="math display">\[
 p(y^{rep} \mid y) = \int{p(y^{rep} \mid \theta) \pi(\theta \mid y) d\theta}
-\]</span> Since this expression will certainly be intractable, we solve numerically then plot the resulting distribution using the following procedure: 1. Sample <span class="math inline">\(\theta^{(s)} \sim \pi(\theta \mid y)\)</span>. 2. Simulate ODE to get <span class="math inline">\(x^{(s)}(t)\)</span>. 3. Add Gaussian noise to obtain <span class="math inline">\(y_{rep}^{(s)}\)</span>.</p>
+\]</span> Since this expression will certainly be intractable, we solve numerically then plot the resulting distribution using the following procedure:</p>
+<ol type="1">
+<li>Sample <span class="math inline">\(\theta^{(s)} \sim \pi(\theta \mid y)\)</span>.</li>
+<li>Simulate ODE to get <span class="math inline">\(x^{(s)}(t)\)</span>.</li>
+<li>Add Gaussian noise to obtain <span class="math inline">\(y_{rep}^{(s)}\)</span>.</li>
+</ol>
 <p>This is what uncertainty quantification (UQ) is all about – obtaining uncertainty bounds for solution trajectories.</p>
 </section>
 </section>
@@ -318,7 +344,12 @@ p(y^{rep} \mid y) = \int{p(y^{rep} \mid \theta) \pi(\theta \mid y) d\theta}
 x(t; \theta_1) = x(t; \theta_2) \text{ for all } t \implies \theta_1 = \theta_2.
 \]</span> That is, there is only one parameter value that produces the observed trajectory (caveat: in the noise-free, infinite-data limit). Otherwise, the parameters are non-identifiable.</p>
 <p>Even if the model is <em>structurally identifiable</em>, under the typical setting of finite, noisy, sparse data, the posterior may still be extremely wide, highly correlated, or exhibit some other degeneracy, so the parameters may be <em>practically non-identifiable</em>.</p>
-<p>In general, non-identifiability in Bayesian inference will exhibit some particular patterns: - flat directions or ridges in the posterior - large or near-perfect correlations between parameters - very large credible intervals</p>
+<p>In general, non-identifiability in Bayesian inference will exhibit some particular patterns:</p>
+<ul>
+<li>flat directions or ridges in the posterior</li>
+<li>large or near-perfect correlations between parameters</li>
+<li>very large credible intervals</li>
+</ul>
 <p>Identifiability can often be studied in terms of geometry. Recall that we let <span class="math display">\[
 G(\theta) = (x(t_1; \theta), \dots, x(t_n; \theta))
 \]</span> represent our forward map. Then, we can study the Jacobian of <span class="math inline">\(G\)</span>, given by <span class="math display">\[
@@ -342,11 +373,37 @@ p_0 \notin \{p(\cdot \mid \theta): \theta \in \Theta\}.
 </section>
 <section id="misspecification-in-ode-inverse-problems" class="level3">
 <h3 class="anchored" data-anchor-id="misspecification-in-ode-inverse-problems">Misspecification in ODE Inverse Problems</h3>
-<p>Things can get even worse in differential equations settings: - The forward map is nonlinear. - The misspecification distorts the geometry drastically (More details on this in the next section). - The model compensates by: - pushing parameters into “weird” correlated regimes - inventing fake explanations of behavior - Typical misspecification effects include: - strong posterior correlations - parameter tradeoffs - ridges - sometimes multimodality - narrow but incorrect posteriors – overconfidence</p>
+<p>Things can get even worse in differential equations settings:</p>
+<ul>
+<li><p>The forward map is nonlinear.</p></li>
+<li><p>The misspecification distorts the geometry drastically (More details on this in the next section).</p></li>
+<li><p>The model compensates by:</p>
+<ul>
+<li>pushing parameters into “weird” correlated regimes</li>
+<li>inventing fake explanations of behavior</li>
+</ul></li>
+<li><p>Typical misspecification effects include:</p>
+<ul>
+<li>strong posterior correlations</li>
+<li>parameter tradeoffs</li>
+<li>ridges</li>
+<li>sometimes multimodality</li>
+<li>narrow but incorrect posteriors – overconfidence</li>
+</ul></li>
+</ul>
 </section>
 <section id="posterior-geometry" class="level3">
 <h3 class="anchored" data-anchor-id="posterior-geometry">Posterior Geometry</h3>
-<p>Given samples from the posterior distribution <span class="math inline">\(\pi(\theta \mid y)\)</span>, we can look at various quantities and diagnostics of its geometry: - covariance/correlation matrix - pair plots - condition number - entropy proxy - <span class="math inline">\(H \approx \frac{1}{2}\log\det\vert{\Sigma}\vert\)</span></p>
+<p>Given samples from the posterior distribution <span class="math inline">\(\pi(\theta \mid y)\)</span>, we can look at various quantities and diagnostics of its geometry:</p>
+<ul>
+<li>covariance/correlation matrix</li>
+<li>pair plots</li>
+<li>condition number</li>
+<li>entropy proxy
+<ul>
+<li><span class="math inline">\(H \approx \frac{1}{2}\log\det\vert{\Sigma}\vert\)</span></li>
+</ul></li>
+</ul>
 </section>
 <section id="posterior-predictive-checking" class="level3">
 <h3 class="anchored" data-anchor-id="posterior-predictive-checking">Posterior Predictive Checking</h3>
@@ -358,8 +415,14 @@ y^{rep} \sim p(y \mid \theta) \,\text{ where } \theta \sim \pi(\theta \mid y)
 <section id="calibration-and-coverage" class="level3">
 <h3 class="anchored" data-anchor-id="calibration-and-coverage">Calibration and Coverage</h3>
 <p>If we know the true parameter value in the data generating process, we can run calibration and coverage checks to see how misspecification affects our ability to recover the correct parameter.</p>
-<p>Parameter coverage: Over repeated experiments, does the <span class="math inline">\(95\%\)</span> posterior credible interval contain the true parameter <span class="math inline">\(95\%\)</span> of the time? - Under model misspecification, the answer to this will be <em>no</em>.</p>
-<p>Predictive coverage: Does the <span class="math inline">\(95\%\)</span> posterior predictive band contain the true trajectory <span class="math inline">\(95\%\)</span> of the time? - Again, under misspecification, this will collapse (badly).</p>
+<p>Parameter coverage: Over repeated experiments, does the <span class="math inline">\(95\%\)</span> posterior credible interval contain the true parameter <span class="math inline">\(95\%\)</span> of the time?</p>
+<ul>
+<li>Under model misspecification, the answer to this will be <em>no</em>.</li>
+</ul>
+<p>Predictive coverage: Does the <span class="math inline">\(95\%\)</span> posterior predictive band contain the true trajectory <span class="math inline">\(95\%\)</span> of the time?</p>
+<ul>
+<li>Again, under misspecification, this will collapse (badly).</li>
+</ul>
 <p>Calibration curve: If we plot nominal level <span class="math inline">\((0.1, 0.2, \dots, 0.9)\)</span> on the <span class="math inline">\(x\)</span>-axis and empirical coverage on the <span class="math inline">\(y\)</span>-axis, do we see a nearly diagonal line, reflecting perfect/strong calibration?</p>
 </section>
 <section id="key-takeaways" class="level3">
@@ -370,19 +433,21 @@ y^{rep} \sim p(y \mid \theta) \,\text{ where } \theta \sim \pi(\theta \mid y)
 </div>
 </div>
 </div>
+</section>
+<section id="background-on-the-lotkavolterra-model" class="level2">
+<h2 class="anchored" data-anchor-id="background-on-the-lotkavolterra-model">Background on the Lotka–Volterra Model</h2>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Background on the Lotka–Volterra Model
+Lotka–Volterra Model
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse show">
-<section id="lotkavolterra-model" class="level3 callout-body-container callout-body">
-<h3 class="anchored" data-anchor-id="lotkavolterra-model">Lotka–Volterra Model</h3>
+<div class="callout-body-container callout-body">
 <p>The Lotka–Volterra system of differential equations models the interactions between a prey species and a predator species in a population.</p>
 <p>The model is given by: <span class="math display">\[
 \frac{dx}{dt} = \alpha x - \beta xy
@@ -422,22 +487,24 @@ y_t = H(x(t; \theta)) + \varepsilon_t,
 <li>seasonal forcing</li>
 <li>noise!</li>
 </ul>
+</div>
+</div>
+</div>
 </section>
-</div>
-</div>
+<section id="background-on-the-sir-model" class="level2">
+<h2 class="anchored" data-anchor-id="background-on-the-sir-model">Background on the SIR Model</h2>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Background on the SIR Model
+SIR Model
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse show">
-<section id="sir-model" class="level3 callout-body-container callout-body">
-<h3 class="anchored" data-anchor-id="sir-model">SIR Model</h3>
+<div class="callout-body-container callout-body">
 <p>SIR = Susceptible–Infected–Recovered</p>
 <ul>
 <li>models the spread of an infectious disease inside a closed population of<span class="math inline">\(N\)</span> individuals</li>
@@ -491,21 +558,60 @@ y_t = H(x(t)) + \varepsilon_t
 <li>No incubation period</li>
 </ul>
 <p>So, suppose that we fit the SIR model to a case where the behavior is more aptly described by an SEIR model, or perhaps with a time-varying transmission rate <span class="math inline">\(\beta(t)\)</span>. Then, we will get biased/wrong parameters, falsely confident posteriors, and the wrong uncertainty conclusions!</p>
+</div>
+</div>
+</div>
 </section>
-</div>
-</div>
 <section id="code-and-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="code-and-analysis">Code and Analysis</h2>
 <p>The code and analysis for this project are currently ongoing and this section will be updated and amended regularly.</p>
-<div id="237a4318" class="cell" data-cache="true" data-show="true" data-execution_count="1">
+<section id="the-correct-model" class="level3">
+<h3 class="anchored" data-anchor-id="the-correct-model">1. The Correct Model</h3>
+<p>First, we wish to demonstrate the “baseline” case of Bayesian inference for the Lotka–Volterra model with no structural misspecification. This is the best-case scenario where the model is correctly specified and we are able to conduct our inference procedure to recover the true parameters (approximately) without issues.</p>
+<div id="ce3da78d" class="cell" data-cache="true" data-show="true" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> placeholder_code():</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
+</section>
+<section id="misspecified-models" class="level3">
+<h3 class="anchored" data-anchor-id="misspecified-models">2. Misspecified Models</h3>
+<p>In this subsection we introduce the specifications for the simulation study on the effect of misspecification on the Bayesian inference procedure. In particular, we discuss the data generating process, the misspecified models to be fit, other configurable settings for experimentation, the inference procedure, and the final results we will investigate.</p>
+<p>We define the true data generating process (DGP) as being given by a generalized Lotka–Volterra model with a saturated functional response incorporated into it: <span class="math display">\[
+\frac{dx}{dt} = \alpha x - \frac{\beta xy}{1+hx}
+\]</span> <span class="math display">\[
+\frac{dy}{dt} = -\gamma y + \frac{\delta xy}{1+hx},
+\]</span> where <span class="math inline">\(h\)</span> is the saturated (Holling type II) functional response parameter that defines the structural misspecification in the model. When <span class="math inline">\(h = 0\)</span>, we recover the standard Lotka–Volterra equations.</p>
+<p>The parameters we wish to infer for this model are <span class="math inline">\(\theta = (\alpha, \beta, \gamma, \delta)\)</span>.</p>
+<p>Our true data will be generated from the above system, but we assume, incorrrectly, that we can fit the standard Lotka–Volterra model (i.e., <span class="math inline">\(h = 0\)</span> above) to the data. This defines our structural misspecification for this study.</p>
+Next, we define the parameter settings and initial conditions for the true DGP. These values were chosen by reconciling various documented sources and best practices for this system and will be held constant across all experiments. (Note: We can choose to fix the values of the initial populations, <span class="math inline">\(x_0, y_0\)</span>, or treat them as parameters and infer them; for now we fix them for ease.) ::: {.table-narrow style=“width: 70%; margin: auto;”} | Parameter | Value | |———–|——-| | <span class="math inline">\(\alpha\)</span> | 1 | | <span class="math inline">\(\beta\)</span> | 0.1 | | <span class="math inline">\(\gamma\)</span> | 1.5 | | <span class="math inline">\(\delta\)</span> | 0.075 | | <span class="math inline">\(x_0\)</span> | 40 | | <span class="math inline">\(y_0\)</span> | 10 |
+<div style="text-align: center;">
+<strong>Table 1: Generalized Lotka–Volterra parameter settings for experiments</strong>
+</div>
+<p>:::</p>
+<p>For our choices of priors on the parameters to be inferred, we use the following: <span class="math display">\[\alpha \sim \text{LogNormal}(\log(1), 0.5)\]</span> <span class="math display">\[\beta \sim \text{LogNormal}(\log(0.1), 0.5)\]</span> <span class="math display">\[\gamma \sim \text{LogNormal}(\log(1.5), 0.5)\]</span> <span class="math display">\[\delta \sim \text{LogNormal}(\log(0.075), 0.5)\]</span></p>
+<p>Lastly, we define the observation model: <span class="math display">\[
+z_t^x = x(t) + \varepsilon_t^x
+\]</span> <span class="math display">\[
+z_t^y = y(t) + \varepsilon_t^y,
+\]</span> where for simplicity, we suppose <span class="math inline">\(\varepsilon_t^x, \varepsilon_t^y \sim \mathcal{N}(0, \sigma^2)\)</span> are independent Gaussian noise terms.</p>
+Experiment grid (table of different misspecification scenarios to test): ::: {.table-narrow style=“width: 70%; margin: auto;”} | Settings | Levels | |———————————- |——————–| | Structural misspecification (<span class="math inline">\(h\)</span>) | 0, 0.02, 0.05, 0.1 | | Observation time grid density | dense, sparse | | Noise level (<span class="math inline">\(sigma\)</span>) | 0.5, 1 |
+<div style="text-align: center;">
+<strong>Table 2: Experiment layout for misspecification scenarios</strong>
+</div>
+<p>::: <br></p>
+<div id="86bd4aa5" class="cell" data-cache="true" data-show="true" data-execution_count="2">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> placeholder_code():</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

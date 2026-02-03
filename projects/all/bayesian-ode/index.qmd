@@ -9,8 +9,9 @@ image: "dynamic2.webp"
 This page contains working notes and analyses for this ongoing project.
 Link to code notebook: []()
 
-::: {.callout-note collapse="false"}
+
 ##  Background on Bayesian Inverse Problems/Model Misspecification for ODEs
+::: {.callout-note collapse="false"}
 
 ## Big Picture
 
@@ -30,6 +31,7 @@ where $H$ is an observation operator (often the identity map or some projection)
 The inverse problem is: Given $y_i (i = 1, \dots, n)$, infer $\theta$.
 
 In general, these problems are ill-posed:
+
 - Many values of $\theta$ can produce similar trajectories, preventing identifiability of $\theta$.
 - Noise amplifies ambiguity behind inference.
 - Models are often (more like *always*) wrong/misspecified.
@@ -50,6 +52,7 @@ $$
 \theta \mapsto x(\cdot; \theta).
 $$
 This map is:
+
 - generally nonlinear
 - smooth in $\theta$ under mild conditions
 - can be very insensitive in some directions but very sensitive in other directions – this sensitivity structure is the root of many parameter identifiability issues
@@ -89,6 +92,7 @@ $$
 \pi(\theta \mid y) \propto p(y \mid \theta)\pi(\theta)
 $$
 For ODE inference problems, since in practice the forward map (likelihood) is nonlinear and partially non-identifiable, the posterior distribution is:
+
 - often strongly correlated
 - sometimes multimodal
 - frequently ridge-like in geometry
@@ -98,6 +102,7 @@ $$
 p(y^{rep} \mid y) = \int{p(y^{rep} \mid \theta) \pi(\theta \mid y) d\theta}
 $$
 Since this expression will certainly be intractable, we solve numerically then plot the resulting distribution using the following procedure:
+
 1. Sample $\theta^{(s)} \sim \pi(\theta \mid y)$.
 2. Simulate ODE to get $x^{(s)}(t)$.
 3. Add Gaussian noise to obtain $y_{rep}^{(s)}$.
@@ -117,6 +122,7 @@ Otherwise, the parameters are non-identifiable.
 Even if the model is *structurally identifiable*, under the typical setting of finite, noisy, sparse data, the posterior may still be extremely wide, highly correlated, or exhibit some other degeneracy, so the parameters may be *practically non-identifiable*.
 
 In general, non-identifiability in Bayesian inference will exhibit some particular patterns:
+
 - flat directions or ridges in the posterior
 - large or near-perfect correlations between parameters
 - very large credible intervals
@@ -164,12 +170,15 @@ Then, the credible intervals will be centered at the wrong value and tend to sev
 ### Misspecification in ODE Inverse Problems
 
 Things can get even worse in differential equations settings:
+
 - The forward map is nonlinear.
 - The misspecification distorts the geometry drastically (More details on this in the next section).
 - The model compensates by:
+
 	- pushing parameters into “weird” correlated regimes
 	- inventing fake explanations of behavior
 - Typical misspecification effects include:
+
 	- strong posterior correlations
 	- parameter tradeoffs
 	- ridges
@@ -180,6 +189,7 @@ Things can get even worse in differential equations settings:
 ### Posterior Geometry
 
 Given samples from the posterior distribution $\pi(\theta \mid y)$, we can look at various quantities and diagnostics of its geometry:
+
 - covariance/correlation matrix
 - pair plots
 - condition number
@@ -203,9 +213,11 @@ Be careful: Posterior predictive checks can sometimes to detect misspecification
 If we know the true parameter value in the data generating process, we can run calibration and coverage checks to see how misspecification affects our ability to recover the correct parameter.
 
 Parameter coverage: Over repeated experiments, does the $95\%$ posterior credible interval contain the true parameter $95\%$ of the time?
+
 - Under model misspecification, the answer to this will be *no*.
 
 Predictive coverage: Does the $95\%$ posterior predictive band contain the true trajectory $95\%$ of the time?
+
 - Again, under misspecification, this will collapse (badly).
 
 Calibration curve: If we plot nominal level $(0.1, 0.2, \dots, 0.9)$ on the $x$-axis and empirical coverage on the $y$-axis, do we see a nearly diagonal line, reflecting perfect/strong calibration?
@@ -218,8 +230,8 @@ In real science, models are always wrong. In particular, much of science relies 
 :::
 
 
-::: {.callout-note collapse="false"}
 ##  Background on the Lotka–Volterra Model
+::: {.callout-note collapse="false"}
 
 ### Lotka–Volterra Model
 
@@ -275,8 +287,8 @@ Misspecification enters because real systems will certainly have one or more of 
 :::
 
 
-::: {.callout-note collapse="false"}
 ##  Background on the SIR Model
+::: {.callout-note collapse="false"}
 
 ### SIR Model
 
@@ -348,6 +360,76 @@ So, suppose that we fit the SIR model to a case where the behavior is more aptly
 ## Code and Analysis
 
 The code and analysis for this project are currently ongoing and this section will be updated and amended regularly.
+
+### 1. The Correct Model
+First, we wish to demonstrate the "baseline" case of Bayesian inference for the Lotka–Volterra model with no structural misspecification. This is the best-case scenario where the model is correctly specified and we are able to conduct our inference procedure to recover the true parameters (approximately) without issues.
+
+```{python}
+#| echo: true
+#| show: true
+#| cache: true
+
+def placeholder_code():
+	pass
+```
+
+### 2. Misspecified Models
+In this subsection we introduce the specifications for the simulation study on the effect of misspecification on the Bayesian inference procedure. In particular, we discuss the data generating process, the misspecified models to be fit, other configurable settings for experimentation, the inference procedure, and the final results we will investigate.
+
+We define the true data generating process (DGP) as being given by a generalized Lotka–Volterra model with a saturated functional response incorporated into it:
+$$
+\frac{dx}{dt} = \alpha x - \frac{\beta xy}{1+hx}
+$$
+$$
+\frac{dy}{dt} = -\gamma y + \frac{\delta xy}{1+hx},
+$$
+where $h$ is the saturated (Holling type II) functional response parameter that defines the structural misspecification in the model. When $h = 0$, we recover the standard Lotka–Volterra equations.
+
+The parameters we wish to infer for this model are $\theta = (\alpha, \beta, \gamma, \delta)$.
+
+Our true data will be generated from the above system, but we assume, incorrrectly, that we can fit the standard Lotka–Volterra model (i.e., $h = 0$ above) to the data. This defines our structural misspecification for this study.
+
+Next, we define the parameter settings and initial conditions for the true DGP. These values were chosen by reconciling various documented sources and best practices for this system and will be held constant across all experiments.
+(Note: We can choose to fix the values of the initial populations, $x_0, y_0$, or treat them as parameters and infer them; for now we fix them for ease.)
+::: {.table-narrow style="width: 70%; margin: auto;"}
+| Parameter | Value |
+|-----------|-------|
+| $\alpha$  | 1     |
+| $\beta$   | 0.1   |
+| $\gamma$  | 1.5   |
+| $\delta$  | 0.075 |
+| $x_0$     | 40    |
+| $y_0$     | 10    |
+<div style="text-align: center;">**Table 1: Generalized Lotka–Volterra parameter settings for experiments**</div>
+:::
+
+For our choices of priors on the parameters to be inferred, we use the following:
+$$\alpha \sim \text{LogNormal}(\log(1), 0.5)$$
+$$\beta \sim \text{LogNormal}(\log(0.1), 0.5)$$
+$$\gamma \sim \text{LogNormal}(\log(1.5), 0.5)$$
+$$\delta \sim \text{LogNormal}(\log(0.075), 0.5)$$
+
+Lastly, we define the observation model:
+$$
+z_t^x = x(t) + \varepsilon_t^x
+$$
+$$
+z_t^y = y(t) + \varepsilon_t^y,
+$$
+where for simplicity, we suppose $\varepsilon_t^x, \varepsilon_t^y \sim \mathcal{N}(0, \sigma^2)$ are independent Gaussian noise terms.
+
+
+Experiment grid (table of different misspecification scenarios to test):
+::: {.table-narrow style="width: 70%; margin: auto;"}
+| Settings                          | Levels             |
+|---------------------------------- |--------------------|
+| Structural misspecification ($h$) | 0, 0.02, 0.05, 0.1 |
+| Observation time grid density     | dense, sparse      |
+| Noise level ($sigma$)             | 0.5, 1             |
+<div style="text-align: center;">**Table 2: Experiment layout for misspecification scenarios**</div>
+:::
+<br>
+
 
 ```{python}
 #| echo: true

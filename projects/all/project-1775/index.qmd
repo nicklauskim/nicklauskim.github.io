@@ -6,4 +6,7 @@ categories: [data visualization, data dashboard, data analytics, historical data
 image: "Declaration-of-Independence.webp"
 ---
 
-This project takes users on an interactive exploration into the writings of the Founding Fathers. Here you will find visuals of when, where, and between whom information was communicated during the Founding era of American history – correspondence and topic networks, timelines, spatial maps – as well as fully customizable query functionality to search for specific phrases or documents. Check it out [here](https://nicklauskim.github.io/founding-stats).
+This project takes users on an interactive exploration into the writings of the Founding Fathers. Features will include visualizations of when, where, and between whom information was communicated during the Founding era of American history – correspondence and topic networks, timelines, spatial maps – as well as fully customizable query functionality to search for specific phrases, content matter, or entire documents. 
+
+Currently working on figuring out (free) public deployment options!
+<!-- Check it out [here](https://nicklauskim.github.io/founding-stats). -->
