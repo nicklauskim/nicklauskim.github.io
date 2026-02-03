@@ -74,7 +74,7 @@
     "href": "projects/all/bayesian-ode/index.html#code-and-analysis",
     "title": "Bayesian Inverse Problems for ODE Systems under Model Misspecification",
     "section": "Code and Analysis",
-    "text": "Code and Analysis\nThe code and analysis for this project are ongoing and will be updated and amended regularly."
+    "text": "Code and Analysis\nThe code and analysis for this project are currently ongoing and this section will be updated and amended regularly.\n\n\nCode\ndef placeholder_code():\n    pass"
   },
   {
     "objectID": "projects/all/experimental-parameter-tuning/index.html",
