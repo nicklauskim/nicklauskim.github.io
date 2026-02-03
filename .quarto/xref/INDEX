@@ -90,5 +90,23 @@
   },
   "notes/intro-stats/index.qmd": {
     "index.html": "bebdf5a5"
+  },
+  "qenv/lib/python3.13/site-packages/cffi/recompiler.py": {
+    "recompiler.html": "938935a8"
+  },
+  "qenv/lib/python3.13/site-packages/idna-3.11.dist-info/licenses/LICENSE.md": {
+    "LICENSE.html": "c1e2ffab"
+  },
+  "qenv/lib/python3.13/site-packages/httpcore-1.0.9.dist-info/licenses/LICENSE.md": {
+    "LICENSE.html": "31a7f896"
+  },
+  "qenv/lib/python3.13/site-packages/soupsieve-2.8.3.dist-info/licenses/LICENSE.md": {
+    "LICENSE.html": "ddf11597"
+  },
+  "qenv/lib/python3.13/site-packages/httpx-0.28.1.dist-info/licenses/LICENSE.md": {
+    "LICENSE.html": "7c946f72"
+  },
+  "qenv/lib/python3.13/site-packages/pyzmq-27.1.0.dist-info/licenses/LICENSE.md": {
+    "LICENSE.html": "21f61182"
   }
 }
