@@ -400,7 +400,7 @@ Next, we define the parameter settings and initial conditions for the true DGP. 
 | $\delta$  | 0.075 |
 | $x_0$     | 40    |
 | $y_0$     | 10    |
-<div style="text-align: center;">**Table 1: Generalized Lotka–Volterra parameter settings for experiments**</div>
+: **Table 1: Generalized Lotka–Volterra parameter settings for experiments**</div>
 :::
 
 For our choices of priors on the parameters to be inferred, we use the following:
@@ -426,7 +426,7 @@ Experiment grid (table of different misspecification scenarios to test):
 | Structural misspecification ($h$) | 0, 0.02, 0.05, 0.1 |
 | Observation time grid density     | dense, sparse      |
 | Noise level ($sigma$)             | 0.5, 1             |
-<div style="text-align: center;">**Table 2: Experiment layout for misspecification scenarios**</div>
+: **Table 2: Experiment layout for misspecification scenarios**</div>
 :::
 <br>
 
