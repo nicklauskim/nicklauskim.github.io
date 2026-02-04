@@ -108,5 +108,11 @@
   },
   "qenv/lib/python3.13/site-packages/pyzmq-27.1.0.dist-info/licenses/LICENSE.md": {
     "LICENSE.html": "21f61182"
+  },
+  "projects/all/bayesian-ode/background_notes.qmd": {
+    "background_notes.html": "a70bc593"
+  },
+  "projects/all/bayesian-ode/simulation_code.qmd": {
+    "simulation_code.html": "f9d076a0"
   }
 }

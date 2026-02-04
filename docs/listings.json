@@ -22,7 +22,9 @@
   {
     "listing": "/projects/index.html",
     "items": [
+      "/projects/all/bayesian-ode/simulation_code.html",
       "/projects/all/bayesian-ode/index.html",
+      "/projects/all/bayesian-ode/background_notes.html",
       "/projects/all/ms-thesis/index.html",
       "/projects/all/experimental-parameter-tuning/index.html",
       "/projects/all/project-1775/index.html",
