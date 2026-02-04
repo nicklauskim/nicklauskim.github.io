@@ -290,7 +290,7 @@ Misspecification enters because real systems will certainly have one or more of 
 
 SIR = Susceptible–Infected–Recovered
 
-- models the spread of an infectious disease inside a closed population of$N$ individuals
+- models the spread of an infectious disease inside a closed population of $N$ individuals
 
 States:
 
@@ -388,6 +388,7 @@ Our true data will be generated from the above system, but we assume, incorrrect
 
 Next, we define the parameter settings and initial conditions for the true DGP. These values were chosen by reconciling various documented sources and best practices for this system and will be held constant across all experiments.
 (Note: We can choose to fix the values of the initial populations, $x_0, y_0$, or treat them as parameters and infer them; for now we fix them for ease.)
+
 ::: {.table-narrow style="width: 70%; margin: auto;"}
 | Parameter | Value |
 |-----------|-------|
@@ -417,6 +418,7 @@ where for simplicity, we suppose $\varepsilon_t^x, \varepsilon_t^y \sim \mathcal
 
 
 Experiment grid (table of different misspecification scenarios to test):
+
 ::: {.table-narrow style="width: 70%; margin: auto;"}
 | Settings                          | Levels             |
 |---------------------------------- |--------------------|

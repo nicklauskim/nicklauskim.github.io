@@ -1,6 +1,5 @@
 ---
 title: "Code for Bayesian Inverse Problems for ODE Systems under Model Misspecification"
-author: "Nick Kim"
 date: "2025-12-26"
 listing: false
 format:
@@ -11,6 +10,7 @@ execute:
   warning: false
   error: false
   message: false
+  cache: false
 ---
 
 I am currently working on integrating the code directly into this page. In the meantime, you can find the code notebook for the analyses for this ongoing project on my GitHub [here](https://github.com/nicklauskim/bayesian-ode-model-misspecification).
@@ -18,7 +18,7 @@ I am currently working on integrating the code directly into this page. In the m
 
 ```{python}
 #| echo: false
-#| show: false
+#| results: false
 #| cache: true
 
 def placeholder_code():

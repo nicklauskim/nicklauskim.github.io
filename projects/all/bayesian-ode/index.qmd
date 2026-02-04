@@ -8,6 +8,7 @@ image: "dynamic2.webp"
 
 This page contains links to working notes and code for the analyses for this ongoing project.
 
-[Link to background notes](./background_notes.qmd.qmd)
+[Link to background notes](./background_notes.qmd)
+
 [Link to code notebook](./simulation_code.qmd)
 

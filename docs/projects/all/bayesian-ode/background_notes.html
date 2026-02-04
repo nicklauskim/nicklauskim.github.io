@@ -499,7 +499,7 @@ SIR Model
 <div class="callout-body-container callout-body">
 <p>SIR = Susceptible–Infected–Recovered</p>
 <ul>
-<li>models the spread of an infectious disease inside a closed population of<span class="math inline">\(N\)</span> individuals</li>
+<li>models the spread of an infectious disease inside a closed population of <span class="math inline">\(N\)</span> individuals</li>
 </ul>
 <p>States:</p>
 <ul>
@@ -560,7 +560,7 @@ y_t = H(x(t)) + \varepsilon_t
 <section id="the-correct-model" class="level3">
 <h3 class="anchored" data-anchor-id="the-correct-model">1. The Correct Model</h3>
 <p>First, we wish to demonstrate the “baseline” case of Bayesian inference for the Lotka–Volterra model with no structural misspecification. This is the best-case scenario where the model is correctly specified and we are able to conduct our inference procedure to recover the true parameters (approximately) without issues.</p>
-<div id="c5c586cb" class="cell" data-cache="true" data-show="true" data-execution_count="1">
+<div id="8f7e7c6b" class="cell" data-cache="true" data-show="true" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> placeholder_code():</span>
@@ -578,28 +578,89 @@ y_t = H(x(t)) + \varepsilon_t
 \]</span> where <span class="math inline">\(h\)</span> is the saturated (Holling type II) functional response parameter that defines the structural misspecification in the model. When <span class="math inline">\(h = 0\)</span>, we recover the standard Lotka–Volterra equations.</p>
 <p>The parameters we wish to infer for this model are <span class="math inline">\(\theta = (\alpha, \beta, \gamma, \delta)\)</span>.</p>
 <p>Our true data will be generated from the above system, but we assume, incorrrectly, that we can fit the standard Lotka–Volterra model (i.e., <span class="math inline">\(h = 0\)</span> above) to the data. This defines our structural misspecification for this study.</p>
-Next, we define the parameter settings and initial conditions for the true DGP. These values were chosen by reconciling various documented sources and best practices for this system and will be held constant across all experiments. (Note: We can choose to fix the values of the initial populations, <span class="math inline">\(x_0, y_0\)</span>, or treat them as parameters and infer them; for now we fix them for ease.) ::: {.table-narrow style=“width: 70%; margin: auto;”} | Parameter | Value | |———–|——-| | <span class="math inline">\(\alpha\)</span> | 1 | | <span class="math inline">\(\beta\)</span> | 0.1 | | <span class="math inline">\(\gamma\)</span> | 1.5 | | <span class="math inline">\(\delta\)</span> | 0.075 | | <span class="math inline">\(x_0\)</span> | 40 | | <span class="math inline">\(y_0\)</span> | 10 | : <strong>Table 1: Generalized Lotka–Volterra parameter settings for experiments</strong>
+<p>Next, we define the parameter settings and initial conditions for the true DGP. These values were chosen by reconciling various documented sources and best practices for this system and will be held constant across all experiments. (Note: We can choose to fix the values of the initial populations, <span class="math inline">\(x_0, y_0\)</span>, or treat them as parameters and infer them; for now we fix them for ease.)</p>
+<div class="table-narrow" style="width: 70%; margin: auto;">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\alpha\)</span></td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\beta\)</span></td>
+<td>0.1</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\gamma\)</span></td>
+<td>1.5</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\delta\)</span></td>
+<td>0.075</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(x_0\)</span></td>
+<td>40</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(y_0\)</span></td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+: <strong>Table 1: Generalized Lotka–Volterra parameter settings for experiments</strong>
+</div>
 </section></section></main></div>
-<p>:::</p>
 <p>For our choices of priors on the parameters to be inferred, we use the following: <span class="math display">\[\alpha \sim \text{LogNormal}(\log(1), 0.5)\]</span> <span class="math display">\[\beta \sim \text{LogNormal}(\log(0.1), 0.5)\]</span> <span class="math display">\[\gamma \sim \text{LogNormal}(\log(1.5), 0.5)\]</span> <span class="math display">\[\delta \sim \text{LogNormal}(\log(0.075), 0.5)\]</span></p>
 <p>Lastly, we define the observation model: <span class="math display">\[
 z_t^x = x(t) + \varepsilon_t^x
 \]</span> <span class="math display">\[
 z_t^y = y(t) + \varepsilon_t^y,
 \]</span> where for simplicity, we suppose <span class="math inline">\(\varepsilon_t^x, \varepsilon_t^y \sim \mathcal{N}(0, \sigma^2)\)</span> are independent Gaussian noise terms.</p>
-Experiment grid (table of different misspecification scenarios to test): ::: {.table-narrow style=“width: 70%; margin: auto;”} | Settings | Levels | |———————————- |——————–| | Structural misspecification (<span class="math inline">\(h\)</span>) | 0, 0.02, 0.05, 0.1 | | Observation time grid density | dense, sparse | | Noise level (<span class="math inline">\(sigma\)</span>) | 0.5, 1 | : <strong>Table 2: Experiment layout for misspecification scenarios</strong>
+<p>Experiment grid (table of different misspecification scenarios to test):</p>
+<div class="table-narrow" style="width: 70%; margin: auto;">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Settings</th>
+<th>Levels</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Structural misspecification (<span class="math inline">\(h\)</span>)</td>
+<td>0, 0.02, 0.05, 0.1</td>
+</tr>
+<tr class="even">
+<td>Observation time grid density</td>
+<td>dense, sparse</td>
+</tr>
+<tr class="odd">
+<td>Noise level (<span class="math inline">\(sigma\)</span>)</td>
+<td>0.5, 1</td>
+</tr>
+</tbody>
+</table>
+: <strong>Table 2: Experiment layout for misspecification scenarios</strong>
+</div>
 
-<p>::: <br></p>
+<p><br></p>
 <section id="structurally-misspecified-inference-h-neq-0" class="level4">
 <h4 data-anchor-id="structurally-misspecified-inference-h-neq-0">Structurally Misspecified Inference (<span class="math inline">\(h \neq 0\)</span>)</h4>
-<div id="1324f73e" class="cell" data-cache="true" data-show="true" data-execution_count="2">
+<div id="d904911c" class="cell" data-cache="true" data-show="true" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> placeholder_code():</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="df1da389" class="cell" data-cache="true" data-show="true" data-execution_count="3">
+<div id="4311e01e" class="cell" data-cache="true" data-show="true" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> placeholder_code():</span>
