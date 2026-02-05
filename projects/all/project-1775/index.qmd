@@ -1,5 +1,5 @@
 ---
-title: Founding Fathers Correspondence Network Analysis
+title: Founding Fathers Correspondence Network Analysis (in progress)
 description: "An interactive application, built in Python using Dash, for exploring and visualizing historical/political correspondence trends in early American history"
 date: 2025-06-10
 categories: [data visualization, data dashboard, data analytics, historical data, history, Python, Flask]

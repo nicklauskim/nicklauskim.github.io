@@ -13,7 +13,7 @@ execute:
   cache: false
 ---
 
-I am currently working on integrating the code directly into this page. In the meantime, you can find the code notebook for the analyses for this ongoing project on my GitHub [here](https://github.com/nicklauskim/bayesian-ode-model-misspecification).
+I am currently working on integrating the code directly into this page. In the meantime, you can find the (work-in-progress!) code notebook for the analyses for this ongoing project on my GitHub [here](https://github.com/nicklauskim/bayesian-ode-model-misspecification).
 
 
 ```{python}
