@@ -2,6 +2,7 @@
 title: "Notes for Bayesian Inverse Problems for ODE Systems under Model Misspecification"
 date: "2025-12-06"
 listing: false
+draft: true
 ---
 
 ##  Background on Bayesian Inverse Problems/Model Misspecification for ODEs

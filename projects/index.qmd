@@ -2,8 +2,6 @@
 title: "Projects"
 listing:
   - contents: all    # will list all index pages in the folder
-    exclude: 
-     - path: all/bayesian-ode-components
     type: default  # or 'grid', 'table', 'carousel', etc.
     sort: "date desc"
 ---
