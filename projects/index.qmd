@@ -4,8 +4,8 @@ listing:
   type: default  # or 'grid', 'table', 'carousel', etc.
   contents: .    # will list all index pages in the folder
   exclude: 
-    - path: bayesian-ode/background_notes.qmd
-    - path: bayesian-ode/simulation_code.qmd
+    - path: all/bayesian-ode/background_notes.qmd
+    - path: all/bayesian-ode/simulation_code.qmd
   sort: "date desc"
 ---
 

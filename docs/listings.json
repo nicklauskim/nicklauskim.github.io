@@ -15,9 +15,7 @@
   },
   {
     "listing": "/blog/index.html",
-    "items": [
-      "/blog/posts/drafts/welcome/index.html"
-    ]
+    "items": []
   },
   {
     "listing": "/projects/index.html",

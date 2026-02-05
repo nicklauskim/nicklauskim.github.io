@@ -117,5 +117,8 @@
   },
   "blog/posts/drafts/welcome/index.qmd": {
     "index.html": "3191e7f8"
+  },
+  "blog/drafts/welcome/index.qmd": {
+    "index.html": "22a794da"
   }
 }
