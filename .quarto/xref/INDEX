@@ -126,5 +126,11 @@
   },
   "projects/all/bayesian-ode/components/simulation_code.qmd": {
     "simulation_code.html": "fbcf98d9"
+  },
+  "projects/all/bayesian-ode-components/background_notes.qmd": {
+    "background_notes.html": "99f70d1d"
+  },
+  "projects/all/bayesian-ode-components/simulation_code.qmd": {
+    "simulation_code.html": "f43a1045"
   }
 }
