@@ -1,6 +1,5 @@
 ---
 title: "Notes for Bayesian Inverse Problems for ODE Systems under Model Misspecification"
-author: "Nick Kim"
 date: "2025-12-06"
 listing: false
 ---
