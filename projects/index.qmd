@@ -1,11 +1,11 @@
 ---
 title: "Projects"
 listing:
-  type: default  # or 'grid', 'table', 'carousel', etc.
-  contents: .    # will list all index pages in the folder
-  exclude: 
-    - path: all/bayesian-ode/components
-  sort: "date desc"
+  - contents: .    # will list all index pages in the folder
+    exclude: 
+      - path: all/bayesian-ode/components
+    type: default  # or 'grid', 'table', 'carousel', etc.
+    sort: "date desc"
 ---
 
 My data science/data analysis projects, mainly executed using Python, SQL, and Dash.
