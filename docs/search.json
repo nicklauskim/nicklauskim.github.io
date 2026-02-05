@@ -25,7 +25,7 @@
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "Blog posts on a wide range of topics, including but not limited to: math, stats, data science, and history.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJun 6, 2025\n\n\nNick Kim\n\n\n\n\n\n\nNo matching items"
+    "text": "Blog posts on a wide range of topics, including but not limited to: math, stats, data science, and history.\nCurrently working on integrating RSS feed to get all my written content in one place! Stay tuned.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJun 6, 2025\n\n\nNick Kim\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -207,7 +207,7 @@
     "href": "blog/about.html",
     "title": "About",
     "section": "",
-    "text": "About this blog"
+    "text": "About this blog:"
   },
   {
     "objectID": "notes/bayesian-data-analysis/index.html",
@@ -221,6 +221,6 @@
     "href": "notes/index.html",
     "title": "Notes",
     "section": "",
-    "text": "Detailed notes of topics in statistics and mathematics that I have used for self-study as well as teaching.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStatistical Inference Notes\n\n\nNotes for Statistical Inference by Casella and Berger\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Detailed notes of topics in statistics and mathematics that I have used for self-study as well as teaching.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStatistical Inference Notes\n\n\nNotes for Statistical Inference by Casella and Berger\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroductory Statistics Notes\n\n\nNotes for teaching College-Level or AP Statistics\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

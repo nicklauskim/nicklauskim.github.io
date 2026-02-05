@@ -4,8 +4,8 @@ listing:
   type: grid  # or 'grid', 'table', 'carousel', etc.
   contents: 
     - statistical-inference/index.qmd
-    - ap-stats/index.qmd
+    - intro-stats/index.qmd
   sort: "date desc"
 ---
 
-Detailed notes of topics in statistics and mathematics that I have used for self-study as well as teaching. 
+Detailed notes of topics in statistics and mathematics that I have used for self-study as well as teaching.

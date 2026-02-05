@@ -2,7 +2,7 @@
 title: "Projects"
 listing:
   type: default  # or 'grid', 'table', 'carousel', etc.
-  contents: all    # will list all index pages in the  folder
+  contents: all    # will list all index pages in the folder
   sort: "date desc"
 ---
 

@@ -12,3 +12,5 @@ title-block-banner: true
 ---
 
 Blog posts on a wide range of topics, including but not limited to: math, stats, data science, and history.
+
+Currently working on integrating RSS feed to get all my written content in one place! Stay tuned.

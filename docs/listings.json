@@ -40,7 +40,8 @@
   {
     "listing": "/notes/index.html",
     "items": [
-      "/notes/statistical-inference/index.html"
+      "/notes/statistical-inference/index.html",
+      "/notes/intro-stats/index.html"
     ]
   }
 ]

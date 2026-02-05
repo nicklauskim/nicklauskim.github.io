@@ -16,4 +16,5 @@ about:
 
 ---
 
-About this blog
+About this blog:
+
