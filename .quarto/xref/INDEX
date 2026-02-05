@@ -114,5 +114,8 @@
   },
   "projects/all/bayesian-ode/simulation_code.qmd": {
     "simulation_code.html": "f9d076a0"
+  },
+  "blog/posts/drafts/welcome/index.qmd": {
+    "index.html": "3191e7f8"
   }
 }

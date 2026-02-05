@@ -9,3 +9,4 @@ listing:
 ---
 
 Detailed notes of topics in statistics and mathematics that I have used for self-study as well as teaching.
+
