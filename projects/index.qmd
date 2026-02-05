@@ -3,6 +3,9 @@ title: "Projects"
 listing:
   type: default  # or 'grid', 'table', 'carousel', etc.
   contents: all    # will list all index pages in the folder
+  exclude: 
+    - bayesian-ode/background_notes.qmd
+    - bayesian-ode/simulation_code.qmd
   sort: "date desc"
 ---
 
