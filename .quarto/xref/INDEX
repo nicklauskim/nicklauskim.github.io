@@ -120,5 +120,11 @@
   },
   "blog/drafts/welcome/index.qmd": {
     "index.html": "22a794da"
+  },
+  "projects/all/bayesian-ode/components/background_notes.qmd": {
+    "background_notes.html": "a5a06fbc"
+  },
+  "projects/all/bayesian-ode/components/simulation_code.qmd": {
+    "simulation_code.html": "fbcf98d9"
   }
 }
